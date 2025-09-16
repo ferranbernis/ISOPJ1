@@ -3,7 +3,7 @@ layout: default
 title: "Implantació de sistemes operatius 0369"
 ---
 
-Este repositorio contiene el material del curso de Machine Learning desarrollado por Mireia Consarnau.
+Este repositori compte el material del curs de Implantació de sistemes operatius 0369 desarrollat por Ferran Bernis.
 
 - Índice y enlaces a las unidades del curso.
 - Recursos en formato PDF, vídeos, y Google Colab.
