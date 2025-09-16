@@ -1,6 +1,6 @@
 # Curs de Implantació de sistemes operatius
 
-Aquest repositori compte el material del curs d'Implantació de sistemes operatius desenvolupat per Ferran Bernis.
+Este repositorio cuenta con el material del curso de Implantación de sistemas operativos desarrollado por Ferran Bernis.
 
 ## Contenido
 
@@ -12,7 +12,7 @@ Aquest repositori compte el material del curs d'Implantació de sistemes operati
 
 Este repositorio está preparado para ser publicado con GitHub Pages.  
 Puedes ver la versión web pública en:  
-https://mireiaconsarnau.github.io/machine_learning/
+https://ferranbernis.github.io/ISOPJ1/
 
 ## Licencia
 
@@ -21,5 +21,5 @@ El contenido está bajo licencia [Creative Commons BY-NC-SA 3.0 ES](LICENSE.md).
 
 ---
 
-© 2025 Mireia Consarnau
+© 2025 Ferran Bernis
 
