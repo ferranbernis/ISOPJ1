@@ -3,7 +3,7 @@ layout: default
 title: "Implantació de sistemes operatius"
 ---
 
-Este repositori compte el material del curs de Implantació de sistemes operatius desarrollat por Ferran Bernis.
+Aquest repositori compte el material del curs d'Implantació de sistemes operatius desenvolupat per Ferran Bernis.
 
 - Índice y enlaces a las unidades del curso.
 - Recursos en formato PDF, vídeos, y Google Colab.
