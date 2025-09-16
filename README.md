@@ -1,6 +1,6 @@
 # Curs de Implantació de sistemes operatius
 
-Este repositorio contiene el material del curso de Machine Learning desarrollado por Mireia Consarnau.
+Aquest repositori compte el material del curs d'Implantació de sistemes operatius desenvolupat per Ferran Bernis.
 
 ## Contenido
 
