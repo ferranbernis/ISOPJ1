@@ -1,5 +1,11 @@
-Logo IES Ebre
+---
+layout: default
+title: "Sprint 1: Instalacio i Configuracio inicial"
+---
 
-<p align="left">
-  <img src="imatges/logo_Institut_Ebre_NEGRE.png" alt="Logo Institut de l’Ebre" width="400">
-</p>
+## Virtualizacio i instalacio del SO Ubuntu
+## Llicenciament
+## Gestors d'arrencada per a instal·lacions DUALS
+## Punts de restauració
+## Configuracio de la xarxa 
+## Comandes generals i instal·lacions 
