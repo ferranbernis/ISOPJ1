@@ -19,6 +19,12 @@ Despres Apretarem seguent hasta arribar a les particions ficarem 18GB per a la a
 Introduirem totes les dades de el usuari
 <img width="809" height="605" alt="image" src="https://github.com/user-attachments/assets/adcc39fb-de2a-4fee-8842-da209bb43bce" />
 
+Despres inserirem el dvd de les guest aditions i obrirem una terminal dintre de el cd i executarem el autorun.sh
+<img width="793" height="56" alt="image" src="https://github.com/user-attachments/assets/1fcb60cf-3faf-419f-b031-4c7b80ab3824" />
+
+
+
+
 
 
 
