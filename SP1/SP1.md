@@ -22,23 +22,7 @@ Introduirem totes les dades de el usuari
 Despres inserirem el dvd de les guest aditions i obrirem una terminal dintre de el cd i executarem el autorun.sh
 <img width="793" height="56" alt="image" src="https://github.com/user-attachments/assets/1fcb60cf-3faf-419f-b031-4c7b80ab3824" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+I JA ESTARIA INSTALAT
 
 
 
@@ -74,15 +58,42 @@ La majoria de les aplicacions incloses a Ubuntu estan sota llicencies de codi ob
 
 
 
-
-
-
-
-
-
-
-
 #  Gestors d'arrencada per a instal·lacions DUALS
+
+amb Ubuntu ja instalat comencarem a instalar windows selecionarem a virtualbox habilita EFI 
+
+<img width="623" height="462" alt="image" src="https://github.com/user-attachments/assets/f7795260-6774-45af-9f45-332bba8d2c36" />
+
+<img width="249" height="32" alt="image" src="https://github.com/user-attachments/assets/3aab1c39-17bb-468e-944b-da6d820ee61e" />
+
+Assignem el Windows a el espai lliure 
+<img width="642" height="481" alt="image" src="https://github.com/user-attachments/assets/2beef985-e43e-4a3c-9e72-03d710cbbaef" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #  Punts de restauració
 # Configuracio de la xarxa 
 # Comandes generals i instal·lacions 
