@@ -66,11 +66,14 @@ amb Ubuntu ja instalat comencarem a instalar windows selecionarem a virtualbox h
 
 <img width="249" height="32" alt="image" src="https://github.com/user-attachments/assets/3aab1c39-17bb-468e-944b-da6d820ee61e" />
 
-Assignem el Windows a el espai lliure 
+Assignem el Windows a el espai lliure i continuarem apretant seguent 
 <img width="642" height="481" alt="image" src="https://github.com/user-attachments/assets/2beef985-e43e-4a3c-9e72-03d710cbbaef" />
 
+Intoduirem el nom de usuari
+<img width="1029" height="772" alt="Captura de pantalla de 2025-09-30 14-09-49" src="https://github.com/user-attachments/assets/8a393c63-6ee3-45d9-9421-b05bacf82797" />
 
-
+Ja Estaria
+<img width="1028" height="769" alt="image" src="https://github.com/user-attachments/assets/3800b9ba-42c2-4f49-a609-bddcc769e8dd" />
 
 
 
