@@ -75,10 +75,26 @@ Intoduirem el nom de usuari
 Ja Estaria
 <img width="1028" height="769" alt="image" src="https://github.com/user-attachments/assets/3800b9ba-42c2-4f49-a609-bddcc769e8dd" />
 
+Per a recuperar el grub inserirem la ISO de el supergrub
+<img width="596" height="76" alt="Captura de pantalla de 2025-10-06 13-02-01" src="https://github.com/user-attachments/assets/bee384ab-808c-498c-960e-591c5753ac03" />
 
+i entrarem a el boot menu i selecionarem iniciar desde el cd 
+<img width="638" height="484" alt="Captura de pantalla de 2025-10-06 11-59-02" src="https://github.com/user-attachments/assets/39e044df-31e2-4274-bb85-346887e67b6a" />
 
+<p>Selecionarem la segona opcio</p>
+<img width="638" height="484" alt="Captura de pantalla de 2025-10-06 11-59-18" src="https://github.com/user-attachments/assets/4e740b2a-1e9d-48d8-854e-796815d94730" />
 
+<p>Selecionarem la opcio UBUNTU</p> 
+<img width="638" height="484" alt="Captura de pantalla de 2025-10-06 11-59-39" src="https://github.com/user-attachments/assets/15c26118-c180-4729-b58f-ca8148d781f5" />
 
+<p>Allavors arrancara el ubuntu</p>
+<img width="500" height="370" alt="image" src="https://github.com/user-attachments/assets/e3de3dd8-c24c-4879-ad3b-51203f71ec80" />
+
+<p>Reinstallarem el grub</p>
+<img width="807" height="140" alt="Captura de pantalla de 2025-10-06 12-12-14" src="https://github.com/user-attachments/assets/b222a14e-f2f6-46e8-a4c3-e940d2c35b7a" />
+
+<p>Comentarem les lines GRUB timeout</p> 
+<img width="754" height="525" alt="Captura de pantalla de 2025-10-06 12-27-08" src="https://github.com/user-attachments/assets/e73a0231-cec9-4923-9430-bb32cb63e591" />
 
 
 
