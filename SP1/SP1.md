@@ -96,7 +96,12 @@ i entrarem a el boot menu i selecionarem iniciar desde el cd
 <p>Comentarem les lines GRUB timeout i escriutrem la linea Grub disable OS</p> 
 <img width="754" height="525" alt="Captura de pantalla de 2025-10-06 12-27-08" src="https://github.com/user-attachments/assets/e73a0231-cec9-4923-9430-bb32cb63e591" />
 
+<p>Actualizarem el Grub</p> 
 <img width="976" height="397" alt="Captura de pantalla de 2025-10-06 12-28-18" src="https://github.com/user-attachments/assets/30a0817a-a2b9-4214-a626-14d6acee4d58" />
+
+<p>Ja estaria </p> 
+<img width="1023" height="769" alt="Captura de pantalla de 2025-10-12 06-26-53" src="https://github.com/user-attachments/assets/f15c94cd-9c94-4340-80b8-9da1c80f654a" />
+
 
 
 
