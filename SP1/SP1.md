@@ -107,23 +107,19 @@ i entrarem a el boot menu i selecionarem iniciar desde el cd
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #  Punts de restauració
+
+
+
+
 # Configuracio de la xarxa 
+<p>Primer de tot mirarem si tenim conexio fent un ping a iesebre.com i a el DNS de google</p> 
+<img width="846" height="225" alt="image" src="https://github.com/user-attachments/assets/75893045-cf51-4c93-b88e-15bdbedf5b4f" />
+<img width="661" height="247" alt="image" src="https://github.com/user-attachments/assets/469a5c1c-1854-4e1f-857e-e0e58b05d8a4" />
+<p>Per a aplicar una configuracio personalizada per terminal modificarem el arxiu /etc/netplan/01-network-manager-all.yaml
+Introduirem la adreça 192.168.203.159 en la mascara /24 i la via 192.168.203.1 que es el router i a nameservers introduirem 
+el DNS de google
+</p>
+<img width="739" height="488" alt="Captura de pantalla de 2025-10-07 14-03-40" src="https://github.com/user-attachments/assets/39ff047f-f914-47a9-886b-1546d48a4163" />
+
 # Comandes generals i instal·lacions 
