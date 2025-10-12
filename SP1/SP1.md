@@ -90,6 +90,9 @@ i entrarem a el boot menu i selecionarem iniciar desde el cd
 <p>Allavors arrancara el ubuntu</p>
 <img width="500" height="370" alt="image" src="https://github.com/user-attachments/assets/e3de3dd8-c24c-4879-ad3b-51203f71ec80" />
 
+<p>Montarem EFI a SDA5</p>
+<img width="981" height="44" alt="Captura de pantalla de 2025-10-06 12-32-14" src="https://github.com/user-attachments/assets/59a402cb-b313-44ad-86d7-0f90127c5adc" />
+
 <p>Reinstallarem el grub</p>
 <img width="807" height="140" alt="Captura de pantalla de 2025-10-06 12-12-14" src="https://github.com/user-attachments/assets/b222a14e-f2f6-46e8-a4c3-e940d2c35b7a" />
 
