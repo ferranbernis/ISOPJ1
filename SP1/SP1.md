@@ -109,6 +109,7 @@ i entrarem a el boot menu i selecionarem iniciar desde el cd
 
 #  Punts de restauració
 
+<img width="872" height="441" alt="Captura de pantalla de 2025-10-07 12-53-38" src="https://github.com/user-attachments/assets/eec22ae8-b180-454b-9aaf-5c6242209a91" />
 
 
 
