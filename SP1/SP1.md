@@ -109,7 +109,16 @@ i entrarem a el boot menu i selecionarem iniciar desde el cd
 
 #  Punts de restauració
 
+<p>Amb Fdisk crearem la particio unica de 15GB  </p>
 <img width="872" height="441" alt="Captura de pantalla de 2025-10-07 12-53-38" src="https://github.com/user-attachments/assets/eec22ae8-b180-454b-9aaf-5c6242209a91" />
+
+<p>Donarem format ext4 a la particio</p> 
+<img width="754" height="256" alt="Captura de pantalla de 2025-10-07 12-56-11" src="https://github.com/user-attachments/assets/f73f8a22-e193-4590-8d31-bda07294ecec" />
+
+Ja estaria preparat para el us 
+<img width="572" height="63" alt="Captura de pantalla de 2025-10-07 12-54-32" src="https://github.com/user-attachments/assets/94158394-38b8-4f46-8c0a-90c7421592d8" />
+
+
 
 
 
