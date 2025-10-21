@@ -142,6 +142,13 @@ i entrarem a el boot menu i selecionarem iniciar desde el cd
 <p>Despres eliminarem el text hola i la carpeta adeu i restaurarem la copia de seguretat</p>
 <img width="507" height="583" alt="image" src="https://github.com/user-attachments/assets/a9db1693-25a6-40ad-b5ef-4f81965ea529" />
 
+<p>Esperarem</p>
+<img width="507" height="583" alt="image" src="https://github.com/user-attachments/assets/88aae583-f0e4-463a-a9f4-8ddaf9fca164" />
+<img width="534" height="165" alt="Captura de pantalla de 2025-10-21 13-39-26" src="https://github.com/user-attachments/assets/fd761080-3402-423c-9582-3363f29f68ca" />
+<img width="1286" height="804" alt="Captura de pantalla de 2025-10-21 13-39-43" src="https://github.com/user-attachments/assets/bf9c3267-aadd-4742-87ec-2780b59f782a" />
+
+
+
 
 
 
