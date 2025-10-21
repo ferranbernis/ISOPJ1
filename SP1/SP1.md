@@ -109,14 +109,40 @@ i entrarem a el boot menu i selecionarem iniciar desde el cd
 
 #  Punts de restauració
 
-<p>Amb Fdisk crearem la particio unica de 15GB  </p>
+<p>Amb Fdisk crearem la particio amb la opcio n (afegeix una nova partico) unica de 15GB</p>
 <img width="872" height="441" alt="Captura de pantalla de 2025-10-07 12-53-38" src="https://github.com/user-attachments/assets/eec22ae8-b180-454b-9aaf-5c6242209a91" />
 
-<p>Donarem format ext4 a la particio</p> 
+<p>Donarem format ext4 a la particio sdb1 creada anteriorment</p> 
 <img width="754" height="256" alt="Captura de pantalla de 2025-10-07 12-56-11" src="https://github.com/user-attachments/assets/f73f8a22-e193-4590-8d31-bda07294ecec" />
 
-Ja estaria preparat para el us 
+<p>Ja estaria preparat para el us</p> 
 <img width="572" height="63" alt="Captura de pantalla de 2025-10-07 12-54-32" src="https://github.com/user-attachments/assets/94158394-38b8-4f46-8c0a-90c7421592d8" />
+
+<p>Despres entrarem a el Programa i selecionarem el assistent</p>  
+<img width="651" height="102" alt="image" src="https://github.com/user-attachments/assets/72f620e8-aecc-44f0-8a73-250f1411192e" />
+
+<p>Selecionarem el tipus de instantanea</p>  
+<img width="602" height="185" alt="image" src="https://github.com/user-attachments/assets/3b2d2e98-7bed-484b-8e68-c13169115de9" />
+
+<p>Selecionarem La particio de el disc dur</p>   
+<img width="604" height="229" alt="Captura de pantalla de 2025-10-07 12-59-00" src="https://github.com/user-attachments/assets/168a6ea1-26e9-45e0-a9ec-979cecea761b" />
+
+<p>Selecionarem que es faci una copia de seguretat al arrancar el sistema</p>  
+<img width="605" height="668" alt="Captura de pantalla de 2025-10-07 12-59-11" src="https://github.com/user-attachments/assets/286ee560-9792-4d1b-9d78-10c87ab07be4" />
+
+<p>Selecionarem la carpeta home i excluirem el boot</p> 
+<img width="816" height="668" alt="Captura de pantalla de 2025-10-07 12-59-50" src="https://github.com/user-attachments/assets/edadff3e-e4c2-4017-97a1-81c3b5bf46f2" />
+
+<p>Crearem la instantanea</p>  
+<img width="804" height="641" alt="Captura de pantalla de 2025-10-07 13-05-16" src="https://github.com/user-attachments/assets/4c8483e3-5a8b-4bc9-b31b-b09ce81bf451" />
+
+<p>Amb el arxiu de text hola i la carpeta adeu</p>  
+<img width="338" height="40" alt="image" src="https://github.com/user-attachments/assets/2320640e-0e81-439d-a565-7dcac3014010" />
+
+<p>Despres eliminarem el text hola i la carpeta adeu i restaurarem la copia de seguretat</p>
+<img width="507" height="583" alt="image" src="https://github.com/user-attachments/assets/a9db1693-25a6-40ad-b5ef-4f81965ea529" />
+
+
 
 
 
