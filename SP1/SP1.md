@@ -171,13 +171,13 @@ el DNS de google
 <p>Introduirem el nom de el packet audacity i un asterisc que simifica que volem instalar les dependencies de el paquet a baix la versio que es la noble-backports la 3.7.3 que es diferent a la candidata que es la 3.4.2 i al final la prioritat com 900 per exemple</p>
 <img width="910" height="170" alt="image" src="https://github.com/user-attachments/assets/b892fc10-7028-4350-96d5-b4efeb51e89b" />
 
-Tornem a fer un sudo apt-cache policy audacity i ja ens diu que la versio candidat ha canviat a la que voliem natros
+<p>Tornem a fer un sudo apt-cache policy audacity i ja ens diu que la versio candidat ha canviat a la que voliem natros</p>
 <img width="911" height="223" alt="image" src="https://github.com/user-attachments/assets/d83e64ad-f917-422f-8083-a58472472535" />
 
-Ara farem un sudo apt install audacity 
+<p>Ara farem un sudo apt install audacity</p> 
 <img width="914" height="607" alt="image" src="https://github.com/user-attachments/assets/80c2238a-aed4-41a5-8877-1c98d301f7c4" />
 
-Comprovarem que la versio que hem instalat sigui la correcta
+<p>Comprovarem que la versio que hem instalat sigui la correcta</p>
 <img width="908" height="250" alt="image" src="https://github.com/user-attachments/assets/8c218c31-d7c8-4838-95bb-a69c4ceae9c1" />
 
 
