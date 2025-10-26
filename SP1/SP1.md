@@ -180,6 +180,9 @@ el DNS de google
 <p>Comprovarem que la versio que hem instalat sigui la correcta</p>
 <img width="908" height="250" alt="image" src="https://github.com/user-attachments/assets/8c218c31-d7c8-4838-95bb-a69c4ceae9c1" />
 
+<img width="1415" height="751" alt="image" src="https://github.com/user-attachments/assets/e509eac6-9d28-4d7c-936b-419c72096fea" />
+
+
 
 
 
