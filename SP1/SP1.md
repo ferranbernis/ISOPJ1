@@ -5,24 +5,24 @@ title: "Sprint 1: Instalacio i Configuracio inicial"
 
 # Virtualizacio i instalacio del SO Ubuntu
 
-Primer de tot selecionarem la memoria ram de la maquina virtual el minim son 4 GB i com a el ordinador host de 32GB introduirem 8GB despres com sera dual introduirem 80 GB de disc 40 GB per a ubuntu i 40 GB per a windows el minim de ubuntu son 25 GB i a la xarxa selecionarem xarxa NAT la diferencia amb el NAT es que els dos poden accedir a internet pero la xarxa nat poden veures varies maquines entre si la maquina anfitrio fa de router 
+<p> Primer de tot selecionarem la memoria ram de la maquina virtual el minim son 4 GB i com a el ordinador host de 32GB introduirem 8GB despres com sera dual introduirem 80 GB de disc 40 GB per a ubuntu i 40 GB per a windows el minim de ubuntu son 25 GB i a la xarxa selecionarem xarxa NAT la diferencia amb el NAT es que els dos poden accedir a internet pero la xarxa nat poden veures varies maquines entre si la maquina anfitrio fa de router</p>
 
 <img width="578" height="666" alt="Captura de pantalla de 2025-09-22 12-41-33" src="https://github.com/user-attachments/assets/76fc07a2-8bf1-4bf5-8acb-44a1f3309e05" />
 
 
-Despres Apretarem seguent hasta arribar a les particions ficarem 18GB per a la arrel i 15GB per a home i 1GB boot anirem justos de almacenament per culpa de el windows pero funcionara be 
+<p>Despres Apretarem seguent hasta arribar a les particions ficarem 18GB per a la arrel i 15GB per a home i 1GB boot anirem justos de almacenament per culpa de el windows pero funcionara be</p>
 
 <img width="804" height="770" alt="Captura de pantalla de 2025-09-23 12-56-54" src="https://github.com/user-attachments/assets/05223edc-d1ef-4782-bdf2-9c288dd9a8ee" />
 
 <img width="804" height="770" alt="image" src="https://github.com/user-attachments/assets/7210c626-149d-434e-8527-29abf2a0f211" />
 
-Introduirem totes les dades de el usuari
+<p>Introduirem totes les dades de el usuari</p>
 <img width="809" height="605" alt="image" src="https://github.com/user-attachments/assets/adcc39fb-de2a-4fee-8842-da209bb43bce" />
 
-Despres inserirem el dvd de les guest aditions i obrirem una terminal dintre de el cd i executarem el autorun.sh
+<p>Despres inserirem el dvd de les guest aditions i obrirem una terminal dintre de el cd i executarem el autorun.sh</p>
 <img width="793" height="56" alt="image" src="https://github.com/user-attachments/assets/1fcb60cf-3faf-419f-b031-4c7b80ab3824" />
 
-I JA ESTARIA INSTALAT
+<p>I JA ESTARIA INSTALAT</p>
 
 
 
@@ -60,25 +60,25 @@ La majoria de les aplicacions incloses a Ubuntu estan sota llicencies de codi ob
 
 #  Gestors d'arrencada per a instal·lacions DUALS
 
-amb Ubuntu ja instalat comencarem a instalar windows selecionarem a virtualbox habilita EFI 
+<p>amb Ubuntu ja instalat comencarem a instalar windows selecionarem a virtualbox habilita EFI</p>
 
 <img width="623" height="462" alt="image" src="https://github.com/user-attachments/assets/f7795260-6774-45af-9f45-332bba8d2c36" />
 
 <img width="249" height="32" alt="image" src="https://github.com/user-attachments/assets/3aab1c39-17bb-468e-944b-da6d820ee61e" />
 
-Assignem el Windows a el espai lliure i continuarem apretant seguent 
+<p>Assignem el Windows a el espai lliure i continuarem apretant seguent</p> 
 <img width="642" height="481" alt="image" src="https://github.com/user-attachments/assets/2beef985-e43e-4a3c-9e72-03d710cbbaef" />
 
-Intoduirem el nom de usuari
+<p>Intoduirem el nom de usuari</p>
 <img width="1029" height="772" alt="Captura de pantalla de 2025-09-30 14-09-49" src="https://github.com/user-attachments/assets/8a393c63-6ee3-45d9-9421-b05bacf82797" />
 
-Ja Estaria
+<p>Ja Estaria</p>
 <img width="1028" height="769" alt="image" src="https://github.com/user-attachments/assets/3800b9ba-42c2-4f49-a609-bddcc769e8dd" />
 
-Per a recuperar el grub inserirem la ISO de el supergrub
+<p>Per a recuperar el grub inserirem la ISO de el supergrub</p>
 <img width="596" height="76" alt="Captura de pantalla de 2025-10-06 13-02-01" src="https://github.com/user-attachments/assets/bee384ab-808c-498c-960e-591c5753ac03" />
 
-i entrarem a el boot menu i selecionarem iniciar desde el cd 
+<p>i entrarem a el boot menu i selecionarem iniciar desde el cd</p> 
 <img width="638" height="484" alt="Captura de pantalla de 2025-10-06 11-59-02" src="https://github.com/user-attachments/assets/39e044df-31e2-4274-bb85-346887e67b6a" />
 
 <p>Selecionarem la segona opcio</p>
@@ -147,7 +147,7 @@ i entrarem a el boot menu i selecionarem iniciar desde el cd
 <img width="534" height="165" alt="Captura de pantalla de 2025-10-21 13-39-26" src="https://github.com/user-attachments/assets/fd761080-3402-423c-9582-3363f29f68ca" />
 <img width="1286" height="804" alt="Captura de pantalla de 2025-10-21 13-39-43" src="https://github.com/user-attachments/assets/bf9c3267-aadd-4742-87ec-2780b59f782a" />
 
-Revisem i ja estaria
+<p>Revisem i ja estaria </p>
 <img width="893" height="556" alt="image" src="https://github.com/user-attachments/assets/c56237e6-2318-48a9-b763-113c5fc1c395" />
 
 # Configuracio de la xarxa 
