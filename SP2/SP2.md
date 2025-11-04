@@ -17,17 +17,21 @@
 
 
 <h2>4. Gestió d'usuaris i grups i permisos</h2>
-<p>Gestio de Usuaris per interficie grafica</p>  
+<p>Gestio de Usuaris per interficie grafica amb gnome-system-tools</p>  
 <img width="1028" height="685" alt="Captura de pantalla de 2025-11-04 12-50-16" src="https://github.com/user-attachments/assets/8c0a58f0-1adc-4bf7-bcd1-685ad955b6d9" />
 
 
 <h3>Fitxers implicats</h3>
+<p>El arxiu Passwd emmagatzema informació bàsica sobre tots els usuaris del sistema</p>
 <img width="883" height="690" alt="Captura de pantalla de 2025-11-04 12-53-12" src="https://github.com/user-attachments/assets/6ed429c9-94cd-4ba7-a60f-bf0c0f661f6c" />
 
+<p>El arxiu groups gestiona els grups d’usuaris</p>
 <img width="876" height="752" alt="Captura de pantalla de 2025-11-04 12-56-24" src="https://github.com/user-attachments/assets/222fc464-5cac-4000-b00c-b50b85ee68f8" />
 
+<p>El arxiu shadow emmagatzema les contrasenyes xifrades dels usuaris i informació addicional de seguretat</p>
 <img width="981" height="745" alt="image" src="https://github.com/user-attachments/assets/2eee2fec-e44d-43b9-87c9-aac2bcb3eb51" />
 
+<p>El arxiu gshadow es equivalent a shadow pero amb grups </p>
 <img width="981" height="745" alt="Captura de pantalla de 2025-11-04 12-58-48" src="https://github.com/user-attachments/assets/9d8ad1cc-646d-4c7a-b1a3-00ac9e4c7d61" />
 
 <h3>Comandes basiques</h3>
@@ -40,11 +44,13 @@
 <p>Crearem el usuari gina2 amb useradd</p>  
 <img width="978" height="548" alt="image" src="https://github.com/user-attachments/assets/14ede398-4252-4f88-96d9-2a9cf598a104" />
 
+Comprovarem que gina no es administradora (sudo) i la afegirem a el grup sudo (administradors)
 <img width="793" height="744" alt="image" src="https://github.com/user-attachments/assets/4a9456f5-937e-42d7-984a-585e5f30bce8" />
 
+Eliminarem el usuari gina amb deluser que elimina tot el relacionat amb el usuari i eliminarem gina2 amb userdel que es una comanda que sol elimina el usuari i no les carptes
 <img width="747" height="351" alt="image" src="https://github.com/user-attachments/assets/bd0e73ea-6b64-4089-9d2c-005745eff1ee" />
 
-<p>Bloquejar i DesBloquejar Usuari Usuari</p>
+<p>Bloquejar i desbloquejar un Usuari </p>
 <img width="912" height="220" alt="image" src="https://github.com/user-attachments/assets/19bee0d1-46d3-4767-8458-87eaffb7d2a7" />
 
 <p>Modificar un Grup i eliminarlo</p>
