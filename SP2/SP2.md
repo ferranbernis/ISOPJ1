@@ -17,6 +17,7 @@
 
 
 <h2>4. Gestió d'usuaris i grups i permisos</h2>
+<p>Gestio de Usuaris per interficie grafica</p>  
 <img width="1028" height="685" alt="Captura de pantalla de 2025-11-04 12-50-16" src="https://github.com/user-attachments/assets/8c0a58f0-1adc-4bf7-bcd1-685ad955b6d9" />
 
 
@@ -55,6 +56,8 @@
 <p>Afegir Usuari administrador de un grup</p>
 <img width="598" height="116" alt="image" src="https://github.com/user-attachments/assets/eb641b82-e8f1-4307-9c5e-41d7656481a9" />
 
+<p>Afegir el grup principal de el Usuari </p>
+<img width="590" height="187" alt="image" src="https://github.com/user-attachments/assets/76bea46c-7e1c-492e-ac9f-eb4c1adfab1f" />
 
 
 
