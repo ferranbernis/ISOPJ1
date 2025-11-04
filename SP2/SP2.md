@@ -44,10 +44,10 @@
 <p>Crearem el usuari gina2 amb useradd</p>  
 <img width="978" height="548" alt="image" src="https://github.com/user-attachments/assets/14ede398-4252-4f88-96d9-2a9cf598a104" />
 
-Comprovarem que gina no es administradora (sudo) i la afegirem a el grup sudo (administradors)
+<p>Comprovarem que gina no es administradora (sudo) i la afegirem a el grup sudo (administradors)</p>
 <img width="793" height="744" alt="image" src="https://github.com/user-attachments/assets/4a9456f5-937e-42d7-984a-585e5f30bce8" />
 
-Eliminarem el usuari gina amb deluser que elimina tot el relacionat amb el usuari i eliminarem gina2 amb userdel que es una comanda que sol elimina el usuari i no les carptes
+<p>Eliminarem el usuari gina amb deluser que elimina tot el relacionat amb el usuari i eliminarem gina2 amb userdel que es una comanda que sol elimina el usuari i no les carptes</p>
 <img width="747" height="351" alt="image" src="https://github.com/user-attachments/assets/bd0e73ea-6b64-4089-9d2c-005745eff1ee" />
 
 <p>Bloquejar i desbloquejar un Usuari </p>
