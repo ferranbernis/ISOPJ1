@@ -23,8 +23,11 @@
 
 <h3>Fitxers implicats</h3>
 <img width="883" height="690" alt="Captura de pantalla de 2025-11-04 12-53-12" src="https://github.com/user-attachments/assets/6ed429c9-94cd-4ba7-a60f-bf0c0f661f6c" />
+
 <img width="876" height="752" alt="Captura de pantalla de 2025-11-04 12-56-24" src="https://github.com/user-attachments/assets/222fc464-5cac-4000-b00c-b50b85ee68f8" />
+
 <img width="981" height="745" alt="image" src="https://github.com/user-attachments/assets/2eee2fec-e44d-43b9-87c9-aac2bcb3eb51" />
+
 <img width="981" height="745" alt="Captura de pantalla de 2025-11-04 12-58-48" src="https://github.com/user-attachments/assets/9d8ad1cc-646d-4c7a-b1a3-00ac9e4c7d61" />
 
 <h3>Comandes basiques</h3>
