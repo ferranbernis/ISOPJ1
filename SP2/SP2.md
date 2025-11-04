@@ -52,6 +52,8 @@
 <p>Afegir Usuaris a un grup de 3 diferentes maneres</p>
 <img width="703" height="228" alt="image" src="https://github.com/user-attachments/assets/b8f39d9d-5f38-45c5-a9c1-e9a98649f217" />
 
+<p>Afegir Usuari administrador de un grup</p>
+<img width="598" height="116" alt="image" src="https://github.com/user-attachments/assets/eb641b82-e8f1-4307-9c5e-41d7656481a9" />
 
 
 
