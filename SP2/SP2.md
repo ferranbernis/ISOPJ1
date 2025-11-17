@@ -94,6 +94,9 @@
 <p> Ara pasarem a el segon arxiu login.dfs que modifica els parametres de quan un usuari incia sesio i modificarem el maxim de dies que estara el minim i el avis</p>
 <img width="737" height="243" alt="Captura de pantalla de 2025-11-17 12-13-54" src="https://github.com/user-attachments/assets/1a445bfc-57b1-4e92-a59c-9015e5df5255" />
 
+crearem el usuari gris i comprovarem que tots 
+<img width="852" height="438" alt="Captura de pantalla de 2025-11-17 12-15-31" src="https://github.com/user-attachments/assets/a7740f16-a365-4c90-971d-7f55b695b322" />
+
 
 
 
