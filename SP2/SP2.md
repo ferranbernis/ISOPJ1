@@ -87,10 +87,12 @@
 <p> Despres entrarem a cd /etc/skel i veurem que tenim varios arxius mos centrarem en 3 de ells .bash_logout,bashrc i .profile els canvis que fesem en aquestos arxius es aplicaran als usauris futurs  </p>
 <img width="605" height="388" alt="Captura de pantalla de 2025-11-17 12-07-39" src="https://github.com/user-attachments/assets/0b06dfe2-ce2d-45c6-8261-0b77c1fb2c29" />
 
-<p> Entrarem a el arxiu    </p>
+<p> Entrarem a el arxiu adduser.conf que serveix per a modificar els determinats de adduser i editarem el shell a bash i que la carpeta home del usuari estigui ubicada a /var i modificarem el UDI de creacio de els usuaris que comencigue a partir de 3000 </p>
 <img width="636" height="242" alt="Captura de pantalla de 2025-11-17 12-11-13" src="https://github.com/user-attachments/assets/515eb864-3981-47f5-88af-1cb3c3ed3fbf" />
+<img width="757" height="575" alt="Captura de pantalla de 2025-11-17 12-11-32" src="https://github.com/user-attachments/assets/a846aeda-4de7-4be0-bfff-fe45eb3a9263" />
 
-
+<p> Ara pasarem a el segon arxiu login.dfs que modifica els parametres de quan un usuari incia sesio i modificarem el maxim de dies que estara el minim i el avis</p>
+<img width="737" height="243" alt="Captura de pantalla de 2025-11-17 12-13-54" src="https://github.com/user-attachments/assets/1a445bfc-57b1-4e92-a59c-9015e5df5255" />
 
 
 
