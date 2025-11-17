@@ -5,18 +5,18 @@
 
 
 
-<h2>2. Gestió de particions</h2>
-
-
-
-
-<h2>3. Gestió de procesos</h2>
 
 
 
 
 
-<h2>4. Gestió d'usuaris i grups i permisos</h2>
+<h2>2. Gestió de procesos</h2>
+
+
+
+
+
+<h2>3. Gestió d'usuaris i grups i permisos</h2>
 <p>Gestio de Usuaris per interficie grafica amb gnome-system-tools</p>  
 <img width="1028" height="685" alt="Captura de pantalla de 2025-11-04 12-50-16" src="https://github.com/user-attachments/assets/8c0a58f0-1adc-4bf7-bcd1-685ad955b6d9" />
 
@@ -114,11 +114,11 @@ tot el que es posi a la carpeta /etc/skel es copiara a la home de el usuari
 
 
 
-<h2>5. Còpies de seguretat i automatització de tasques</h2>
+<h2>4. Còpies de seguretat i automatització de tasques</h2>
 
 
 
 
 
 
-<h2>6. Quotes d'usuari</h2>
+<h2>5. Quotes d'usuari</h2>
