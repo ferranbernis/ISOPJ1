@@ -102,6 +102,18 @@ crearem el usuari gris i comprovarem que tots
 tot el que es posi a la carpeta /etc/skel es copiara a la home de el usuari 
 
 
+Gestio permisos 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
