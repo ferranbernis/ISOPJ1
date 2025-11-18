@@ -97,15 +97,10 @@
 crearem el usuari gris i comprovarem que tots 
 <img width="852" height="438" alt="Captura de pantalla de 2025-11-17 12-15-31" src="https://github.com/user-attachments/assets/a7740f16-a365-4c90-971d-7f55b695b322" />
 
-
-
-
 <p>Un grup es por esborrar i a els usuaris no els pasa res a no ser que algun usuari el tingui com a grup principal</p>
 
-
-
-
 tot el que es posi a la carpeta /etc/skel es copiara a la home de el usuari 
+
 
 
 
