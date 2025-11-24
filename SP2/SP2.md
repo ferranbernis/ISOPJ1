@@ -103,14 +103,24 @@ crearem el usuari gris i comprovarem que tots
 <img width="414" height="45" alt="Captura de pantalla de 2025-11-17 11-57-57" src="https://github.com/user-attachments/assets/ad513f64-c801-4c62-87d0-1d60e0694de6" />
 
 
-
-
 <p>tot el que es posi a la carpeta /etc/skel es copiara a la home de el usuari</p>
 <img width="605" height="388" alt="Captura de pantalla de 2025-11-17 12-07-39" src="https://github.com/user-attachments/assets/fb8168c7-02ac-4695-9435-39d2e080ed37" />
 
 
+<p>Ara entrarem a el arxiu adduser.conf que son els parametres de la comanda adduser que serveix per crear usuaris introduirem que la Shell la volem en bash i que la carpeta home la volem a /var</p>
+<img width="636" height="242" alt="Captura de pantalla de 2025-11-17 12-11-13" src="https://github.com/user-attachments/assets/4431ec59-7a13-471f-bec1-76f66366afe0" />
 
+<p>i canviarem que crei els id de els usuaris a partir de 3000</p>
+<img width="757" height="575" alt="Captura de pantalla de 2025-11-17 12-11-32" src="https://github.com/user-attachments/assets/6009580e-22a3-47de-8ea4-9a2b5353c28f" />
 
+<p>Despres obrerem el arxiu login.defs que modifica es regles generals del sistema per a:
+contrasenyes
+creació d’usuaris
+permisos
+comportament del login</p>
+
+<p> Introduirem que la contrasenya tingui un maxim de 20 dies i un minim de 15 dies i que te avise als 3 dies</p>
+<img width="737" height="243" alt="Captura de pantalla de 2025-11-17 12-13-54" src="https://github.com/user-attachments/assets/c827feb8-6e37-4ed9-9031-9b87a61fcbbd" />
 
 
 
