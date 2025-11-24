@@ -122,6 +122,26 @@ comportament del login</p>
 <p> Introduirem que la contrasenya tingui un maxim de 20 dies i un minim de 15 dies i que te avise als 3 dies</p>
 <img width="737" height="243" alt="Captura de pantalla de 2025-11-17 12-13-54" src="https://github.com/user-attachments/assets/c827feb8-6e37-4ed9-9031-9b87a61fcbbd" />
 
+<p>Crearem el usuari gris i comprovarem que tot el anterior es hagui aplicat correctament</p>
+<img width="852" height="438" alt="Captura de pantalla de 2025-11-17 12-15-31" src="https://github.com/user-attachments/assets/37c69459-d9c4-48f4-80dc-df27b3c29cea" />
+
+<p>Si comenca a assignar a partir de el 3000</p>
+<img width="483" height="57" alt="Captura de pantalla de 2025-11-17 12-15-58" src="https://github.com/user-attachments/assets/ec1c165a-18b2-494d-8951-3164fffbf37c" />
+
+<p>Si la contrasenya la caducitat assignada a el arxiu login.defs</p>
+<img width="865" height="40" alt="Captura de pantalla de 2025-11-17 12-16-59" src="https://github.com/user-attachments/assets/d009641c-b3d0-4697-b469-d5dcedf18627" />
+
+<p>I tambe es ha creat la carpeta prova que haviem creat a etc/skel </p>
+<img width="504" height="183" alt="Captura de pantalla de 2025-11-17 12-17-56" src="https://github.com/user-attachments/assets/64f22801-b2a5-412a-8fae-ba6878c2b604" />
+
+<p>Ara modificarem el useradd i canviarem el shell a bash</p>
+<img width="918" height="382" alt="Captura de pantalla de 2025-11-17 12-19-56" src="https://github.com/user-attachments/assets/76ddda7f-0644-491f-a52f-59ad4e9ae22b" />
+
+<p>Crearem el usuari negre amb useradd i comprovarem el id que es 3001 i que esta en bash</p> 
+<img width="501" height="66" alt="Captura de pantalla de 2025-11-17 12-20-36" src="https://github.com/user-attachments/assets/e3497563-6f11-45e7-a290-036c49a70a8a" />
+
+<p>Comprovarem la caducitat de la contrasenya</p> 
+<img width="487" height="68" alt="Captura de pantalla de 2025-11-17 12-21-05" src="https://github.com/user-attachments/assets/a350bc0f-a685-41fa-b8a2-cf584a07ef84" />
 
 
 
