@@ -156,8 +156,7 @@ comportament del login</p>
 
 
 <h3>Mascara</h3>
-
-
+<p>Explicar la mascara de el usuari cuan el usuari crea una carpeta els permisos que es creen per defecte   </p> 
 
 
 
