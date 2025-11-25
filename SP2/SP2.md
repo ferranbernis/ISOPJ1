@@ -158,15 +158,28 @@ comportament del login</p>
 <h3>Mascara</h3>
 <p>Explicar la mascara de el usuari cuan el usuari crea una carpeta els permisos que es creen per defecte</p> 
 
+<p>Primer de tot veurem en la comanda unmask la mascara de el usuari i la mascara quan el usuari es root</p> 
+<img width="530" height="215" alt="Captura de pantalla de 2025-11-25 13-12-11" src="https://github.com/user-attachments/assets/7b8f355e-b0c7-4b04-84aa-fb614a9c430a" />
+
+<p> Despres entrarem a el arxiu login.defs que defineix els parametres globals de els usuaris i podrem modificar la mascara de els usuaris que es creein despres de la modificacio</p> 
+<img width="747" height="669" alt="Captura de pantalla de 2025-11-25 13-13-01" src="https://github.com/user-attachments/assets/c61cf294-9d02-4ec8-93a3-5a72689dc31a" />
+
 
 <p>Per a canviar la mascara de el usuari actual entrarem a el arxiu .profile i canviarem la mascara</p> 
 <img width="743" height="663" alt="Captura de pantalla de 2025-11-25 13-14-24" src="https://github.com/user-attachments/assets/1e585f01-98b9-41d8-bc9e-ba167bc80b5f" />
 
+<p>Ara si volem canviar la mascara de un usuari temporalment hasta que reinici i comprovarem creant una carpeta i un arxiu que la mascara  </p> 
+<img width="728" height="185" alt="Captura de pantalla de 2025-11-25 13-17-08" src="https://github.com/user-attachments/assets/b14aa729-7e2f-4f49-8013-825293846eb3" />
 
 
+<p>Ara Modificarem el arxiu login.defs i canviarem la mascara de 22 a 33 </p> 
+<img width="742" height="341" alt="Captura de pantalla de 2025-11-25 13-19-11" src="https://github.com/user-attachments/assets/10887633-9390-436e-a337-c9a82f3ecd61" />
 
+<p>Crearem el usuari prova</p>  
+<img width="724" height="331" alt="Captura de pantalla de 2025-11-25 13-20-46" src="https://github.com/user-attachments/assets/6f70fd0e-a7dd-4274-944e-105aa0daacc7" />
 
-
+<p> Crearem una carpeta i un axiu i comprovarem que la mascara 33 es ha aplicat</p> 
+<img width="472" height="149" alt="Captura de pantalla de 2025-11-25 13-23-34" src="https://github.com/user-attachments/assets/421959cd-6277-4296-b3bf-cb10a9ae697b" />
 
 
 
