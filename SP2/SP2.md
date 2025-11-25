@@ -156,10 +156,10 @@ comportament del login</p>
 
 
 <h3>Mascara</h3>
-<p>Explicar la mascara de el usuari cuan el usuari crea una carpeta els permisos que es creen per defecte   </p> 
+<p>Explicar la mascara de el usuari cuan el usuari crea una carpeta els permisos que es creen per defecte</p> 
 
 
-Canviar la mascara sol de el usuari actual 
+<p>Per a canviar la mascara de el usuari actual entrarem a el arxiu .profile i canviarem la mascara</p> 
 <img width="743" height="663" alt="Captura de pantalla de 2025-11-25 13-14-24" src="https://github.com/user-attachments/assets/1e585f01-98b9-41d8-bc9e-ba167bc80b5f" />
 
 
