@@ -107,6 +107,7 @@
 <p>Ara entrarem a el arxiu adduser.conf que son els parametres de la comanda adduser que serveix per crear usuaris introduirem que la Shell la volem en bash i que la carpeta home la volem a /var</p>
 <img width="636" height="242" alt="Captura de pantalla de 2025-11-17 12-11-13" src="https://github.com/user-attachments/assets/4431ec59-7a13-471f-bec1-76f66366afe0" />
 
+
 <p>i canviarem que crei els id de els usuaris a partir de 3000</p>
 <img width="757" height="575" alt="Captura de pantalla de 2025-11-17 12-11-32" src="https://github.com/user-attachments/assets/6009580e-22a3-47de-8ea4-9a2b5353c28f" />
 
