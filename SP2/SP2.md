@@ -145,21 +145,21 @@ comportament del login</p>
 
 <h3>Gestio permisos</h3>
 
-<p>Primer de tot crearem la carpeta palomes i afegirem a el usuari nick com a propietari amb chown -R</p> 
+<p>Primer de tot crearem la carpeta palomes i el grup palomes i afegirem a el usuari nick com a propietari amb chown -R</p> 
 <img width="576" height="331" alt="Captura de pantalla de 2025-11-18 13-49-12" src="https://github.com/user-attachments/assets/bc3be556-4ab1-45e1-90ac-a397e0281a9c" />
 
-<p>Despres modificarem els permisos de la carpeta amb chmod 750 que simifica permisos totals per a el usuari permisos de lectura i execucio per a el grup i no permisos per als altres</p>  
+<p>Despres modificarem els permisos de la carpeta amb chmod 750 per a el grup palomes que simifica permisos totals per a el usuari permisos de lectura i execucio per a el grup i no permisos per als altres</p>  
 <img width="512" height="79" alt="Captura de pantalla de 2025-11-18 13-51-25" src="https://github.com/user-attachments/assets/8e993be5-746a-469b-a293-842800a8395d" />
 
 
 <img width="512" height="79" alt="Captura de pantalla de 2025-11-18 13-51-25" src="https://github.com/user-attachments/assets/b5e4f0ba-8149-4937-9940-cea1e2a4fe75" />
 
-Ara amb chmod o+r donarem permisos als altres per a lectura i en chmod o-r llevarem el permis de llectura als altres i amb ls -l | grep palomes veurem els permisos sol de la carpeta palomes
+<p>Ara amb chmod o+r donarem permisos als altres per a lectura i en chmod o-r llevarem el permis de llectura als altres i amb ls -l | grep palomes veurem els permisos sol de la carpeta palomes</p>  
 <img width="507" height="138" alt="Captura de pantalla de 2025-11-18 13-52-34" src="https://github.com/user-attachments/assets/fe123a6f-77bd-4bc2-8334-56ad7d4938cd" />
 
 
 
-Ara comprovarem els permisos primer amb el usuari nick que podrar entrar a la carpeta crear el arxiu sdfsdf i escriure dints despues pasarem a el usuari cire podra entrar dints de la carpeta pero no podra crear cap arxiu i despues provarem amb el usuari ferran que no podrar entrar dints de la carpeta perque nick es el propietari i te permisos totals cire es un usuari de el gurp palomes i ferran es altres que no tenen cap permis 
+<p>Ara comprovarem els permisos primer amb el usuari nick que podrar entrar a la carpeta crear el arxiu sdfsdf i escriure dints despues pasarem a el usuari cire podra entrar dints de la carpeta pero no podra crear cap arxiu i despues provarem amb el usuari ferran que no podrar entrar dints de la carpeta perque nick es el propietari i te permisos totals cire es un usuari de el gurp palomes i ferran es altres que no tenen cap permis</p>   
 <img width="948" height="385" alt="Captura de pantalla de 2025-11-18 13-54-14" src="https://github.com/user-attachments/assets/010f0889-6b17-4dbb-bdad-13a19c64f48f" />
 
 
