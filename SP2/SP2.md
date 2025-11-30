@@ -47,7 +47,27 @@ A diferència de la fragmentació interna (que és espai perdut dins d'un bloc),
 
 <p>FAT32 (File Allocation Table 32): Un sistema antic, però encara utilitzat per la seva compatibilitat amb gairebé qualsevol dispositiu (càmeres, consoles, reproductors). La seva limitació clau és que no pot emmagatzemar fitxers individuals de més de 4 GB.</p>
 
+<p>Ubuntu EXT4</p>
+<img width="745" height="243" alt="image" src="https://github.com/user-attachments/assets/f13d0a18-2bce-4e21-be3b-5bd46eb7f195" />
 
+<p>Windows NTFS</p>
+<img width="603" height="124" alt="image" src="https://github.com/user-attachments/assets/b6700966-2261-49fa-bbcb-081a921c714f" />
+
+<p>Comprovem que se han creat amb el format correcte amb lsblk -f</p>
+<img width="603" height="124" alt="image" src="https://github.com/user-attachments/assets/46f10528-77ac-47d1-848a-3e7c4553d1fe" />
+
+<p>Baix Nivell (Low-Level)</p>
+<p>Què fa: Aquest procés realitza una neteja total del disc.</p>
+Resultat: Segons la teva definició, "Borra sistema de fitxers, borra formateig, etc.", eliminant totes les dades i totes les estructures lògiques prèvies. El disc queda en un estat de fàbrica, "com a nou", sense cap mena d'organització lògica (sense particions ni sistemes de fitxers).
+Accessibilitat: No es pot fer des del sistema operatiu (SO) operatiu normal. Requereix programes adients i especialitzats, ja que treballa directament amb el firmware del disc dur.</p>
+
+<p>Mig Nivell (Mid-Level)</p>
+<p>Què fa: Aquesta és una operació que se centra en la capa lògica i la integritat del disc.</p>
+Resultat: "Només borra el sistema de fitxers" (igual que el format d'Alt Nivell Ràpid), deixant les dades antigues presents però irrellevants per al SO. La funció distintiva és la comprovació de la integritat: si hi ha sectors defectuosos, els marca per evitar que el sistema operatiu els utilitzi en el futur, però "no els arregla".</p>
+
+<p>Alt Nivell (High-Level)</p>
+<p>Què fa: Aquesta és l'operació més comuna i ràpida.
+Resultat: "Només borra el sistema de fitxers". El disc es prepara amb la creació del sistema de fitxers nou (p. ex., ext4 o NTFS) i el directori arrel. El contingut de les dades antigues roman al disc fins que es sobreescriu, cosa que permet la seva recuperació.</p>
 
 
 
