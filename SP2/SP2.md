@@ -140,7 +140,20 @@ comportament del login</p>
 <p>Comprovarem la caducitat de la contrasenya</p> 
 <img width="487" height="68" alt="Captura de pantalla de 2025-11-17 12-21-05" src="https://github.com/user-attachments/assets/a350bc0f-a685-41fa-b8a2-cf584a07ef84" />
 
+<p>Ara entrarem a .profile i introduirem que els usuaris cuan facin login estiguin ven situats al directori /var</p>
+<img width="729" height="566" alt="Captura de pantalla de 2025-11-17 12-27-37" src="https://github.com/user-attachments/assets/c0e83f5b-fa39-4cc5-baa4-af3a36e5d675" />
 
+<p>Ara a el archiu .bashrc afegirem un alias quan escriguen alias connexio es fara un ls -la</p>
+<img width="721" height="305" alt="Captura de pantalla de 2025-11-17 12-30-42" src="https://github.com/user-attachments/assets/18e29570-ad06-4d62-93ba-f0b7f0a81294" />
+
+<p>Despres entrarem a el arxiu bash_logout i introduirem que cuan el usuari tanqui la sesio es elimini el seu directori personal</p> 
+<img width="721" height="305" alt="Captura de pantalla de 2025-11-17 12-31-51" src="https://github.com/user-attachments/assets/431ccf76-1f1e-4d39-922f-3598176e64a6" />
+
+<p>Ara entrarem a el usuari rosa i comprovarem que estigui a la carpeta correcta /var/rosa</p> 
+<img width="676" height="696" alt="Captura de pantalla de 2025-11-17 12-34-30" src="https://github.com/user-attachments/assets/7c5c2ffe-57bd-4ace-a57b-bdca1eb40f71" />
+
+<p>Tancarem la sesio i tornarem a obrirla i es haura eliminat tot per el introduit anteriorment a el arxiu bash_logout</p>
+<img width="619" height="356" alt="Captura de pantalla de 2025-11-17 12-35-33" src="https://github.com/user-attachments/assets/bce3892a-652a-4655-8ad8-cbe8e9adf99d" />
 
 
 <h3>Gestio permisos</h3>
@@ -158,13 +171,40 @@ comportament del login</p>
 
 
 
-<p>Ara comprovarem els permisos primer amb el usuari nick que podrar entrar a la carpeta crear el arxiu sdfsdf i escriure dints despues pasarem a el usuari cire podra entrar dints de la carpeta pero no podra crear cap arxiu i despues provarem amb el usuari ferran que no podrar entrar dints de la carpeta perque nick es el propietari i te permisos totals cire es un usuari de el gurp palomes i ferran es altres que no tenen cap permis</p>   
+<p>Ara comprovarem els permisos primer amb el usuari nick que podrar entrar a la carpeta crear el arxiu sdfsdf i escriure dints despues pasarem a el usuari cire podra entrar dints de la carpeta pero no podra crear cap arxiu i despues provarem amb el usuari ferran que no podrar entrar dints de la carpeta perque nick es el propietari i te permisos totals cire es un usuari de el gurp paloma i ferran es altres que no tenen cap permis</p>   
 <img width="948" height="385" alt="Captura de pantalla de 2025-11-18 13-54-14" src="https://github.com/user-attachments/assets/010f0889-6b17-4dbb-bdad-13a19c64f48f" />
 
+
+<p>Ara afegirem a ferran i a deivy a el grup paloma amb adduser el nom de el usuari i el grup en el que el vols afegir</p>
+<img width="722" height="284" alt="Captura de pantalla de 2025-11-18 13-55-40" src="https://github.com/user-attachments/assets/4c99b31b-6f97-4190-a4ad-c46650e603b3" />
+
+
+<p>Despres en chmod g+w afegirem a el grup paloma el permis de escriptura i ho comprovarem amb ls -l</p> 
+<img width="509" height="94" alt="Captura de pantalla de 2025-11-18 13-56-48" src="https://github.com/user-attachments/assets/414eb29d-3e46-4908-bbc6-cbb52c1b310b" />
+
+
+<p>Devy creara el arxiu practicavaras i ferran el eliminara</p> 
+<img width="942" height="368" alt="Captura de pantalla de 2025-11-18 13-58-46" src="https://github.com/user-attachments/assets/a2573745-3011-4fc8-b1af-9d0222f98eee" />
+
+<p>Per evitar que ferran elimini arxius que no son de ell introduirem chmod o+t a la carpeta palomes simifica que sol el propietari de el arxiu el pugi eliminar aquesta regla es nombra sticky bit</p>
+<img width="525" height="64" alt="Captura de pantalla de 2025-11-18 14-01-14" src="https://github.com/user-attachments/assets/7f1abc2d-ddf9-462c-902e-da5ed969b988" />
+
+<p>Ara torarem a crear el arxiu practicavaras i ferran el intentara tornar a elminiar pero ya no podrar</p> 
+<img width="816" height="456" alt="Captura de pantalla de 2025-11-18 14-03-53" src="https://github.com/user-attachments/assets/0e9aee55-d820-4eed-b30a-5446cf26c49a" />
+
+<p>Traurem el sticky amb chmod o-t i ho tornare a posar amb un chmod 1770 pero ara amb numeros</p> 
+<img width="603" height="421" alt="Captura de pantalla de 2025-11-18 14-05-11" src="https://github.com/user-attachments/assets/e971bee4-df4c-42fa-a7cf-fa1b5356d931" />
+
+<p>Ara amb chmod g+s el usuari que execute el arxiu el executara amb els permisos de el grup no de el propi usuari</p> 
+<img width="575" height="402" alt="Captura de pantalla de 2025-11-18 14-08-00" src="https://github.com/user-attachments/assets/e3b56bda-32d6-4072-ab4f-306310c8319c" />
 
 
 
 <h3>ACL</h3>
+
+
+
+
 
 
 
