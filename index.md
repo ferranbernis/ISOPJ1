@@ -3,14 +3,7 @@ layout: default
 title: "Implantació de sistemes operatius"
 ---
 
-
 Este repositorio cuenta con el material del curso de Implantación de sistemas operativos desarrollado por Ferran Bernis.
-
-- Sprint 1
-- Sprint 2
-- Sprint 3
-- Sprint 4
-- Sprint 5
 
 ## Licencia
 
