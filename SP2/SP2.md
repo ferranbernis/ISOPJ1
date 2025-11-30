@@ -2,6 +2,21 @@
 
 <h2>1. Sistemes de fitxers i Particions</h2>
 
+<h4>Mida sector</h4> 
+<p>És la unitat mínima física on es guarden les dades en un disc.
+Per defecte, la mida del sector és de 512 bytes i no es pot modificar.</p>  
+<img width="695" height="282" alt="image" src="https://github.com/user-attachments/assets/7534c445-fa4f-4955-81f0-41f33bbc5744" />
+
+
+<h4>Mida block o clúster</h4> 
+<p>És la unitat mínima lògica on es guarden les dades a nivell de sistema operatiu.
+Per defecte, la mida és de 4096 bytes (8 sectors) i sí que es pot modificar quan es formateja la partició.
+Cada partició del disc pot tenir una mida de bloc i un sistema de fitxers diferent.</p>  
+<img width="707" height="98" alt="image" src="https://github.com/user-attachments/assets/56718c51-c336-4287-bbd0-e4e7c8105ca4" />
+
+<h4>La fragmentació interna</h4>
+<p>és l'espai no utilitzat dins del darrer bloc assignat a un fitxer. És l'espai perdut dins de les unitats d'emmagatzematge del disc.
+Aquest concepte s'origina per la manera com els sistemes operatius gestionen l'espai del disc dur.</p>
 
 
 
