@@ -56,23 +56,42 @@ A diferència de la fragmentació interna (que és espai perdut dins d'un bloc),
 <p>Comprovem que se han creat amb el format correcte amb lsblk -f</p>
 <img width="603" height="124" alt="image" src="https://github.com/user-attachments/assets/46f10528-77ac-47d1-848a-3e7c4553d1fe" />
 
-<p>Baix Nivell (Low-Level)</p>
+<h4>Baix Nivell (Low-Level)</h4>
 <p>Què fa: Aquest procés realitza una neteja total del disc.</p>
 Resultat: Segons la teva definició, "Borra sistema de fitxers, borra formateig, etc.", eliminant totes les dades i totes les estructures lògiques prèvies. El disc queda en un estat de fàbrica, "com a nou", sense cap mena d'organització lògica (sense particions ni sistemes de fitxers).
 Accessibilitat: No es pot fer des del sistema operatiu (SO) operatiu normal. Requereix programes adients i especialitzats, ja que treballa directament amb el firmware del disc dur.</p>
 
-<p>Mig Nivell (Mid-Level)</p>
+<h4>Mig Nivell (Mid-Level)</h4>
 <p>Què fa: Aquesta és una operació que se centra en la capa lògica i la integritat del disc.</p>
 Resultat: "Només borra el sistema de fitxers" (igual que el format d'Alt Nivell Ràpid), deixant les dades antigues presents però irrellevants per al SO. La funció distintiva és la comprovació de la integritat: si hi ha sectors defectuosos, els marca per evitar que el sistema operatiu els utilitzi en el futur, però "no els arregla".</p>
 
-<p>Alt Nivell (High-Level)</p>
+<h4>Alt Nivell (High-Level)</h4>
 <p>Què fa: Aquesta és l'operació més comuna i ràpida.
 Resultat: "Només borra el sistema de fitxers". El disc es prepara amb la creació del sistema de fitxers nou (p. ex., ext4 o NTFS) i el directori arrel. El contingut de les dades antigues roman al disc fins que es sobreescriu, cosa que permet la seva recuperació.</p>
 
 
+<h3>GPARTED</h3>
 
+<p>Desde el Gparted podem veure les particions de una manera grafica i crear modificar redimiencionar i etc...</p>
+<img width="968" height="642" alt="image" src="https://github.com/user-attachments/assets/fbf4f020-d5fc-4f97-82a6-05115d84fb79" />
 
+<p>Com la particio de ntfs no ha quedat ve i es de 4gb enves de 5gb redimencionarem la particio selecionarem el GB de espai que queda lliure i apretarem redimensiona</p>
+<img width="972" height="327" alt="image" src="https://github.com/user-attachments/assets/e6c60478-ebe8-4986-a424-46808ae9085f" />
+<img width="554" height="331" alt="image" src="https://github.com/user-attachments/assets/d4868dd7-65cf-4913-a61f-ba74db554b08" />
 
+<p>Apretarem el tick verd i aplicarem els canvis</p>
+<img width="795" height="428" alt="image" src="https://github.com/user-attachments/assets/075fc4a2-7e69-4189-95c8-b87e16d07fa3" />
+<img width="964" height="269" alt="image" src="https://github.com/user-attachments/assets/fedcbb2c-9949-4f4f-a81a-9525305ba3a6" />
+
+<p>Ara pasarem a un altre disc este te 25 GB nou i crearem una nova taula de particions gpt</p>  
+<img width="971" height="195" alt="image" src="https://github.com/user-attachments/assets/074b22e7-2b4a-446e-940e-03dddacdd4d6" />
+<img width="794" height="181" alt="image" src="https://github.com/user-attachments/assets/e91f8aa8-3a02-46c0-8ba5-24352a253099" />
+
+<p>i assignarem els 25 GB tots a una particio apretant nova i selecionant els 25 GB</p> 
+<img width="774" height="331" alt="image" src="https://github.com/user-attachments/assets/de14df9c-0192-4213-91b0-d152841122be" />
+
+<p>Aplicariem els canvis i ja estaria</p>
+<img width="971" height="280" alt="image" src="https://github.com/user-attachments/assets/b607d6df-ba4c-4511-ab40-d0eff3c06a18" />
 
 
 
