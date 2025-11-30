@@ -6,9 +6,11 @@ title: "Implantació de sistemes operatius"
 
 Este repositorio cuenta con el material del curso de Implantación de sistemas operativos desarrollado por Ferran Bernis.
 
-- Índice y enlaces a las unidades del curso.
-- Recursos en formato PDF, vídeos, y Google Colab.
-- Código y ejemplos prácticos.
+- Sprint 1
+- Sprint 2
+- Sprint 3
+- Sprint 4
+- Sprint 5
 
 ## Licencia
 
@@ -21,7 +23,3 @@ El contenido está bajo licencia [Creative Commons BY-NC-SA 4.0 ES](LICENSE.md).
 ### [Sprint 3.  Administració de Dominis i Seguretat](SP3/SP3.md)  
 ### [Sprint 4. Configuració del Programari de Base i Sistemes d’Emmagatzematge en Ubuntu](SP4/SP4.md)  
 ### [Sprint 5. Monitoratge, Auditories i Programari Client/Servidor](SP5/SP5.md)  
-
-### [Relación entre Unidades y Resultados de Aprendizaje (RAs)](ras.md)  
-
-### [FAQs](faqs/faqs.md)  
