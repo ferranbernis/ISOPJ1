@@ -201,8 +201,14 @@ comportament del login</p>
 
 
 <h3>ACL</h3>
+<p>Crearem la carpeta proves i el arxiu proves2</p> 
+<img width="437" height="26" alt="Captura de pantalla de 2025-11-24 11-58-58" src="https://github.com/user-attachments/assets/183ce5cc-2a9e-4e68-84a3-292dd7595da5" />
+<img width="437" height="26" alt="Captura de pantalla de 2025-11-24 11-58-52" src="https://github.com/user-attachments/assets/bbfb613b-43b6-40dc-beff-cca2dc13872a" />
 
-
+<p>Comprovarem els permisos per defecte que son:
+proves:755 (rwxr-xr-x): El propietari té tots els permisos (7), i el grup i els altres només poden llegir i executar/accedir (5). Típic per a directoris i scripts públics.
+proves2: 644 (rw-r--r--): El propietari pot llegir i escriure (6), i el grup i els altres només poden llegir (4). Típic per a fitxers de text</p> 
+<img width="502" height="80" alt="Captura de pantalla de 2025-11-24 11-58-41" src="https://github.com/user-attachments/assets/4a127a28-5ed6-4afc-8e3e-959527aa2434" />
 
 
 
