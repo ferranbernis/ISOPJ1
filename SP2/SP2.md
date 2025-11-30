@@ -224,14 +224,22 @@ comportament del login</p>
 <img width="502" height="404" alt="Captura de pantalla de 2025-11-24 12-00-15" src="https://github.com/user-attachments/assets/9bf553f1-f70f-40b0-afa6-84057aff7074" />
 
 
-amb setfacl, atorgant a l'usuari específic roig permisos addicionals de Lectura i Escriptura (rw-) sobre el fitxer proves2, sense modificar els permisos estàndards del grup o d'altres.
+<p>amb setfacl, atorgant a l'usuari específic roig permisos addicionals de Lectura i Escriptura (rw-) sobre el fitxer proves2, sense modificar els permisos estàndards del grup o d'altres.</p> 
 <img width="624" height="232" alt="Captura de pantalla de 2025-11-24 12-02-51" src="https://github.com/user-attachments/assets/15cca446-631e-439d-a6ae-96a135e1aada" />
 
 
-Si entro a el arxiu com a el usuari roig el puc modificar 
+<p>Si entro a el arxiu com a el usuari roig el puc modificar</p>  
 <img width="736" height="665" alt="Captura de pantalla de 2025-11-24 12-16-29" src="https://github.com/user-attachments/assets/bd5a45ae-5ac7-44b2-9a9a-8d1de4ced7a4" />
 
-i si entro com a el usuari blau no perque es altres i no te permisos com demostra el getfacl
+<p>i si entro com a el usuari blau no perque es altres i no te permisos com demostra el getfacl</p> 
+<img width="732" height="620" alt="Captura de pantalla de 2025-11-24 12-03-51" src="https://github.com/user-attachments/assets/d2e6582b-da54-4f84-88d2-736ad9ea7c0e" />
+
+<p>Si volem eliminar totes les ACL de proves2 podem ferho amb la comanda setfacl -b proves2</p> 
+<img width="739" height="484" alt="Captura de pantalla de 2025-11-24 12-22-34" src="https://github.com/user-attachments/assets/986108fb-f6f5-402a-8524-a063bfef78e8" />
+
+<p>Crearem una carpeta que es dira compartida i tindra permisos 777 que son tots els permisos a tothom pero ara modificarem perque volem que el usuari roig no tingui cap permis amb setfacl -m user:roig --- compartida/</p>  
+<p>(Els tres gions simifica cap permis)</p> 
+<img width="622" height="256" alt="image" src="https://github.com/user-attachments/assets/9a8a864d-509f-41ce-84ff-a54b1cbbec42" />
 
 
 
