@@ -93,6 +93,15 @@ Resultat: "Només borra el sistema de fitxers". El disc es prepara amb la creaci
 <p>Aplicariem els canvis i ja estaria</p>
 <img width="971" height="280" alt="image" src="https://github.com/user-attachments/assets/b607d6df-ba4c-4511-ab40-d0eff3c06a18" />
 
+<p>Ara montarem la particio sdb1 a /mnt/f1 carpeta creada amb mkdir dintre de mnt</p>
+<img width="517" height="21" alt="image" src="https://github.com/user-attachments/assets/6d7d8d70-1f0e-41f8-817b-04d00556a6e6" />
+<img width="602" height="48" alt="image" src="https://github.com/user-attachments/assets/40382591-abae-4ca4-9340-9918d930d0bf" />
+
+<p>Crearem una carpeta per provar que funcioni correctament</p>
+<img width="459" height="136" alt="image" src="https://github.com/user-attachments/assets/d9dabcef-57d3-448b-83ac-f41c55bdbfd2" />
+
+<p>Afegim la partició /dev/sdb1 al fitxer /etc/fstab per muntar-la automàticament com a ext4 al punt `/mnt/f1` cada vegada que el sistema s'engegui</p>
+<img width="741" height="323" alt="image" src="https://github.com/user-attachments/assets/f5001906-f858-43a4-bd9b-6d84526c4364" />
 
 
 
