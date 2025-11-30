@@ -37,8 +37,8 @@ A diferència de la fragmentació interna (que és espai perdut dins d'un bloc),
 
 <p>ZFS: Un sistema de fitxers i un gestor de volums integrats que es caracteritza per una gran integritat de dades gràcies a l'ús de sumes de comprovació (checksumming) per detectar i corregir errors de dades. També utilitza el principi CoW.</p>
 
-<p>Sistemes Propietaris (Windows/Mac)
-NTFS (New Technology Filesystem): L'estàndard utilitzat per Windows. Incorpora journaling, suport per a ACLs (Llistes de Control d'Accés) per a permisos de seguretat detallats i la capacitat d'encriptació de fitxers.</p>
+<p>Sistemes Propietaris (Windows/Mac)</p>
+<p>NTFS (New Technology Filesystem): L'estàndard utilitzat per Windows. Incorpora journaling, suport per a ACLs (Llistes de Control d'Accés) per a permisos de seguretat detallats i la capacitat d'encriptació de fitxers.</p>
 
 <p>APFS (Apple File System): El sistema modern d'Apple (macOS, iOS), optimitzat per a dispositius amb memòria flash (SSDs). Està centrat en l'eficiència i la creació d'instantànies ràpides i lleugeres.</p>
 
@@ -50,9 +50,14 @@ NTFS (New Technology Filesystem): L'estàndard utilitzat per Windows. Incorpora 
 
 
 
+
+
+
+
+
+
+
 <h2>2. Gestió de Procesos</h2>
-
-
 
 
 
