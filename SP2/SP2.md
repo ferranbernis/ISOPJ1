@@ -18,9 +18,34 @@ Cada partició del disc pot tenir una mida de bloc i un sistema de fitxers difer
 <p>és l'espai no utilitzat dins del darrer bloc assignat a un fitxer. És l'espai perdut dins de les unitats d'emmagatzematge del disc.
 Aquest concepte s'origina per la manera com els sistemes operatius gestionen l'espai del disc dur.</p>
 
+<h4>La fragmentació externa</h4>
 
+<p>es refereix a l'espai lliure d'emmagatzematge que no és contigu, sinó que es troba dispers en molts petits forats separats per fitxers que s'han mantingut al disc.
+A diferència de la fragmentació interna (que és espai perdut dins d'un bloc), la fragmentació externa és espai lliure totalment utilitzable, però està tan segmentat que pot ser massa petit per allotjar eficaçment fitxers nous i grans.</p>
 
+<p>La comanda e4defrag -c /home s'utilitza en sistemes Linux que fan servir el sistema de fitxers ext4 (el més comú) per comprovar el nivell de fragmentació del directori /home o del sistema de fitxers on es troba.</p>
+<img width="521" height="82" alt="image" src="https://github.com/user-attachments/assets/4704b210-cbe1-4938-bf92-580d307ae766" />
 
+<h4>Sistemes de fitxers</h4> 
+
+<p>Sistemes Robustos i Moderns (Linux/Unix)</p>
+<p>ext4 (Fourth Extended Filesystem): És l'estàndard de facto actual en la majoria de distribucions Linux. Ofereix un excel·lent rendiment i és molt fiable. La seva característica principal és el journaling (registre per diari), que prevé la corrupció de dades en cas de fallada del sistema.</p>
+
+<p>Btrfs (B-Tree Filesystem): Considerat el futur de Linux. És un sistema Copy-on-Write (CoW), el que significa que cada vegada que es modifica una dada, s'escriu en una nova ubicació, mantenint la versió antiga intacta. Això permet la creació de snapshots (instantànies) molt ràpides i la autocuració d'errors.</p>
+
+<p>XFS: Destaca per la seva escalabilitat i alt rendiment, especialment amb fitxers i volums de dades molt grans. És molt utilitzat en entorns de servidors on es treballa amb arxius massius.</p>
+
+<p>ZFS: Un sistema de fitxers i un gestor de volums integrats que es caracteritza per una gran integritat de dades gràcies a l'ús de sumes de comprovació (checksumming) per detectar i corregir errors de dades. També utilitza el principi CoW.</p>
+
+<p>Sistemes Propietaris (Windows/Mac)
+NTFS (New Technology Filesystem): L'estàndard utilitzat per Windows. Incorpora journaling, suport per a ACLs (Llistes de Control d'Accés) per a permisos de seguretat detallats i la capacitat d'encriptació de fitxers.</p>
+
+<p>APFS (Apple File System): El sistema modern d'Apple (macOS, iOS), optimitzat per a dispositius amb memòria flash (SSDs). Està centrat en l'eficiència i la creació d'instantànies ràpides i lleugeres.</p>
+
+<p>Sistemes per a Compatibilitat (Transferència)</p>
+<p>exFAT (Extended File Allocation Table): Creat per Microsoft, és l'opció preferida per a memòries USB i targetes SD. El seu avantatge és la compatibilitat universal entre Windows, Linux i macOS, a més d'eliminar la limitació de mida de fitxer de 4 GB que tenia el seu predecessor (FAT32).</p>
+
+<p>FAT32 (File Allocation Table 32): Un sistema antic, però encara utilitzat per la seva compatibilitat amb gairebé qualsevol dispositiu (càmeres, consoles, reproductors). La seva limitació clau és que no pot emmagatzemar fitxers individuals de més de 4 GB.</p>
 
 
 
