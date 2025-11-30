@@ -206,11 +206,32 @@ comportament del login</p>
 <img width="437" height="26" alt="Captura de pantalla de 2025-11-24 11-58-52" src="https://github.com/user-attachments/assets/bbfb613b-43b6-40dc-beff-cca2dc13872a" />
 
 <p>Comprovarem els permisos per defecte que son:</p> 
-<p>proves:755 (rwxr-xr-x): El propietari té tots els permisos (7), i el grup i els altres només poden llegir i executar/accedir (5). Típic per a directoris i scripts públics.</p> 
-<p>proves2: 644 (rw-r--r--): El propietari pot llegir i escriure (6), i el grup i els altres només poden llegir (4). Típic per a fitxers de text</p> 
+<p>proves:755 (rwxr-xr-x): El propietari té tots els permisos (7), i el grup i els altres només poden llegir i executar/accedir (5).</p> 
+<p>proves2: 644 (rw-r--r--): El propietari pot llegir i escriure (6), i el grup i els altres només poden llegir (4). </p> 
 <img width="502" height="80" alt="Captura de pantalla de 2025-11-24 11-58-41" src="https://github.com/user-attachments/assets/4a127a28-5ed6-4afc-8e3e-959527aa2434" />
 
+<p>Ara canviarem els permisos i els comprovarem en getfacl que mostra la llista de control d’accessos (ACL) 
+<p>És a dir, et mostra:</p> 
 
+<p>Permisos normals (rwx)</p> 
+
+<p>Permisos extensos (ACL) si n’hi ha</p> 
+
+<p>Propietari i grup</p> 
+
+<p>Entrades especials com mask i permisos heretats</p> 
+
+<img width="502" height="404" alt="Captura de pantalla de 2025-11-24 12-00-15" src="https://github.com/user-attachments/assets/9bf553f1-f70f-40b0-afa6-84057aff7074" />
+
+
+amb setfacl, atorgant a l'usuari específic roig permisos addicionals de Lectura i Escriptura (rw-) sobre el fitxer proves2, sense modificar els permisos estàndards del grup o d'altres.
+<img width="624" height="232" alt="Captura de pantalla de 2025-11-24 12-02-51" src="https://github.com/user-attachments/assets/15cca446-631e-439d-a6ae-96a135e1aada" />
+
+
+Si entro a el arxiu com a el usuari roig el puc modificar 
+<img width="736" height="665" alt="Captura de pantalla de 2025-11-24 12-16-29" src="https://github.com/user-attachments/assets/bd5a45ae-5ac7-44b2-9a9a-8d1de4ced7a4" />
+
+i si entro com a el usuari blau no perque es altres i no te permisos com demostra el getfacl
 
 
 
