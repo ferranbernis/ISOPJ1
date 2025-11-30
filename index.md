@@ -3,9 +3,8 @@ layout: default
 title: "Implantació de sistemes operatius"
 ---
 
-Este repositorio cuenta con el material del curso de Implantación de sistemas operativos desarrollado por Ferran Bernis.
+<p>Este repositorio cuenta con el material del curso de Implantación de sistemas operativos desarrollado por Ferran Bernis.</p>
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/133c674e-ac79-40c7-828f-1707fbd84f20" />
-
 
 ## Licencia
 
