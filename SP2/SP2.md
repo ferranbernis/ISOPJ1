@@ -369,7 +369,24 @@ comportament del login</p>
 
 
 <h2>4. Còpies de seguretat i automatització de tasques</h2>
+<h3>Teoria copies de seguretat</h3>
 
+<h3>Teoria commandes Backups </h3>
+
+<h3>Practica commandes Backups</h3>
+<h4>cp</h4>
+<h4>rsync</h4>
+<h4>dd</h4>
+
+<h3>Practica programes Backups</h3>
+<h4>Deja-Dup</h4>
+<h4>Duplicity</h4>
+
+<h3>Teoria de automatizacio scripts, cron i anacron</h3>
+
+<h3>Practica automatizacio</h3>
+<h4>Cron</h4>
+<h4>anacron</h4>
 
 
 
