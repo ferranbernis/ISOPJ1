@@ -371,7 +371,31 @@ comportament del login</p>
 <h2>4. Còpies de seguretat i automatització de tasques</h2>
 <h3>1.Teoria copies de seguretat</h3>
 
+Que es una copia de seguretat i els tres tipus i que es neccesita
+
+Completa
+Neccesita res
+
+diferencial 
+Neccesita una completa
+
+
+
+incremental
+
+1 completa o diferencial 
+
+
 <h3>2.Teoria commandes Backups</h3>
+
+cp es una copia simple que no es inteligent transfereix arxius nomes localment i no optimiza ni temps ni espai
+
+rsync es una eina inteligent que nomes copia els fitxers modificats treballa en local i en remot
+
+dd  no es una eina per a copiar pero cuan volem copiar tot un disc o particio se utilizar es per a clonar
+
+
+
 
 <h3>3.Practica commandes Backups</h3>
 <h4>1.cp</h4>
