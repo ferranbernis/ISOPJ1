@@ -365,6 +365,34 @@ comportament del login</p>
 
 
 
+Que es un process 
+
+PROVAR
+pstree
+
+
+top
+ctrl c
+ctrl z
+top & llencar serveis en segon pla 
+
+
+
+htop
+btop
+
+
+ps aux
+kill -9 PID
+
+jobs
+
+fg % tornar a 1 pla 
+
+
+
+
+
 
 
 
