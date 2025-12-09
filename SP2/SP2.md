@@ -397,6 +397,7 @@ fg % tornar a 1 pla
 
 
 <h2>4. Còpies de seguretat i automatització de tasques</h2>
+
 <h3>1.Teoria copies de seguretat</h3>
 
 Que es una copia de seguretat i els tres tipus i que es neccesita
@@ -416,11 +417,11 @@ incremental
 
 <h3>2.Teoria commandes Backups</h3>
 
-cp es una copia simple que no es inteligent transfereix arxius nomes localment i no optimiza ni temps ni espai
+**CP** es una copia simple que no es inteligent transfereix arxius nomes localment i no optimiza ni temps ni espai</p>
 
-rsync es una eina inteligent que nomes copia els fitxers modificats treballa en local i en remot
+**RSYNC** es una eina inteligent que nomes copia els fitxers modificats treballa en local i en remot</p>
 
-dd  no es una eina per a copiar pero cuan volem copiar tot un disc o particio se utilizar es per a clonar
+**DD** no es una eina per a copiar pero cuan volem copiar tot un disc o particio se utilizar es per a clonar</p>
 
 
 
@@ -435,6 +436,11 @@ dd  no es una eina per a copiar pero cuan volem copiar tot un disc o particio se
 <h4>2.Duplicity</h4>
 
 <h3>5.Teoria de automatizacio scripts, cron i anacron</h3>
+Cron i anacron son dues eines de automatizacio per a exectutar tasques periodiques son a traves de scripts 
+
+**Cron** Executa tasques programades en una data i una hora especifiques si el sistema esta apagat la tasca es perd es ideal per a tasces en dates i hores conquretes i per a accions especifiques de un usuari 
+
+**Anacron** es ideal per a executar tasques periodices on no cal una data i una hora especifica normalment se utiliza per a tasques de el manteniment de el sistema no requereix que el sistema estigui obert perque cuan se obrigue ja la executara no es perd la tasca com en el Cron 
 
 <h3>6.Practica automatizacio</h3>
 <h4>1.Cron</h4>
@@ -444,4 +450,8 @@ dd  no es una eina per a copiar pero cuan volem copiar tot un disc o particio se
 
 
 
+
 <h2>5. Quotes d'usuari</h2>
+
+
+
