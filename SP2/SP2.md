@@ -453,5 +453,11 @@ Cron i anacron son dues eines de automatizacio per a exectutar tasques periodiqu
 
 <h2>5. Quotes d'usuari</h2>
 
+Una cuota de disc es la llimitacio que es dona als usuaris de espai de el disc
+
+
+
+
+
 
 
