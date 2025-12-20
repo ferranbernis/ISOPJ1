@@ -363,9 +363,9 @@ comportament del login</p>
 <img width="472" height="149" alt="Captura de pantalla de 2025-11-25 13-23-34" src="https://github.com/user-attachments/assets/421959cd-6277-4296-b3bf-cb10a9ae697b" />
 
 
+<h3>Procesos</h3>
 
-
-Que es un process 
+<p>Un procés és un programa que s’està executant en aquell moment, juntament amb tots els recursos que necessita per funcionar</p> 
 
 PROVAR
 pstree
