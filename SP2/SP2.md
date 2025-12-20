@@ -115,9 +115,9 @@ Resultat: "Només borra el sistema de fitxers". El disc es prepara amb la creaci
 <h4>pstree</h4>
 
 <p>Pstree serveix per mostrar tots els procesos de el sistema operatiu en forma de arbre indicant quins procesos son pare  i quins fill</p>
-<img width="751" height="728" alt="image" src="https://github.com/user-attachments/assets/302fcb1f-d158-4173-84c6-7e5dd23fb121" />
-<img width="746" height="672" alt="image" src="https://github.com/user-attachments/assets/7f19b325-944f-4dfe-85f5-2f7f89c57c55" />
-<img width="724" height="653" alt="image" src="https://github.com/user-attachments/assets/fbdffdfe-97d8-4cee-9e13-f3d0333000c9" />
+<p><img width="751" height="728" alt="image" src="https://github.com/user-attachments/assets/302fcb1f-d158-4173-84c6-7e5dd23fb121" /></p>
+<p><img width="746" height="672" alt="image" src="https://github.com/user-attachments/assets/7f19b325-944f-4dfe-85f5-2f7f89c57c55" /></p>
+<p><img width="724" height="653" alt="image" src="https://github.com/user-attachments/assets/fbdffdfe-97d8-4cee-9e13-f3d0333000c9" /></p>
 
 
 <h4>top</h4>
@@ -162,19 +162,19 @@ Resultat: "Només borra el sistema de fitxers". El disc es prepara amb la creaci
 
 <h4>HTOP</h4>
 <p>htop mostra els processos del sistema en temps real, igual que top però amb una interfície més amigable: colors, barres de CPU/memòria i navegació amb el teclat i permet ordenar, filtrar i matar processos fàcilment sense escriure PID</p>
-<img width="797" height="592" alt="image" src="https://github.com/user-attachments/assets/a5f9d00a-cec8-4978-b076-b2b20fdec386" />
+<p><img width="797" height="592" alt="image" src="https://github.com/user-attachments/assets/a5f9d00a-cec8-4978-b076-b2b20fdec386" /></p>
 
 <h4>BTOP</h4>
 <p>btop és una evolució moderna de htop i top, amb encara més gràfics i informació visual sobre el sistema </p>
-<p>Mostra els processos del sistema, CPU, memòria, swap, discs i xarxa amb gràfics molt visuals.
-<p>Permet monitoritzar recursos en temps real de manera intuïtiva.
-<p>Té interfície de colors i menús interactius, amb navegació amb fletxes i tecles.
+<p>Mostra els processos del sistema, CPU, memòria, swap, discs i xarxa amb gràfics molt visuals.</p>
+<p>Permet monitoritzar recursos en temps real de manera intuïtiva.</p>
+<p>Té interfície de colors i menús interactius, amb navegació amb fletxes i tecles.</p>
 <img width="1041" height="727" alt="image" src="https://github.com/user-attachments/assets/fabaa9d5-4393-4ef2-8881-257fc2b603c0" />
 
 
 
 <h4>PS AUX</h4>
-<p>ps aux s’utilitza per veure tots els processos que s’estan executant al sistema, amb informació detallada.
+<p>ps aux s’utilitza per veure tots els processos que s’estan executant al sistema, amb informació detallada.</p>
 <img width="1044" height="633" alt="image" src="https://github.com/user-attachments/assets/f1c1344a-c450-46c1-963a-2d5a1ca8b99d" />
 
 
@@ -190,12 +190,12 @@ Cada procés té un PID (identificador únic) que és necessari per enviar-li un
 PID → número del procés (el veus amb ps aux, jobs, top, htop)
 Opcions → senyals que vols enviar (SIGTERM, SIGKILL, etc.)</p>
 
-| Senyal  | Número | Efecte                                                    |
-| ------- | ------ | --------------------------------------------------------- |
-| SIGTERM | 15     | Demana al procés que es tanqui de manera neta             |
-| SIGKILL | 9      | Mata immediatament el procés (no neteja recursos)         |
-| SIGSTOP | 19     | Suspèn el procés (equivalent a Ctrl+Z)                    |
-| SIGCONT | 18     | Torna un procés suspès a executar-se (equivalent a fg/bg) |
+<p>| Senyal  | Número | Efecte                                                    |</p>
+<p>| ------- | ------ | --------------------------------------------------------- |</p>
+<p>| SIGTERM | 15     | Demana al procés que es tanqui de manera neta             |</p>
+<p>| SIGKILL | 9      | Mata immediatament el procés (no neteja recursos)         |</p>
+<p>| SIGSTOP | 19     | Suspèn el procés (equivalent a Ctrl+Z)                    |</p>
+<p>| SIGCONT | 18     | Torna un procés suspès a executar-se (equivalent a fg/bg) |</p>
 
 
 
