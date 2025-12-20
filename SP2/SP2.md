@@ -198,7 +198,8 @@ Opcions → senyals que vols enviar (SIGTERM, SIGKILL, etc.)</p>
 <p>| SIGCONT | 18     | Torna un procés suspès a executar-se (equivalent a fg/bg) |</p>
 
 
-
+<p> Per exemple firefox te el pid 2344 i volem tancar el proces inmediatament utilizarem kill -9 2344 i inmediatament es ha tancat firefox 
+<img width="1281" height="802" alt="image" src="https://github.com/user-attachments/assets/d4474593-a507-45b8-983c-c07d3e854365" />
 
 
 
