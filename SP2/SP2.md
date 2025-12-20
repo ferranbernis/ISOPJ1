@@ -137,31 +137,34 @@ Resultat: "Només borra el sistema de fitxers". El disc es prepara amb la creaci
 
 <img width="920" height="780" alt="image" src="https://github.com/user-attachments/assets/ecf1684a-0583-48d8-8d78-5aca0408be95" />
 
-<h4>Control de procesos</h4>
+<h3>Control de procesos</h3>
 
+
+<h4>CTRL C</h4>
 <p>ctrl c serveix per interrompre un procés que s’està executant envia el senyal SIGINT</p>
 <p> En aquest exemple el ping para quan el usuari introdueix ctrl c sino es executara infinitament</p>
 <img width="821" height="223" alt="image" src="https://github.com/user-attachments/assets/beb1b69d-c81c-4189-9d13-0637db577df6" />
 
 
-  
+<h4>CTRL Z</h4>  
 <p>ctrl z serveix per aturar temporalment un procces i enviar-lo al “background” en estat suspès</p>
 <img width="812" height="192" alt="image" src="https://github.com/user-attachments/assets/4e5d0eba-02d3-4f86-a94f-04b7d2a5b5d9" />
 
-
+<h4>JOBS</h4>
 <p>jobs Mostra els processos que tens en estat suspès o en segon pla</p>
 <img width="431" height="79" alt="image" src="https://github.com/user-attachments/assets/36445c4c-56ba-43ce-91b4-c18c9bbbbd6a" />
 
 
+<h4>FG</h4>
 <p>fg % Torna en primer pla el proces amb el numero</p>
 <p>Com es mostra a la imatge continua el ping i mostra que 6 paquets se han transmitit 2 avans de aturarlo i 4 despres</p>
 <img width="811" height="211" alt="image" src="https://github.com/user-attachments/assets/ea9ac0ca-592a-4e3e-b1de-7f8512836049" />
 
-
+<h4>HTOP</h4>
 <p>htop mostra els processos del sistema en temps real, igual que top però amb una interfície més amigable: colors, barres de CPU/memòria i navegació amb el teclat i permet ordenar, filtrar i matar processos fàcilment sense escriure PID</p>
 <img width="797" height="592" alt="image" src="https://github.com/user-attachments/assets/a5f9d00a-cec8-4978-b076-b2b20fdec386" />
 
-
+<h4>BTOP</h4>
 <p>btop és una evolució moderna de htop i top, amb encara més gràfics i informació visual sobre el sistema </p>
 <p>Mostra els processos del sistema, CPU, memòria, swap, discs i xarxa amb gràfics molt visuals.
 <p>Permet monitoritzar recursos en temps real de manera intuïtiva.
@@ -170,10 +173,29 @@ Resultat: "Només borra el sistema de fitxers". El disc es prepara amb la creaci
 
 
 
-ps aux
+<h4>PS AUX</h4>
+<p>ps aux s’utilitza per veure tots els processos que s’estan executant al sistema, amb informació detallada.
+<img width="1044" height="633" alt="image" src="https://github.com/user-attachments/assets/f1c1344a-c450-46c1-963a-2d5a1ca8b99d" />
 
 
-kill -9 PID
+
+
+<h4>kill</h4>
+
+<p>kill serveix per enviar senyals a processos.
+No només serveix per “matar” un procés; també pots suspendre-lo o reprendre’l.
+Cada procés té un PID (identificador únic) que és necessari per enviar-li un senyal.</p>
+
+<p>kill [opció] PID
+PID → número del procés (el veus amb ps aux, jobs, top, htop)
+Opcions → senyals que vols enviar (SIGTERM, SIGKILL, etc.)</p>
+
+| Senyal  | Número | Efecte                                                    |
+| ------- | ------ | --------------------------------------------------------- |
+| SIGTERM | 15     | Demana al procés que es tanqui de manera neta             |
+| SIGKILL | 9      | Mata immediatament el procés (no neteja recursos)         |
+| SIGSTOP | 19     | Suspèn el procés (equivalent a Ctrl+Z)                    |
+| SIGCONT | 18     | Torna un procés suspès a executar-se (equivalent a fg/bg) |
 
 
 
