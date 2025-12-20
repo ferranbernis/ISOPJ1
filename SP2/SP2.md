@@ -1,5 +1,7 @@
 <h1>Sprint 2. Instal·lació, Configuració de Programari de Base i Gestió de Fitxers</h1>
 
+
+
 <h2>1. Sistemes de fitxers i Particions</h2>
 
 <h4>Mida sector</h4> 
@@ -106,6 +108,54 @@ Resultat: "Només borra el sistema de fitxers". El disc es prepara amb la creaci
 
 
 <h2>2. Gestió de Procesos</h2>
+
+<p>Un procés és un programa que s’està executant en aquell moment, juntament amb tots els recursos que necessita per funcionar</p> 
+
+
+<h4>pstree</h4>
+
+<p>Pstree serveix per mostrar tots els procesos de el sistema operatiu en forma de arbre indicant quins procesos son pare  i quins fill</p>
+<img width="751" height="728" alt="image" src="https://github.com/user-attachments/assets/302fcb1f-d158-4173-84c6-7e5dd23fb121" />
+<img width="746" height="672" alt="image" src="https://github.com/user-attachments/assets/7f19b325-944f-4dfe-85f5-2f7f89c57c55" />
+<img width="724" height="653" alt="image" src="https://github.com/user-attachments/assets/fbdffdfe-97d8-4cee-9e13-f3d0333000c9" />
+
+
+<h4>top</h4>
+
+<p>Top serveix per mostrar en temps real els processos que s’estan executant i els recursos que utilitzen.</p>
+<p>Quan executes top, veuràs informació com:</p>
+
+<p>PID → identificador del procés</p>
+
+<p>USER → usuari que executa el procés</p>
+
+<p>%CPU → percentatge de CPU que està utilitzant</p>
+
+<p>%MEM → percentatge de memòria RAM que utilitza</p>
+
+<p>COMMAND → nom del procés</p>
+
+
+
+ctrl c
+ctrl z
+top & llencar serveis en segon pla 
+
+
+
+htop
+btop
+
+
+ps aux
+kill -9 PID
+
+jobs
+
+fg % tornar a 1 pla 
+
+
+
 
 
 
@@ -306,7 +356,7 @@ comportament del login</p>
 <p>Ara canviarem els permisos i els comprovarem en getfacl que mostra la llista de control d’accessos (ACL) 
 <p>És a dir, et mostra:</p> 
 
-<p>Permisos normals (rwx)</p> 
+<p>Permisos normalSprint 2. Instal·lació, Configuració de Programari de Base i Gestió de Fitxerss (rwx)</p> 
 
 <p>Permisos extensos (ACL) si n’hi ha</p> 
 
@@ -363,38 +413,6 @@ comportament del login</p>
 <img width="472" height="149" alt="Captura de pantalla de 2025-11-25 13-23-34" src="https://github.com/user-attachments/assets/421959cd-6277-4296-b3bf-cb10a9ae697b" />
 
 
-<h3>Procesos</h3>
-
-<p>Un procés és un programa que s’està executant en aquell moment, juntament amb tots els recursos que necessita per funcionar</p> 
-
-PROVAR
-pstree
-
-
-top
-ctrl c
-ctrl z
-top & llencar serveis en segon pla 
-
-
-
-htop
-btop
-
-
-ps aux
-kill -9 PID
-
-jobs
-
-fg % tornar a 1 pla 
-
-
-
-
-
-
-
 
 <h2>4. Còpies de seguretat i automatització de tasques</h2>
 
@@ -408,11 +426,11 @@ Neccesita res
 diferencial 
 Neccesita una completa
 
-
-
 incremental
 
 1 completa o diferencial 
+
+
 
 
 <h3>2.Teoria commandes Backups</h3>
