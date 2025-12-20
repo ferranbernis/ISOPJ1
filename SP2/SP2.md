@@ -466,18 +466,17 @@ comportament del login</p>
 
 <h3>1.Teoria copies de seguretat</h3>
 
-Que es una copia de seguretat i els tres tipus i que es neccesita
+<p>Una còpia de seguretat és una còpia de les dades importants per poder recuperar-les en cas de pèrdua, corrupció o fallada del sistema.</p> 
 
-Completa
-Neccesita res
+<p>Hi ha tres tipus principals:</p> 
 
-diferencial 
-Neccesita una completa
+<p>Completa: copia totes les dades seleccionades i només necessita ella mateixa per recuperar-se.</p> 
 
-incremental
+<p>Diferencial: copia només les dades que han canviat des de l’última còpia completa i necessita aquesta còpia completa per poder restaurar les dades.</p> 
 
-1 completa o diferencial 
+<p>Incremental: copia només les dades que han canviat des de l’última còpia, sigui completa o incremental, i necessita aquesta última còpia (completa o incremental) per poder recuperar tota la informació.</p> 
 
+<p>En resum, la còpia completa és la base, la diferencial depèn de la completa i l’incremental depèn de l’última còpia feta.</p>  
 
 
 
@@ -493,9 +492,21 @@ incremental
 
 
 <h3>3.Practica commandes Backups</h3>
+
 <h4>1.cp</h4>
+<p>Primer de tot Crearem una carpeta de prova i un archiu de prova a la carpeta documentos despues montarem el disc on volem fer el cp</p> 
+<img width="692" height="476" alt="Captura de pantalla de 2025-12-01 13-15-27" src="https://github.com/user-attachments/assets/9c9ceac4-6736-41c9-9312-d276ee88cf7c" />
+
+<p>Ara amb la comanda cp copiarem tot el que hi ha a documentos a la carpeta /var/copies/ que esta montada al disc de les copies de seguretat el -R serveix per copiar els directoris de manera recursiva i el asterisc per copiar tot el contingut de la carpeta</p>  
+<img width="663" height="304" alt="Captura de pantalla de 2025-12-01 13-23-33" src="https://github.com/user-attachments/assets/0d035cd5-fb37-4345-844f-1e27cb4e2a29" />
+
 <h4>2.rsync</h4>
+Ara crearem una carpeta i un arxiu dintre de documentos i executarem la comanda rsync la a es per archive que copia de manera recursiva i conserva permisos, propietaris, marques de temps i enllaços simbòlics les dos vv es de molt verbose que mostra informacio sobre el que esta fent i el delete elimina al destí els fitxers que ja no existeixen a l’origen, mantenint una còpia exacta.
+<img width="739" height="441" alt="Captura de pantalla de 2025-12-01 13-29-28" src="https://github.com/user-attachments/assets/c48f0216-3307-4524-b630-4948bf42a309" />
+
 <h4>3.dd</h4>
+
+
 
 <h3>4.Practica programes Backups</h3>
 <h4>1.Deja-Dup</h4>
