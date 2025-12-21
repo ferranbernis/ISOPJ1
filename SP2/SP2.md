@@ -501,15 +501,24 @@ comportament del login</p>
 <img width="663" height="304" alt="Captura de pantalla de 2025-12-01 13-23-33" src="https://github.com/user-attachments/assets/0d035cd5-fb37-4345-844f-1e27cb4e2a29" />
 
 <h4>2.rsync</h4>
-Ara crearem una carpeta i un arxiu dintre de documentos i executarem la comanda rsync la a es per archive que copia de manera recursiva i conserva permisos, propietaris, marques de temps i enllaços simbòlics les dos vv es de molt verbose que mostra informacio sobre el que esta fent i el delete elimina al destí els fitxers que ja no existeixen a l’origen, mantenint una còpia exacta.
+<p>Ara crearem una carpeta i un arxiu dintre de documentos i executarem la comanda rsync la a es per archive que copia de manera recursiva i conserva permisos, propietaris, marques de temps i enllaços simbòlics les dos vv es de molt verbose que mostra informacio sobre el que esta fent i el delete elimina al destí els fitxers que ja no existeixen a l’origen, mantenint una còpia exacta.</p>
 <img width="739" height="441" alt="Captura de pantalla de 2025-12-01 13-29-28" src="https://github.com/user-attachments/assets/c48f0216-3307-4524-b630-4948bf42a309" />
 
 <h4>3.dd</h4>
-
+<p>introduirem dd if que es el origen i of el desti de la copia bs es mida de block indica que les dades es llegeixin i s'escriguin en blocs de 1 Megabyte per fer el procés més ràpid i status progres mostra en temps real quants gigues s'han copiat i a quina velocitat</p>
+<img width="744" height="310" alt="Captura de pantalla de 2025-12-09 12-56-18" src="https://github.com/user-attachments/assets/e3c5562f-1872-4b92-ac42-1bbc9ac89666" />
 
 
 <h3>4.Practica programes Backups</h3>
 <h4>1.Deja-Dup</h4>
+<p> Deja-Dup es el programa per defecte a ubuntu per fer copies de seguretat es pot obrir desde el menu de aplicacions o ejecutant desde la terminal deja-dup i es una aplicacio que funciona per interfice grafica</p>
+<img width="776" height="456" alt="image" src="https://github.com/user-attachments/assets/c03c1fe8-537a-4f7a-b3cf-4ca028cf4e1d" />
+
+<p> Selecionem la o les carpetes que volem fer una copia per exemple documentos i les carpetes a ignorar si ens interesa</p>
+
+
+
+
 <h4>2.Duplicity</h4>
 
 <h3>5.Teoria de automatizacio scripts, cron i anacron</h3>
@@ -521,7 +530,31 @@ Cron i anacron son dues eines de automatizacio per a exectutar tasques periodiqu
 
 <h3>6.Practica automatizacio</h3>
 <h4>1.Cron</h4>
+<p>Primer crearem el script indicant que timestap es la data actual i la hora i vaix introduirem un tar que creara el arxiu copies_ladataactual.tar.gz i el arxiu contindra tot el que hi hagi a la carpeta imagenes</p>
+<img width="896" height="753" alt="Captura de pantalla de 2025-12-09 13-25-13" src="https://github.com/user-attachments/assets/2e77f17c-de20-432d-874a-084d03099bbc" />
+
+<p>Despres farem un nano /etc/crontab i afegirem el script creat anteriorment que fara una copia de tot el que hi hagui a la carpeta imagenes i el guardara amb un arxiu al escriptori</p> 
+<p><img width="594" height="139" alt="Captura de pantalla de 2025-12-09 13-34-04" src="https://github.com/user-attachments/assets/fcacde69-b6d9-4353-a997-6d7cb0c7ac3c" /></p>
+
+<p><img width="904" height="606" alt="Captura de pantalla de 2025-12-09 13-29-26" src="https://github.com/user-attachments/assets/5baccde8-a307-40e6-99b9-66de51b3de35" /></p>
+
+<p>Si que el haura creat</p> 
+<img width="1057" height="646" alt="image" src="https://github.com/user-attachments/assets/e0c9b489-baf5-44c8-acd4-ccd98b6d014b" />
+
+<p>Si volem sol ferho de un usuari especific i no a tots introduirem la comanda crontab -e (editar) -u (usuari) i el nom de usuari</p> 
+<img width="896" height="292" alt="Captura de pantalla de 2025-12-09 13-17-31" src="https://github.com/user-attachments/assets/f322d725-69ca-4e0f-95da-4a1da78b6d9c" />
+
+
+
+
 <h4>2.anacron</h4>
+
+<p>Utilizarem el mateix script que a cron i entrarem a nano /etc/anacrontab primer de tot introduirem cada quan es produira la copia que sera cada dia i cuan tardara a ferla desde que se inicia el ordinador que seran 5 minuts el nom de la tasca i on volem que es realizi la copia que sera a el home de alumne </p>
+<img width="817" height="584" alt="image" src="https://github.com/user-attachments/assets/a0f15aa6-c4b3-493d-b13e-edb2bde44d5f" />
+
+Si deixem el ordinador ences durant 5 minuts i el dia de avui no ha fet la copia la efectuara
+<img width="896" height="546" alt="image" src="https://github.com/user-attachments/assets/aea64322-78ab-4df9-b3c2-8a52383a5d26" />
+
 
 
 
