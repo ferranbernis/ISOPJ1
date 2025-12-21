@@ -515,11 +515,39 @@ comportament del login</p>
 <img width="776" height="456" alt="image" src="https://github.com/user-attachments/assets/c03c1fe8-537a-4f7a-b3cf-4ca028cf4e1d" />
 
 <p> Selecionem la o les carpetes que volem fer una copia per exemple documentos i les carpetes a ignorar si ens interesa</p>
+<img width="775" height="452" alt="image" src="https://github.com/user-attachments/assets/30960ac0-66d2-4e5b-a9b6-0e982541d936" />
 
+<p>Selecionarem la ubicacio de la copia/respaldo per exemple a la carpeta Copia</p>
+<img width="775" height="452" alt="image" src="https://github.com/user-attachments/assets/d22bcf06-bf45-44e3-86aa-9a4dcd459608" />
 
+<p>Ens preguntara si volem posar una contrasenya a la copia de seguretat com es una prova direm que no</p>
+<img width="775" height="452" alt="image" src="https://github.com/user-attachments/assets/1f2799c5-3f2b-40af-8930-9a30a0679dbf" />
+
+<p>Despres podrem selecionar si fer la copia manualment o auotomaticament cada 4 dies (Desde la configuracio es pot canviar a semanalment o cada dia la copia automatica i es pot modificar tots els adjustos anteriors)</p>
+
+<p><img width="775" height="452" alt="image" src="https://github.com/user-attachments/assets/d5d79089-782e-4934-88a6-2f48613ba611" /></p>
+
+<p><img width="775" height="452" alt="image" src="https://github.com/user-attachments/assets/5cbad326-a3aa-4eb4-95c4-816268308291" /></p>
+
+<p> Selecionarem respaldar ahora per a fer-ho manualment i al apartat de restaura tindrem les copies de seguretat ordenades per fecha i el boto de restaura</p>
+<img width="780" height="575" alt="image" src="https://github.com/user-attachments/assets/fbad8bbe-d2b5-42c7-9563-564e3352a475" />
+
+<p> Per exemple eliminarem la carpeta adeu i el archiu hola</p>
+<img width="973" height="779" alt="Captura de pantalla de 2025-12-21 01-54-11" src="https://github.com/user-attachments/assets/5da97b2d-6dbb-43f8-b207-da58e0b3527f" />
+
+<p> Selecionarem hola i adeu i apretarem restaura i que els restauri a la carpeta original tambe tindriem la opcio de restaurarlos a una altra ubicacio i ja els tindriem de volta</p> 
+<p><img width="772" height="456" alt="image" src="https://github.com/user-attachments/assets/4ac89003-d352-48cc-8a6d-c44ed8ca3636" /></p> 
+<p><img width="454" height="317" alt="image" src="https://github.com/user-attachments/assets/83046945-3c89-4e94-afc1-0a7465a5be90" /></p> 
+<p><img width="454" height="317" alt="image" src="https://github.com/user-attachments/assets/6cd0cec2-232d-4602-894f-2bae0915b681" /></p>
+<p><img width="894" height="459" alt="image" src="https://github.com/user-attachments/assets/08e249ea-2898-43b1-ab3f-36379c41d422" /></p>
 
 
 <h4>2.Duplicity</h4>
+
+
+
+
+
 
 <h3>5.Teoria de automatizacio scripts, cron i anacron</h3>
 Cron i anacron son dues eines de automatizacio per a exectutar tasques periodiques son a traves de scripts 
