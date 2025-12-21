@@ -580,7 +580,7 @@ Cron i anacron son dues eines de automatizacio per a exectutar tasques periodiqu
 <p>Utilizarem el mateix script que a cron i entrarem a nano /etc/anacrontab primer de tot introduirem cada quan es produira la copia que sera cada dia i cuan tardara a ferla desde que se inicia el ordinador que seran 5 minuts el nom de la tasca i on volem que es realizi la copia que sera a el home de alumne </p>
 <img width="817" height="584" alt="image" src="https://github.com/user-attachments/assets/a0f15aa6-c4b3-493d-b13e-edb2bde44d5f" />
 
-Si deixem el ordinador ences durant 5 minuts i el dia de avui no ha fet la copia la efectuara
+<p>Si deixem el ordinador ences durant 5 minuts i el dia de avui no ha fet la copia la efectuara</p>
 <img width="896" height="546" alt="image" src="https://github.com/user-attachments/assets/aea64322-78ab-4df9-b3c2-8a52383a5d26" />
 
 
