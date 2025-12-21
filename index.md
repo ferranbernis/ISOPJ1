@@ -3,14 +3,14 @@ layout: default
 title: "Implantació de sistemes operatius"
 ---
 
-<p>Este repositorio cuenta con el material del curso de Implantación de sistemas operativos desarrollado por Ferran Bernis.</p>
+<p>Aquest repositori té el material del curs d'Implantació de sistemes operatius desenvolupat per Ferran Bernis.</p>
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/133c674e-ac79-40c7-828f-1707fbd84f20" />
 
 ## Licencia
 
 El contenido está bajo licencia [Creative Commons BY-NC-SA 4.0 ES](LICENSE.md).
 
-## Contenido del curso
+## Contingut del curs
 
 ### [Sprint 1. Instal·lació i Configuració Inicial](SP1/SP1.md)  
 ### [Sprint 2. Instal·lació, Configuració de Programari de Base i Gestió de Fitxers](SP2/SP2.md)  
