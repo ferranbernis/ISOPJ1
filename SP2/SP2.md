@@ -482,11 +482,11 @@ comportament del login</p>
 
 <h3>2.Teoria commandes Backups</h3>
 
-**CP** es una copia simple que no es inteligent transfereix arxius nomes localment i no optimiza ni temps ni espai</p>
+**CP** es una copia simple que no es inteligent transfereix arxius nomes localment i no optimiza ni temps ni espai
 
-**RSYNC** es una eina inteligent que nomes copia els fitxers modificats treballa en local i en remot</p>
+**RSYNC** es una eina inteligent que nomes copia els fitxers modificats treballa en local i en remot
 
-**DD** no es una eina per a copiar pero cuan volem copiar tot un disc o particio se utilizar es per a clonar</p>
+**DD** no es una eina per a copiar pero cuan volem copiar tot un disc o particio se utilizar es per a clonar
 
 
 
