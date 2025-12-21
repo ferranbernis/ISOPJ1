@@ -574,9 +574,9 @@ comportament del login</p>
 <h3>5.Teoria de automatizacio scripts, cron i anacron</h3>
 <p>Cron i anacron son dues eines de automatizacio per a exectutar tasques periodiques son a traves de scripts</p>  
 
-**Cron** Executa tasques programades en una data i una hora especifiques si el sistema esta apagat la tasca es perd es ideal per a tasces en dates i hores conquretes i per a accions especifiques de un usuari 
+<p><b>Cron</b> Executa tasquesprogramades en una data i una hora especifiques si el sistema esta apagat la tasca es perd es ideal per a tasces en dates i hores conquretes i per a accions especifiques de un usuari</p> 
 
-**Anacron** es ideal per a executar tasques periodices on no cal una data i una hora especifica normalment se utiliza per a tasques de el manteniment de el sistema no requereix que el sistema estigui obert perque cuan se obrigue ja la executara no es perd la tasca com en el Cron 
+<p><b>Anacron</b> es ideal per a executar tasques periodices on no cal una data i una hora especifica normalment se utiliza per a tasques de el manteniment de el sistema no requereix que el sistema estigui obert perque cuan se obrigue ja la executara no es perd la tasca com en el Cron</p> 
 
 <h3>6.Practica automatizacio</h3>
 <h4>1.Cron</h4>
