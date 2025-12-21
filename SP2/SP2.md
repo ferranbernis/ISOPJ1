@@ -608,15 +608,60 @@ comportament del login</p>
 
 
 
-
-
 <h2>5. Quotes d'usuari</h2>
 
-Una cuota de disc es la llimitacio que es dona als usuaris de espai de el disc
+<p>Una cuota de disc es la llimitacio que es dona als usuaris de espai de el disc</p>
+
+<p>Muntarem la particio sdc1 sobre la que treballarem</p>
+<img width="797" height="353" alt="Captura de pantalla de 2025-12-15 11-51-57" src="https://github.com/user-attachments/assets/ef61597d-6379-4af5-820c-9501a6dd392a" />
+
+<p>Ara instalarem quota que serveix per comprovar i controlar l’ús de l’espai de disc per usuari o grup en un sistema de fitxers que tingui activada la quota de disc i crearem la carpeta dades_usuaris</p>
+<img width="797" height="492" alt="Captura de pantalla de 2025-12-15 12-06-52" src="https://github.com/user-attachments/assets/a77821b9-90c1-47b0-baf4-e3fffeda7986" />
+
+<p> Entrarem a el arxiu /etc/fstab que serveix per a que la particio es munti automaticament quan inici el sistema i tambe es afegix que el usuari i el grup tinguin una cuota</p>
+<img width="1336" height="424" alt="image" src="https://github.com/user-attachments/assets/93057361-9f2b-4e65-af8a-c3b26dcb2105" />
+
+<p>Comprovarem que se hagi muntat correctament la particio</p> 
+<img width="742" height="268" alt="Captura de pantalla de 2025-12-15 12-16-03" src="https://github.com/user-attachments/assets/cad15d3e-61c5-4763-9174-66d5fbc79d03" />
 
 
+<p> Crearem el usuari prova en adduser</p> 
+<img width="742" height="436" alt="Captura de pantalla de 2025-12-15 12-17-02" src="https://github.com/user-attachments/assets/a3627b5f-f2d6-433b-9108-41033a5f4733" />
+
+<p>Entarem a la particio i comprovarem que estiguin els arxius aquota user i group (Si no estan introduiu aquesta comanda quotacheck -cum /mnt/dades_usuari)</p>
+<img width="545" height="76" alt="Captura de pantalla de 2025-12-15 12-18-49" src="https://github.com/user-attachments/assets/2c244bb6-5e89-4ee2-9b94-38a6909f3825" />
+
+<p>Amb quota off apaguem la cuota i amb on iniciem la cuota</p>
+<img width="596" height="65" alt="Captura de pantalla de 2025-12-15 12-39-48" src="https://github.com/user-attachments/assets/ab2f4e3d-6203-46df-814a-778cb4bfdb31" />
+
+<p>Amb repquota comprovem la cuota de cada usuari com de moment sol root te permisos es el unic usuari que es mostra</p>
+<img width="662" height="217" alt="Captura de pantalla de 2025-12-15 12-41-10" src="https://github.com/user-attachments/assets/19f44394-9931-4b47-917c-edfce8b8d37f" />
+
+<p> Donarem permisos totals a tothom i amb edquota i el nom de el usuari entrarem a el axiu per modificar la quota</p>
+<img width="619" height="81" alt="Captura de pantalla de 2025-12-15 12-45-07" src="https://github.com/user-attachments/assets/b42ff710-1011-439d-864c-cbe3cccb7bc3" />
+
+<p>Aquesta secció controla quants dades pot guardar l'usuari. En Linux, els valors de les quotes solen expressar-se en blocs d'1 KB.</p>
+
+<p>bloques (0): És l'espai que l'usuari està utilitzant actualment. En aquest cas, 0 KB, el que indica que encara no ha guardat res.</p>
+
+<p>blando (1024): És el límit suau (soft limit). L'usuari pot arribar a 1 MB (1024 KB). Si el supera, rebrà un avís, però se li permetrà seguir escrivint durant un "període de gràcia" (normalment 7 dies).</p>
+
+<p>duro (2048): És el límit dur (hard limit). L'usuari té prohibit passar de 2 MB (2048 KB). El sistema bloquejarà qualsevol intent d'escriure més dades un cop arribi a aquest valor.</p>
+
+<p><img width="829" height="594" alt="Captura de pantalla de 2025-12-15 12-43-18" src="https://github.com/user-attachments/assets/03e09e8b-faf7-40ff-ae40-600acc681834" /></p>
 
 
+<p>Ara entarem a el usuari prova i crearem dos archius de 800MB sol hem arribat a el limit suau</p>
+<img width="722" height="187" alt="Captura de pantalla de 2025-12-15 12-46-35" src="https://github.com/user-attachments/assets/d054b356-edd7-42e9-92d4-652e6d7e5aaf" />
 
+<p>Fem un repquota i ara si que apareix el usuari prova i mostra el espai utilizat 1600MB el limit suau i el dur i que tenim 6 dies de gracia per que hem superat el limit suau</p>
+<img width="737" height="363" alt="Captura de pantalla de 2025-12-15 12-47-54" src="https://github.com/user-attachments/assets/d2566597-f537-461a-a401-388e418f525e" />
 
+<p>Pero a la que intentem crear un altre arxiu de 800MB que supera el llimit Dur copiara hasta 2024 MB i donara error mostrant que hem superat la cuota de disc</p> 
+<img width="764" height="441" alt="Captura de pantalla de 2025-12-15 12-49-47" src="https://github.com/user-attachments/assets/2da001e2-4d7f-4d8d-9ce5-dedf36c54f78" />
 
+<p>Tornem a fer un repquota i ja estem a el limit dur</p>
+<img width="738" height="265" alt="Captura de pantalla de 2025-12-15 12-51-00" src="https://github.com/user-attachments/assets/fd572b17-6edd-465c-b346-b9361c04e66c" />
+
+<p>Amb edquota -t podem modificar el periode de gracia</p>
+<img width="1340" height="193" alt="image" src="https://github.com/user-attachments/assets/a9baf8cd-47ec-48a2-b615-0dae3751d257" />
