@@ -543,14 +543,36 @@ comportament del login</p>
 
 
 <h4>2.Duplicity</h4>
+<p> Duplicity permet crear, gestionar i restaurar còpies de seguretat de fitxers i directoris.</p> 
 
+<p>•Fa una còpia completa inicial.</p>
+<p>•Les còpies següents són incrementals (només desa els canvis).</p> 
+<p>•Xifra les dades amb GPG perquè ningú pugui llegir-les sense contrasenya.</p> 
+<p>•Comprimeix les dades per ocupar menys espai.</p> 
+<p>•Permet restaurar fitxers, carpetes o tot el sistema.</p> 
+<p>•Pot verificar la integritat de les còpies.</p> 
+<p>•Permet esborrar còpies antigues segons polítiques de retenció.</p> 
 
+<p>Introduirem la comanda duplicity la carpeta que volem fer la copia i la ruta de desti on es guardara la copia com es la primera sera copia completa totes les seguents seran incrementals</p>
+<img width="1008" height="58" alt="image" src="https://github.com/user-attachments/assets/8b2d19e1-12bd-4049-a984-6eef38d444d4" />
 
+<p>Ens detmanara una contrasenya per a xifrar les dades i que la tornesim a posar per a confirmar i allavors es completara la copia
+<p><img width="991" height="570" alt="image" src="https://github.com/user-attachments/assets/04df60d0-453f-40d8-909f-25a61692b1c2" /></p>
+<p><img width="806" height="166" alt="image" src="https://github.com/user-attachments/assets/1df4bfb0-86b8-482c-bac6-c2d5ec888727" /></p>
+
+<p>Ara eliminare tot el contingut de la carpeta documentos</p>
+<img width="1284" height="798" alt="image" src="https://github.com/user-attachments/assets/2c6ecd1d-67d0-4d1f-a9b2-76029e6da66b" />
+
+<p>Amb Duplicity restore restaurarem la copia amb restore file indicarem el arxiu a restaurar i despues la ubicacio on es restaurara tambe ens detmanara la contrasenya introduida anteriorment</p>
+<img width="1094" height="213" alt="image" src="https://github.com/user-attachments/assets/92a2df4e-a53b-43d1-a03d-a67f61940857" />
+
+<p>Ja estaria restaurat</p>
+<img width="1282" height="601" alt="image" src="https://github.com/user-attachments/assets/7a05b1fb-6463-4fcc-a9c2-b11f95cfb2ce" />
 
 
 
 <h3>5.Teoria de automatizacio scripts, cron i anacron</h3>
-Cron i anacron son dues eines de automatizacio per a exectutar tasques periodiques son a traves de scripts 
+<p>Cron i anacron son dues eines de automatizacio per a exectutar tasques periodiques son a traves de scripts</p>  
 
 **Cron** Executa tasques programades en una data i una hora especifiques si el sistema esta apagat la tasca es perd es ideal per a tasces en dates i hores conquretes i per a accions especifiques de un usuari 
 
@@ -571,7 +593,6 @@ Cron i anacron son dues eines de automatizacio per a exectutar tasques periodiqu
 
 <p>Si volem sol ferho de un usuari especific i no a tots introduirem la comanda crontab -e (editar) -u (usuari) i el nom de usuari</p> 
 <img width="896" height="292" alt="Captura de pantalla de 2025-12-09 13-17-31" src="https://github.com/user-attachments/assets/f322d725-69ca-4e0f-95da-4a1da78b6d9c" />
-
 
 
 
