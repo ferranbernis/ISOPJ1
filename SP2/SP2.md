@@ -527,7 +527,7 @@ comportament del login</p>
 
 <p><img width="775" height="452" alt="image" src="https://github.com/user-attachments/assets/d5d79089-782e-4934-88a6-2f48613ba611" /></p>
 
-<p><img width="775" height="452" alt="image" src="https://github.com/user-attachments/assets/5cbad326-a3aa-4eb4-95c4-816268308291" /></p>
+<p><img width="505" height="506" alt="image" src="https://github.com/user-attachments/assets/dec1beec-28b4-4b97-a2c0-9e6a60cd22e6" /></p>
 
 <p> Selecionarem respaldar ahora per a fer-ho manualment i al apartat de restaura tindrem les copies de seguretat ordenades per fecha i el boto de restaura</p>
 <img width="780" height="575" alt="image" src="https://github.com/user-attachments/assets/fbad8bbe-d2b5-42c7-9563-564e3352a475" />
