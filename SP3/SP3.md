@@ -12,6 +12,6 @@ Servidor Samba
 
 Serveix per compartir fitxers impresores carpetes la diferencia que hi ha es que es fa amb autentificacio a nivell de usuari 
 
-
+Fet sense usuaris LDAP i fer natros sols en usuaris LDAP
 
 Servidor NFS
