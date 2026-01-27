@@ -54,6 +54,17 @@ usuaris, grups recursos unitats organizatives el bosc i  el arbre
 <img width="849" height="225" alt="Captura de pantalla de 2026-01-12 12-37-52" src="https://github.com/user-attachments/assets/f26c2af0-9f0f-48b0-9e7f-d85384751f9b" />
 
 <p>Entrarem a usu.ldif i veurem que el axiu crea un usuari anomenat alu1 amb la contrasenya alu1 tambe especifcat la seva shell (bin/bsh) i la home (home/alu1) i el uid (1001)</p>
+<img width="849" height="443" alt="Captura de pantalla de 2026-01-12 12-39-01" src="https://github.com/user-attachments/assets/2b2e40a7-c4e5-4781-8c5b-3d808f09ca02" />
+
+<p>Executarem el primer arxiu ou.ldif que creara la unitat organizativa users despres el usu.ldif que creara el usuari alu1 i per ultim el grup.ldif que creara el grup alumnes i introduira al usuari alum1 per aixo el hem executat abans</p>
+<img width="1070" height="244" alt="Captura de pantalla de 2026-01-12 12-41-37" src="https://github.com/user-attachments/assets/efaddf8c-51b5-441a-a91e-e50711fa4aaa" />
+
+<p>Comprovacio amb Slapcat</p>
+<img width="611" height="697" alt="Captura de pantalla de 2026-01-12 12-43-17" src="https://github.com/user-attachments/assets/90663ece-d956-4ce3-9bb5-3b44c5293383" />
+<img width="538" height="586" alt="Captura de pantalla de 2026-01-12 12-43-38" src="https://github.com/user-attachments/assets/aeac8ba9-fd6f-4b3f-9483-054f6fe8ee51" />
+
+
+
 
 
 
