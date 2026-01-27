@@ -8,10 +8,10 @@ usuaris, grups recursos unitats organizatives el bosc i  el arbre
 
 <h2>Servidor LDAP</h2>
 
-<p>Primer de tot canviarem de DHCP a ip manual</p>
+<p>Primer de tot canviarem de DHCP a IP manual</p>
 <img width="584" height="472" alt="image" src="https://github.com/user-attachments/assets/6b85db42-4e9a-4f0e-8cf3-612ad963416d" />
 
-<p>Despres canviarem el hostname</p>
+<p>Despres canviarem el Hostname</p>
 <img width="805" height="114" alt="Captura de pantalla de 2026-01-12 12-08-53" src="https://github.com/user-attachments/assets/b9f3d649-0690-4e8d-b442-abd3cbd61993" />
 
 <p>Ara instalarem LDAP en apt install slapd ldap-utils</p>
@@ -33,8 +33,28 @@ usuaris, grups recursos unitats organizatives el bosc i  el arbre
 <img width="1161" height="774" alt="Captura de pantalla de 2026-01-12 12-29-39" src="https://github.com/user-attachments/assets/951f547d-f6cb-4137-97e1-e5925a83669d" />
 
 
-
+<p>Introduirem el Nom de la organizacio</p>
 <img width="1161" height="774" alt="Captura de pantalla de 2026-01-12 12-30-09" src="https://github.com/user-attachments/assets/de8c30ac-5647-4573-958b-1d8bc44efd00" />
+
+
+<p>Direm que no es purgui la base de dades quan es purgui el paquet slapd</p>
+<img width="1161" height="774" alt="Captura de pantalla de 2026-01-12 12-30-58" src="https://github.com/user-attachments/assets/3c29a14b-5182-451c-8a46-21f1a73e30b9" />
+
+<p>Direm que si que mogue la base de dades antigua per a que no intefereixi en la nova</p>
+<img width="1161" height="774" alt="Captura de pantalla de 2026-01-12 12-31-21" src="https://github.com/user-attachments/assets/65887a8e-8aae-47a1-a787-088469e76cc5" />
+
+
+<p>Tornarem a executar slapcat per a veure que es ha aplicat tota la configuracio</p>
+<img width="604" height="295" alt="Captura de pantalla de 2026-01-12 12-31-49" src="https://github.com/user-attachments/assets/e6468167-cb7c-4672-be38-0f1c9acd2817" />
+
+<p>Entrarem a uo.ldif que estava al archiu comprimit i veurem que es un arxiu que crea una Unitat Organizativa anomenada users</p>
+<img width="838" height="188" alt="Captura de pantalla de 2026-01-12 12-36-40" src="https://github.com/user-attachments/assets/ecf4ba69-4c3c-4665-90bd-8ebcadcb0913" />
+
+<p>Entrarem a group.ldif que estava al archiu comprimit i veurem que es un arxiu que crea un grup anomenat alumnes i afegeix al usuari alu1 al grup</p>
+<img width="849" height="225" alt="Captura de pantalla de 2026-01-12 12-37-52" src="https://github.com/user-attachments/assets/f26c2af0-9f0f-48b0-9e7f-d85384751f9b" />
+
+<p>Entrarem a usu.ldif i veurem que el axiu crea un usuari anomenat alu1 amb la contrasenya alu1 tambe especifcat la seva shell (bin/bsh) i la home (home/alu1) i el uid (1001)</p>
+
 
 
 
