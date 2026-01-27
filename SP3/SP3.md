@@ -6,9 +6,9 @@ que es un servidor
 usuaris, grups recursos unitats organizatives el bosc i  el arbre 
 
 
-Servidor LDAP
+<h2>Servidor LDAP</h2>
 
-Servidor Samba
+<h2>Servidor Samba</h2>
 
 Serveix per compartir fitxers impresores carpetes la diferencia que hi ha es que es fa amb autentificacio a nivell de usuari 
 
