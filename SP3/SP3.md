@@ -178,8 +178,9 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="365" height="244" alt="Captura de pantalla de 2026-01-26 12-00-16" src="https://github.com/user-attachments/assets/eed6411b-b2a5-480d-8f6e-cbea8bdce5f1" />
 
 
-<p>Entarem a el arxiu etc/samba/smb.conf que es el arxiu de configuracio de samba i afegirem vaix de tot proves que sera la carpeta que compartirem amb samba a path introduirem la ruta de la carpeta a guest ok direm si volem usuaris anonims o no a directory mask i a create mask introduirem la mascara que son els permisos que asseguren que els fitxers nous siguin llegibles per tothom però només modificables pel propietari i a browseable posarem yes per a que els gestors de arxius vegin la carpeta ara pasarem a els permisos de la carpeta posarem que blau i tot el grup color pugin llegir els arxius i que blau pugui escriure i que roig sigui usuari invalid que no pugi accedir</p>
-<img width="738" height="723" alt="Captura de pantalla de 2026-01-26 12-03-56" src="https://github.com/user-attachments/assets/f445b906-769f-466f-9135-a26c961b5fbd" />
+<p>Entarem a el arxiu etc/samba/smb.conf que es el arxiu de configuracio de samba i afegirem vaix de tot proves que sera la carpeta que compartirem amb samba a path introduirem la ruta de la carpeta a guest ok direm si volem usuaris anonims o no a directory mask i a create mask introduirem la mascara que son els permisos que asseguren que els fitxers nous siguin llegibles per tothom però només modificables pel propietari i a browseable posarem yes per a que els gestors de arxius vegin la carpeta ara pasarem a els permisos de la carpeta posarem que blau i tot el grup color pugin llegir els arxius i que blau pugui escriure i que roig sigui usuari invalid que no pugi accedir i read only no</p>
+<img width="738" height="721" alt="Captura de pantalla de 2026-01-26 13-06-32" src="https://github.com/user-attachments/assets/db49c06a-e8e3-464f-ba1e-3c351003f546" />
+
 
 <p>Reinciarem el servei de samba</p>
 <img width="444" height="27" alt="Captura de pantalla de 2026-01-26 12-05-57" src="https://github.com/user-attachments/assets/da01144d-f11b-4465-ae83-7a26c0afff5f" />
@@ -190,6 +191,28 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 
 <p>Comprovarem desde el client que tinguesim connexio amb el servidor amb ping i la ip de el servidor</p>
 <img width="991" height="429" alt="Captura de pantalla de 2026-01-26 12-32-43" src="https://github.com/user-attachments/assets/120db5a5-c48d-4800-b3c3-09fb13a22aff" />
+
+<p>Desde el client obrirem fitxers i anirem a el apartat altres ubicacions i vaix a connectar a un servidor introduirem smb://IP DE EL SERVIDOR/</p>
+<img width="893" height="554" alt="Captura de pantalla de 2026-01-26 12-34-52" src="https://github.com/user-attachments/assets/89543125-5b21-4b6b-a128-52db09c61b00" />
+
+<p>Provarem amb el usuari roig pero no ens deixara perque es usuari prohibit i ens tornara a saltar la mateixa pantalla</p> 
+<img width="893" height="554" alt="Captura de pantalla de 2026-01-26 12-36-29" src="https://github.com/user-attachments/assets/e43bcffd-c268-4d76-bd96-e60d1186b779" />
+
+<p>Provarem en anonim i com abans hem configurat que guest ok yes si funcionara</p> 
+<img width="575" height="436" alt="Captura de pantalla de 2026-01-26 13-07-35" src="https://github.com/user-attachments/assets/012c383d-40c1-4de0-bc3b-161f4d7895e8" />
+<img width="890" height="601" alt="Captura de pantalla de 2026-01-26 13-07-47" src="https://github.com/user-attachments/assets/f6fc55fb-aacc-4155-8995-6368a3098709" />
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
