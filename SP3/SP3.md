@@ -202,20 +202,4 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="575" height="436" alt="Captura de pantalla de 2026-01-26 13-07-35" src="https://github.com/user-attachments/assets/012c383d-40c1-4de0-bc3b-161f4d7895e8" />
 <img width="890" height="601" alt="Captura de pantalla de 2026-01-26 13-07-47" src="https://github.com/user-attachments/assets/f6fc55fb-aacc-4155-8995-6368a3098709" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Fet sense usuaris LDAP i fer natros sols en usuaris LDAP
-
 <h2>Servidor NFS</h2>
