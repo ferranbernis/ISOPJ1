@@ -1,9 +1,26 @@
 <h1>Sprint 3: Administració de Dominis i Seguretat</h1>
 
 
-que es un servidor 
+<p>1. Usuaris, Grups i Recursos
+Són els objectes bàsics que conté el directori:
+Usuaris: Comptes individuals per a persones (com el teu usuari ferranbernis).
+Grups: Conjunts d'usuaris (ex: grup "professors", grup "alumnes") per gestionar permisos de cop.
+Recursos: Impressores, carpetes compartides o servidors que estan registrats a la xarxa.</p>
 
-usuaris, grups recursos unitats organizatives el bosc i  el arbre 
+<p>2. Unitats Organitzatives (OU)
+Pensa en les OU com a carpetes o contenidors dins del servidor. Serveixen per organitzar els objectes segons la lògica de l'empresa o centre:
+Exemple: Una OU anomenada Sistemes i una altra Administració.
+Permeten aplicar polítiques (GPOs) diferents a cada grup.</p>
+
+<p>3. L'Arbre (Tree)
+Un Arbre és un conjunt d'un o més dominis que comparteixen un espai de noms continu (un nom arrel).
+Si el teu domini principal és fje.edu, un subdomini anomenat clot.fje.edu formaria part del mateix arbre. Tots comparteixen una relació de confiança i una base de dades comuna.</p>
+
+<p>4. El Bosc (Forest)
+El Bosc és el nivell més alt del disseny. És un conjunt d'un o més arbres que no necessàriament comparteixen el mateix nom, però sí que comparteixen el mateix esquema (les regles de què pot contenir el directori) i configuració.
+Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien unir els dos arbres en un mateix bosc per poder compartir recursos entre ells.</p>
+
+
 
 
 <h2>Servidor LDAP</h2>
@@ -62,6 +79,9 @@ usuaris, grups recursos unitats organizatives el bosc i  el arbre
 <p>Comprovacio amb Slapcat</p>
 <img width="611" height="697" alt="Captura de pantalla de 2026-01-12 12-43-17" src="https://github.com/user-attachments/assets/90663ece-d956-4ce3-9bb5-3b44c5293383" />
 <img width="538" height="586" alt="Captura de pantalla de 2026-01-12 12-43-38" src="https://github.com/user-attachments/assets/aeac8ba9-fd6f-4b3f-9483-054f6fe8ee51" />
+
+<p> Ara pasarem a el client i instalarem els paquets neccesaris. libnss-ldap: Perquè el sistema pugui consultar noms d'usuari i grups al servidor i libpam-ldap: Perquè el sistema pugui gestionar l'autenticació (contrasenyes) contra el servidor</p> 
+<img width="1153" height="255" alt="Captura de pantalla de 2026-01-12 13-00-16" src="https://github.com/user-attachments/assets/be72a1a2-7022-40c8-b42d-730439cdc1f5" />
 
 
 
