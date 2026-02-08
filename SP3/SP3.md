@@ -5,7 +5,7 @@
 
 <p>1. Usuaris, Grups i Recursos
 Són els objectes bàsics que conté el directori:
-Usuaris: Comptes individuals per a persones (com el teu usuari ferranbernis).
+Usuaris: Comptes individuals per a persones (com el meu usuari ferranbernis).
 Grups: Conjunts d'usuaris (ex: grup "professors", grup "alumnes") per gestionar permisos de cop.
 Recursos: Impressores, carpetes compartides o servidors que estan registrats a la xarxa.</p>
 
