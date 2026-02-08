@@ -142,23 +142,47 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 
 <h2>Interfice Grafica LDAP</h2>
 
+<p>Primer de tot instalarem el programa jxplorer que es un progarama amb interfice grafica que es un navegador de fitxers per al servidor LDAP.</p> 
+<img width="744" height="490" alt="Captura de pantalla de 2026-01-13 13-48-33" src="https://github.com/user-attachments/assets/b2318f19-0d21-4b77-9177-77098d2fde70" />
 
+<p>El podem executar posant jxplorer a la terminal o desde la llista de aplicacions</p> 
+<img width="486" height="68" alt="image" src="https://github.com/user-attachments/assets/d0e800fc-94b3-4311-8f2e-9f47a6972205" />
+<img width="99" height="124" alt="image" src="https://github.com/user-attachments/assets/7464a50f-dd48-446b-8cfd-7954dcf29f28" />
 
+<p>Al entar al progarma anirem a file i a connect</p> 
+<img width="448" height="266" alt="image" src="https://github.com/user-attachments/assets/5bf68380-20f1-4954-9b0f-a2e8c7fb7e6f" />
 
+<p>Introduirem la ip de el servidor a host despres a base DN introduirem el domini gina.cat i a security selecionarem la opcio user+password i introduirem el usuari admin mes el domini i la contrasenya i apretarem OK</p> 
+<img width="676" height="513" alt="Captura de pantalla de 2026-02-08 06-09-35" src="https://github.com/user-attachments/assets/8d499245-01ed-48fa-a00e-9a10bd6dac3b" />
 
-
-
-
-
-
-
+<p> Desde aqui podem gestionar el servidor LDAP graficament com crear usuaris,grups i unitats organizatives</p>
+<img width="805" height="605" alt="image" src="https://github.com/user-attachments/assets/7eb383b7-eb5a-41e9-a867-9a317e100f3b" />
 
 
 
 
 <h2>Servidor Samba</h2>
 
-Serveix per compartir fitxers impresores carpetes la diferencia que hi ha es que es fa amb autentificacio a nivell de usuari 
+<p>Samba serveix per compartir fitxers, impressores i carpetes en una xarxa local. La seva gran característica, és que permet gestionar l'accés mitjançant una autenticació a nivell d'usuari. Això significa que el servidor no només comparteix el recurs, sinó que verifica qui ets abans de deixar-te entrar, permetent que cada usuari tingui els seus propis permisos i carpetes privades.</p>
+
+<p>Primer de tot instalarem SAMBA</p>
+<img width="738" height="419" alt="Captura de pantalla de 2026-01-26 11-50-39" src="https://github.com/user-attachments/assets/d3d8cd03-a0a2-4011-bdf2-4a7b164fb43d" />
+
+<p>Ara crearem una carpeta anomenada proves donarem tots els permisos a tothom amb chmod 777 i canviarem el propietari amb chown indicant que no volem propietari a la carpeta i tampoc volem grup i comprovarem que es hagui creat correctament</p>
+
+<img width="732" height="302" alt="Captura de pantalla de 2026-01-26 11-53-00" src="https://github.com/user-attachments/assets/b7a32977-6e55-40c5-8562-808f1f6862d7" />
+
+
+
+
+
+
+
+
+
+
+
+
 
 Fet sense usuaris LDAP i fer natros sols en usuaris LDAP
 
