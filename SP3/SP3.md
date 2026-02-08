@@ -169,21 +169,30 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="738" height="419" alt="Captura de pantalla de 2026-01-26 11-50-39" src="https://github.com/user-attachments/assets/d3d8cd03-a0a2-4011-bdf2-4a7b164fb43d" />
 
 <p>Ara crearem una carpeta anomenada proves donarem tots els permisos a tothom amb chmod 777 i canviarem el propietari amb chown indicant que no volem propietari a la carpeta i tampoc volem grup i comprovarem que es hagui creat correctament</p>
+<img width="741" height="402" alt="Captura de pantalla de 2026-01-26 11-54-34" src="https://github.com/user-attachments/assets/cd0cf9d4-543f-46bf-b525-59231bf54841" />
 
-<img width="732" height="302" alt="Captura de pantalla de 2026-01-26 11-53-00" src="https://github.com/user-attachments/assets/b7a32977-6e55-40c5-8562-808f1f6862d7" />
+<p>Crearem els usuaris blau,roig i groc amb els parametres -M que no creí carpeta home per a els usuaris i que no es pugin logeigar i un grup anomenat color que afegirem a groc i roig despres farem un tail de les ultimes 5 lines de el arxiu passwd per veure que els tres usuaris es haguin creat correctament i un tail de la ultima linea de el arxiu group per veure que el grup color es ha creat correctament</p>
+<img width="648" height="415" alt="Captura de pantalla de 2026-01-26 11-57-00" src="https://github.com/user-attachments/assets/5c5d2a0b-d0eb-483f-a7a5-a53b39d95c02" />
 
-
-
-
-
-
-
+<p>Amb els usuaris ja creats els afegirem a samba amb smbpasswd introduirem una contrasenya dos vegades i els tres usuaris es afegiran a samba</p>
+<img width="365" height="244" alt="Captura de pantalla de 2026-01-26 12-00-16" src="https://github.com/user-attachments/assets/eed6411b-b2a5-480d-8f6e-cbea8bdce5f1" />
 
 
+<p>Entarem a el arxiu etc/samba/smb.conf que es el arxiu de configuracio de samba i afegirem vaix de tot proves que sera la carpeta que compartirem amb samba a path introduirem la ruta de la carpeta a guest ok direm si volem usuaris anonims o no a directory mask i a create mask introduirem la mascara que son els permisos que asseguren que els fitxers nous siguin llegibles per tothom però només modificables pel propietari i a browseable posarem yes per a que els gestors de arxius vegin la carpeta ara pasarem a els permisos de la carpeta posarem que blau i tot el grup color pugin llegir els arxius i que blau pugui escriure i que roig sigui usuari invalid que no pugi accedir</p>
+<img width="738" height="723" alt="Captura de pantalla de 2026-01-26 12-03-56" src="https://github.com/user-attachments/assets/f445b906-769f-466f-9135-a26c961b5fbd" />
 
+<p>Reinciarem el servei de samba</p>
+<img width="444" height="27" alt="Captura de pantalla de 2026-01-26 12-05-57" src="https://github.com/user-attachments/assets/da01144d-f11b-4465-ae83-7a26c0afff5f" />
+
+<p>Passarem a el client i instalarem smbclient (Samba Client)</p>
+<img width="740" height="76" alt="Captura de pantalla de 2026-01-26 12-29-16" src="https://github.com/user-attachments/assets/9a2fdafa-a709-41d5-9f13-6d74720a24e6" />
+
+
+<p>Comprovarem desde el client que tinguesim connexio amb el servidor amb ping i la ip de el servidor</p>
+<img width="991" height="429" alt="Captura de pantalla de 2026-01-26 12-32-43" src="https://github.com/user-attachments/assets/120db5a5-c48d-4800-b3c3-09fb13a22aff" />
 
 
 
 Fet sense usuaris LDAP i fer natros sols en usuaris LDAP
 
-Servidor NFS
+<h2>Servidor NFS</h2>
