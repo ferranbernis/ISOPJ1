@@ -1,5 +1,7 @@
 <h1>Sprint 3: Administració de Dominis i Seguretat</h1>
 
+<img width="1280" height="668" alt="image" src="https://github.com/user-attachments/assets/1ba31aca-a759-46af-b1b5-cb763b9e604b" />
+
 
 <p>1. Usuaris, Grups i Recursos
 Són els objectes bàsics que conté el directori:
@@ -80,8 +82,71 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="611" height="697" alt="Captura de pantalla de 2026-01-12 12-43-17" src="https://github.com/user-attachments/assets/90663ece-d956-4ce3-9bb5-3b44c5293383" />
 <img width="538" height="586" alt="Captura de pantalla de 2026-01-12 12-43-38" src="https://github.com/user-attachments/assets/aeac8ba9-fd6f-4b3f-9483-054f6fe8ee51" />
 
-<p> Ara pasarem a el client i instalarem els paquets neccesaris. libnss-ldap: Perquè el sistema pugui consultar noms d'usuari i grups al servidor i libpam-ldap: Perquè el sistema pugui gestionar l'autenticació (contrasenyes) contra el servidor</p> 
+<p>Ara pasarem a el client i instalarem els paquets neccesaris. libnss-ldap: Perquè el sistema pugui consultar noms d'usuari i grups al servidor i libpam-ldap: Perquè el sistema pugui gestionar l'autenticació (contrasenyes) contra el servidor</p> 
 <img width="1153" height="255" alt="Captura de pantalla de 2026-01-12 13-00-16" src="https://github.com/user-attachments/assets/be72a1a2-7022-40c8-b42d-730439cdc1f5" />
+
+<p>Ens apareixera la pantalla de configuracio de ldap a el client i primer de tot introduirem la ip de el servidor</p>
+<img width="1153" height="494" alt="Captura de pantalla de 2026-01-12 13-01-29" src="https://github.com/user-attachments/assets/18347834-83de-40e7-9e78-6db0c53cc7f7" />
+
+<p>Ara introduirem el domini gina.cat</p>
+<img width="1153" height="494" alt="Captura de pantalla de 2026-01-12 13-01-43" src="https://github.com/user-attachments/assets/51c828e5-0822-4989-9913-e7d4336442d2" />
+
+<p>La versio de LDAP que es la 3</p>
+<img width="1153" height="494" alt="Captura de pantalla de 2026-01-12 13-01-51" src="https://github.com/user-attachments/assets/d9140e36-208e-4be4-be04-5acac1998a22" />
+
+<p>Pregunta si volem que el usuari local sigui adminsitrador de la base de dades i que el arxiu de les contrasenyes sol sera accesible per root</p>
+<img width="1153" height="494" alt="Captura de pantalla de 2026-01-12 13-02-05" src="https://github.com/user-attachments/assets/754c2838-ac63-410a-b5e1-b200c666908c" />
+
+<p>I si volem que la base de dades de ldap requereixque login</p>
+<img width="1153" height="494" alt="Captura de pantalla de 2026-01-12 13-02-12" src="https://github.com/user-attachments/assets/42589406-e479-4847-81d4-8bd0a890fe5b" />
+
+<p>Ara ens detmanara que introdueixim un usuari administrador de LDAP i la contrasenya</p> 
+<img width="1153" height="494" alt="Captura de pantalla de 2026-01-12 13-03-04" src="https://github.com/user-attachments/assets/a4b35617-2e93-45f8-aee1-e567f2691c49" />
+<img width="1147" height="488" alt="Captura de pantalla de 2026-01-12 13-03-19" src="https://github.com/user-attachments/assets/4891b417-5e8c-4155-b27b-8c61fb2219dc" />
+
+<p>I ara el usuari que iniciarem sessio a la base de dades LDAP</p> 
+<img width="1147" height="488" alt="Captura de pantalla de 2026-01-12 13-03-55" src="https://github.com/user-attachments/assets/fda24184-3e84-4dcd-81d0-a29cc2a5953c" />
+
+<p>Si ens hem equivocat en algun pas podem reconfiguraro amb dpkg-reconfigure ldap-auth-config</p>
+<img width="772" height="62" alt="Captura de pantalla de 2026-01-12 13-04-53" src="https://github.com/user-attachments/assets/37f4e426-fb21-42b2-b713-de3689314508" />
+
+<p>Hi hauran unes pantalles que es afegiran de mes com aquesta que diu permetràs que les futures actualitzacions del sistema utilitzin aquesta configuració que estàs posant ara</p>
+<img width="1147" height="483" alt="Captura de pantalla de 2026-01-12 13-07-30" src="https://github.com/user-attachments/assets/fc145129-6185-4ed7-acce-02d41319eb98" />
+
+<p>Tambe sortira aquesta pantalla sobre el metode de xifratge de la contrasenya cuan dexideixes canviarla desde el client i te preguntara el metode natros triarem md5</p>
+<img width="1147" height="483" alt="Captura de pantalla de 2026-01-12 13-08-08" src="https://github.com/user-attachments/assets/f960d76e-6fa0-4cd9-9bb6-8db292e8ed81" />
+<img width="1147" height="483" alt="Captura de pantalla de 2026-01-12 13-08-17" src="https://github.com/user-attachments/assets/d13fbab6-7fb6-4588-959b-2f4a4d551b66" />
+
+<p>Modificarem el arxiu nsswitch i a passwd i group introduirem ldap compact files systemd això vol dir que quan el sistema busqui un usuari per fer login, primer preguntarà a la base de dades LDAP. </p> 
+<img width="795" height="482" alt="Captura de pantalla de 2026-01-12 13-10-50" src="https://github.com/user-attachments/assets/b8664468-5fcf-48c8-9d45-0293d294118e" />
+
+<p>Tambe modificarem el arxiu common-session que es molt important perque crea la carpeta home de els usuaris LDAP quan iniciesim sessio i tambe indica en crear la carpeta nova, ha de copiar els fitxers de configuració bàsics (com el .bashrc) des de la carpeta "esquelet" del sistema i tambe defineix els permisos per defecte de la nova carpeta (l'usuari pot fer-ho tot, la resta només llegir).</p> 
+<img width="795" height="482" alt="Captura de pantalla de 2026-01-12 13-14-16" src="https://github.com/user-attachments/assets/4773c176-bd41-4cf6-9c2f-74c24156197c" />
+
+<p>Tambe modificarem el arxiu common password afegint la 4 linea blanca de password que fa:</p> 
+<p>pam_pwquality.so: Primer es comprova que la contrasenya nova sigui prou segura (complexitat).</p> 
+<p>pam_unix.so: S'encarrega dels usuaris locals.</p> 
+<p>pam_ldap.so: És la línia clau que s'ha afegit. El paràmetre try_first_pass fa que el sistema intenti fer servir la contrasenya que ja has escrit abans de tornar-te-la a demanar.</p> 
+<p>[success=1 user_unknown=ignore default=die]: Aquest és un codi de control. Diu que si el mòdul de LDAP té èxit, se saltarà el següent pas (que sol ser un missatge d'error).</p> 
+<img width="1095" height="483" alt="Captura de pantalla de 2026-01-12 13-15-21" src="https://github.com/user-attachments/assets/d2ddd22d-3e19-4fe4-a971-c9ae0d56a6e8" />
+
+<p>Per finalizar els arxiu modificarem es e 50-ubuntu.conf afegint la ultima linea que mostra una llista amb els usuaris locals que ja existeixen a la màquina. Com que els teus usuaris de l'Arbre LDAP són remots i encara no han entrat mai, no apareixerien a la llista.</p> 
+<img width="1150" height="485" alt="Captura de pantalla de 2026-01-12 13-16-46" src="https://github.com/user-attachments/assets/6b645c44-93d0-4dc1-9c9d-45b586783f67" />
+
+
+<p>Tancarem sessio de el usuari actual i clicarem no esta en la llista i introduirem el nom de usuari alu1 i la contrasenya i es creara la carpeta home per a alu1 i comprovarem el la terminal que som el usuari alu1 i que te carpeta home</p> 
+<img width="133" height="34" alt="image" src="https://github.com/user-attachments/assets/b476bfde-6769-4f8c-8382-2f25bc773946" />
+<img width="402" height="290" alt="image" src="https://github.com/user-attachments/assets/86d9c67b-d2be-4c4f-b8bd-57dd938537d5" />
+<img width="741" height="485" alt="Captura de pantalla de 2026-01-12 13-23-30" src="https://github.com/user-attachments/assets/661c6d35-80b5-4e8e-b8c6-3915d5c9573b" />
+
+
+<h2>Interfice Grafica LDAP</h2>
+
+
+
+
+
+
 
 
 
