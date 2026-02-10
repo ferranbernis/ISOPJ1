@@ -203,4 +203,12 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="890" height="601" alt="Captura de pantalla de 2026-01-26 13-07-47" src="https://github.com/user-attachments/assets/f6fc55fb-aacc-4155-8995-6368a3098709" />
 
 <h2>Servidor NFS</h2>
-Es un protcol que permet compartir fitxers directoris no impresores amb linux a traves de una xarxa local la autentificacio es fa a nivell de host no de usuari, a diferencia de samba i poden accedir tant clients windows com linux
+Es un protcol que permet compartir fitxers directoris no impresores amb linux a traves de una xarxa local la autentificacio es fa a nivell de host no de usuari, a diferencia de samba i poden accedir tant clients windows com linux 
+NFS SENSE LDAP
+
+
+NFS AMB LDAP
+
+
+
+Fer natros instalar un windows 10 o 11 i connectarmos a la carpeta NFS 
