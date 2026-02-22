@@ -203,39 +203,68 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="890" height="601" alt="Captura de pantalla de 2026-01-26 13-07-47" src="https://github.com/user-attachments/assets/f6fc55fb-aacc-4155-8995-6368a3098709" />
 
 <h2>Servidor NFS</h2>
-Es un protcol que permet compartir fitxers directoris no impresores amb linux a traves de una xarxa local la autentificacio es fa a nivell de host no de usuari, a diferencia de samba i poden accedir tant clients windows com linux 
+<p>NFS es un protcol que permet compartir fitxers directoris (no impresores) amb linux a traves de una xarxa local la autentificacio es fa a nivell de host no de usuari, a diferencia de samba i poden accedir tant clients windows com linux</p>  
+
+
 <h3>NFS SENSE LDAP</h3>
 
-<p>Primer de tot instalarem el paquet nfs-kernel server</p> 
+<p>Primer de tot instalarem el paquet nfs-kernel server (Servidor NFS)</p> 
 <img width="735" height="434" alt="Captura de pantalla de 2026-02-10 12-51-37" src="https://github.com/user-attachments/assets/133e9b83-7cb5-40d3-a39e-ed81a053707e" />
 
 <p>Ara crearem la carpeta 1exercici donerem privlegis totals a tohom amb chmod 777 i canviarem el propietari a ningu i el grup tambe amb chown nobody:nogroup i comprovarem els permisos i el propietari amb ls -l i filtrarem per el 1 i veurem que tindra tots els permisos correctes</p> 
 <img width="689" height="589" alt="Captura de pantalla de 2026-02-10 12-53-35" src="https://github.com/user-attachments/assets/2c6f5867-133f-4bab-92af-e35a1c048501" />
 
-<p>Configurarem els permisos que compartirem la carpeta intoduirem la ruta de la carpeta i un asterisc es que qualsevol equip de la xarxa pot intentar connectar-se a aquesta carpeta i entre parentesis   </p> 
+<p>Entarem al arxiu exports que esta a /etc/exports</p>
+<img width="364" height="44" alt="Captura de pantalla de 2026-02-10 12-58-04" src="https://github.com/user-attachments/assets/e2412a09-057d-4b4e-9d34-c70d5609a0e5" />
+
+<p>Configurarem els permisos que compartirem la carpeta intoduirem la ruta de la carpeta i un asterisc es que qualsevol equip de la xarxa pot intentar connectar-se a aquesta carpeta</p> 
+ <p>rw que es podran llegir i escriure</p>  
+ <p>sync obliga al servidor a respondre a les peticions només quan els canvis s'han guardat realment al disc</p>  
+ <p>no_subtree_check Millora el rendiment i evita problemes quan es canvien els noms dels fitxers o s'exporten només subdirectoris</p>        
 <img width="831" height="284" alt="Captura de pantalla de 2026-02-10 12-57-42" src="https://github.com/user-attachments/assets/0bfacf54-e603-4906-b01d-f33556793d32" />
 
+<p>Reinciarem el servei NFS amb systemctl restart i amb systemctl status comprovarem el estat de el servei que es active</p> 
+<img width="852" height="295" alt="Captura de pantalla de 2026-02-10 12-58-58" src="https://github.com/user-attachments/assets/38feae09-a2cd-42ba-a0d4-ea655d43b810" />
 
+<p>Dintre de la carpeta 1exercici crearem un arxiu anomenat hola per a que la carpeta no estigui buida</p>
+<img width="378" height="62" alt="Captura de pantalla de 2026-02-10 13-00-47" src="https://github.com/user-attachments/assets/de7e54fb-80d3-407f-b274-b40becad47f5" />
 
+<p>Passarem al client i instalarem el paquet nsf-common (Client NFS) i el paquet rpcbind (servei que ajuda a gestionar les connexions entre el client i el servidor)</p>
+<img width="850" height="76" alt="Captura de pantalla de 2026-02-10 13-03-18" src="https://github.com/user-attachments/assets/2446d3ea-0b4c-4bb6-aeed-74d3e5cf92d1" />
 
+<p>Al client crearem la carpeta prova i li donarem privlegis totals a tohom amb chmod 777 i canviarem el propietari a ningu i el grup tambe amb chown nobody:nogroup i tambe farem ping a el servidor per comprovar la conectivitat</p>
+<img width="850" height="369" alt="Captura de pantalla de 2026-02-10 13-10-37" src="https://github.com/user-attachments/assets/ee437b94-34db-4739-81c3-3f34b348ee44" />
 
+<p>Entarem al fitxer fstab que esta a /etc/fstab</p>
+<img width="610" height="74" alt="image" src="https://github.com/user-attachments/assets/97756e3d-bf3d-40a5-ad5c-cdb31202933c" />
 
+<p>En aquesta línia de configuració del fitxer /etc/fstab, he definit el muntatge automàtic del recurs compartit que prové del servidor amb la IP 10.0.2.15 i el directori d'origen /1exercici. Aquest recurs es muntarà localment a la carpeta /prova utilitzant el sistema de fitxers nfs. He aplicat un seguit d'opcions específiques per optimitzar la connexió: auto permet que el muntatge es realitzi sol en arrencar el sistema, noatime millora el rendiment en evitar actualitzar la data d'accés als fitxers, i nolock desactiva el bloqueig de fitxers per simplificar la compatibilitat. A més, he forçat l'ús de la versió 3 del protocol amb nfsvers=3, he habilitat el protocol de transport tcp per garantir la fiabilitat de les dades, i he permès la interrupció d'operacions penjades amb intr. Finalment, amb actimeo=1800 he fixat el temps de memòria cau dels atributs en 1800 segons, mentre que els valors finals 0 0 indiquen que no es realitzaran còpies de seguretat (dump) ni comprovacions de disc (fsck) sobre aquest punt de xarxa.</p>
+<img width="911" height="316" alt="Captura de pantalla de 2026-02-10 13-23-15" src="https://github.com/user-attachments/assets/8a23d068-b8c3-4ea9-b1f6-8499f5644d44" />
 
-
-
-
-
-
-
-
-
-
-
-
+cFarem un ls a la carpeta prova i hens sortira el arxiu hola que hem creat a el servidor a la carpeta exercici1 que esta monatada a la carpeta prova al client</p>
+<img width="525" height="120" alt="Captura de pantalla de 2026-02-10 13-27-26" src="https://github.com/user-attachments/assets/37df5817-0840-4d94-b118-dc936de7438d" />
 
 
 
 <h3>NFS AMB LDAP</h3>
+
+<p>Al servidor crearem la carpeta homes i donerem privlegis totals a tohom amb chmod 777 i canviarem el propietari a ningu i el grup tambe amb chown nobody:nogroup i crearem la carpeta marcel tambe donarem privlegis totals a tohom</p>
+<img width="1018" height="272" alt="Captura de pantalla de 2026-02-10 13-52-07" src="https://github.com/user-attachments/assets/e9938344-fbe9-4b38-abef-6a08b11a5fad" />
+
+<p>Copiarem i pegarem la linea de la carpeta 1exercici baix i canviarem el nom a homes (Explicacio de permisos feta anteriorment)</p> 
+<img width="846" height="298" alt="Captura de pantalla de 2026-02-10 13-53-17" src="https://github.com/user-attachments/assets/e61b4805-5aab-48c5-92ed-2a008ba4bd87" />
+
+<p>Tornarem a el Client i tambe crearem a carpeta homes i donerem privlegis totals a tohom</p> 
+<img width="873" height="158" alt="Captura de pantalla de 2026-02-10 13-57-23" src="https://github.com/user-attachments/assets/55836991-4735-4114-a6c6-03d7372fe749" />
+
+<p>Entrarem a el arxiu /etc/fstab i copiarem la linea de la carpeta 1exercici i la pegarem canviarem el nom de les carpetes a les corresponents al servidor i al client que es /homes al servidor i /homes al client (Explicacio de la resta de la linea feta anteriorment)</p> 
+<img width="855" height="329" alt="Captura de pantalla de 2026-02-10 13-58-04" src="https://github.com/user-attachments/assets/3ba6c33e-bce8-41ef-8ccb-79dc184b8e7f" />
+
+<p>Anirem a el Servidor i crearem el usuari marcel a el LDAP introduint que la carpeta home seria /homes/marcel que son les carpetes compartides</p> 
+<img width="850" height="436" alt="Captura de pantalla de 2026-02-10 14-02-04" src="https://github.com/user-attachments/assets/1982d237-52d0-4c17-b9b2-95dbc6d25ddf" />
+
+
+
 
 
 
