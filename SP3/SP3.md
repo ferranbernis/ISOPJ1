@@ -220,9 +220,16 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="374" height="28" alt="image" src="https://github.com/user-attachments/assets/53a42704-9bb8-43e7-83f9-deea23506f2e" />
 <img width="374" height="28" alt="image" src="https://github.com/user-attachments/assets/10b5e66f-9210-4f8e-8623-6fbf694116f5" />
 
+<p>Selecionarem el grup informatica i eliminarem el gidNumer amb ldapmodify</p>  
+<img width="843" height="182" alt="image" src="https://github.com/user-attachments/assets/7f5d0a7c-0855-4ce3-88ba-20d59f89ffd7" />
 
+<p>Dona error perque tots els grups han de tenir gudNumber</p> 
+<img width="931" height="121" alt="image" src="https://github.com/user-attachments/assets/44f8044c-fe58-42ef-9db1-26f078010dfc" />
 
+<p>Hi ha dos UO rrhh i departaments</p> 
+<img width="467" height="434" alt="image" src="https://github.com/user-attachments/assets/dc0ca756-fcf5-4e89-8e93-58da88960ea4" />
 
+<p>Canviarem el nom de xavier a fransesc xavier el changetype que es el tipus es de modificar i remplacarem el cn per el correcte</p> 
 
 
 
