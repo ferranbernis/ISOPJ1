@@ -262,10 +262,12 @@ cFarem un ls a la carpeta prova i hens sortira el arxiu hola que hem creat a el 
 
 <p>Anirem a el Servidor i crearem el usuari marcel a el LDAP introduint que la carpeta home seria /homes/marcel que son les carpetes compartides</p> 
 <img width="850" height="436" alt="Captura de pantalla de 2026-02-10 14-02-04" src="https://github.com/user-attachments/assets/1982d237-52d0-4c17-b9b2-95dbc6d25ddf" />
+<img width="937" height="100" alt="Captura de pantalla de 2026-02-10 14-03-16" src="https://github.com/user-attachments/assets/021ef2af-8739-413a-8112-3226b1d4670a" />
+
+<p>Veurem que la carpeta de el usuari marcel esta buida i cuan iniciesim sessio al client es afegira tota la home</p> 
+<img width="787" height="140" alt="Captura de pantalla de 2026-02-10 14-06-49" src="https://github.com/user-attachments/assets/743d9532-2300-47e9-b0d1-f4bc9506baa6" />
+<img width="737" height="119" alt="Captura de pantalla de 2026-02-10 14-07-26" src="https://github.com/user-attachments/assets/0ba72550-9939-4ac3-bf62-3a583010c0a2" />
 
 
+<h3>NFS AMB WINDOWS</h3>
 
-
-
-
-Fer natros instalar un windows 10 o 11 i connectarmos a la carpeta NFS 
