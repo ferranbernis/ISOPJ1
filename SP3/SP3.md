@@ -204,10 +204,38 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 
 <h2>Servidor NFS</h2>
 Es un protcol que permet compartir fitxers directoris no impresores amb linux a traves de una xarxa local la autentificacio es fa a nivell de host no de usuari, a diferencia de samba i poden accedir tant clients windows com linux 
-NFS SENSE LDAP
+<h3>NFS SENSE LDAP</h3>
+
+<p>Primer de tot instalarem el paquet nfs-kernel server</p> 
+<img width="735" height="434" alt="Captura de pantalla de 2026-02-10 12-51-37" src="https://github.com/user-attachments/assets/133e9b83-7cb5-40d3-a39e-ed81a053707e" />
+
+<p>Ara crearem la carpeta 1exercici donerem privlegis totals a tohom amb chmod 777 i canviarem el propietari a ningu i el grup tambe amb chown nobody:nogroup i comprovarem els permisos i el propietari amb ls -l i filtrarem per el 1 i veurem que tindra tots els permisos correctes</p> 
+<img width="689" height="589" alt="Captura de pantalla de 2026-02-10 12-53-35" src="https://github.com/user-attachments/assets/2c6f5867-133f-4bab-92af-e35a1c048501" />
+
+<p>Configurarem els permisos que compartirem la carpeta intoduirem la ruta de la carpeta i un asterisc es que qualsevol equip de la xarxa pot intentar connectar-se a aquesta carpeta i entre parentesis   </p> 
+<img width="831" height="284" alt="Captura de pantalla de 2026-02-10 12-57-42" src="https://github.com/user-attachments/assets/0bfacf54-e603-4906-b01d-f33556793d32" />
 
 
-NFS AMB LDAP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>NFS AMB LDAP</h3>
 
 
 
