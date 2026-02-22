@@ -271,3 +271,32 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 
 <h3>NFS AMB WINDOWS</h3>
 
+<p>Primer anirem a programes i caracteristiques i instalarem el paquet client per a NFS</p> 
+<img width="630" height="436" alt="image" src="https://github.com/user-attachments/assets/e92f392b-f8fb-4101-a8e5-8615fc51aec8" />
+
+<p>Despres obrirem una terminal de powershell i intoduirem mount.exe per a montar la ip de el servidor la ruta de la carpeta al servidor i per ultim el punt de muntatge on es munatara a windows per exeple la unitat F</p>
+<img width="430" height="93" alt="image" src="https://github.com/user-attachments/assets/cf37ddcf-56c0-4cf9-a5b3-871173187794" />
+
+
+<p>Mostarem el configut de la carpeta i veurem que esta el arxiu hola creat anteriorment a el NFS sense ldap</p>
+<img width="387" height="183" alt="image" src="https://github.com/user-attachments/assets/2f662c99-dc5a-412b-a38e-bbfe352aac81" />
+
+<p>Carpeta al Servidor</p>
+<img width="890" height="181" alt="image" src="https://github.com/user-attachments/assets/b9bc8b5f-59d0-4576-8e11-7647a31f7ffb" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
