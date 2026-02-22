@@ -159,6 +159,71 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="805" height="605" alt="image" src="https://github.com/user-attachments/assets/7eb383b7-eb5a-41e9-a867-9a317e100f3b" />
 
 
+<h2>Comandes LDAP (Exercici al moodle)</h2>
+
+<p>Farem un sudo dpkg reconfigure slapd per a deixar la base de dades buida intoduirem el nom de domini (ferran.cat) i tot el que ens detmani</p>
+<img width="830" height="157" alt="image" src="https://github.com/user-attachments/assets/4882874d-e511-45a4-b792-1e78bbc025ec" />
+
+<p>Amb slapcat comprovarem que es hagui creat tot el domini correctament</p>
+<img width="480" height="304" alt="image" src="https://github.com/user-attachments/assets/c87c2226-0f63-4e5a-8c7c-aa464afa0367" />
+
+<p>Descaregarem el arxiu de el moodle dades_pt10_V2.ldif</p>
+<img width="555" height="208" alt="image" src="https://github.com/user-attachments/assets/6c466779-4364-4708-be3c-10976e04a64f" />
+
+<p>Obrirem el arxiu i remplacarem vesper per ferran</p>
+<img width="600" height="387" alt="image" src="https://github.com/user-attachments/assets/e40f7727-7883-4d37-aabf-d87b6dbf75a4" />
+<img width="902" height="751" alt="image" src="https://github.com/user-attachments/assets/e79647d6-9436-4fee-8434-b362b7655da3" />
+
+<p>Inserirem el arxiu amb ldapadd -D  el usuari admin i el domini i -W que es que detmani la contrasenya al final el nom de el arxiu -F</p>
+<img width="933" height="334" alt="image" src="https://github.com/user-attachments/assets/ae468f19-820b-498a-a9d4-4b9c17aeb89e" />
+
+<p>Farem un altre slapcat per comprovar que tot es ha importat correctament</p>
+<img width="484" height="704" alt="image" src="https://github.com/user-attachments/assets/673b9f8d-cffa-44a4-879d-91a4a9570094" />
+<img width="465" height="662" alt="image" src="https://github.com/user-attachments/assets/e0d213fc-2818-4224-a202-c7b2ed529634" />
+<img width="468" height="692" alt="image" src="https://github.com/user-attachments/assets/67312af8-28b0-499a-b2ff-3c93e392eaf3" />
+<img width="487" height="554" alt="image" src="https://github.com/user-attachments/assets/c5e46e08-a36a-457d-b392-c51e1f182445" />
+
+<p>Crearem una nou usuari ferran i el executarem i comprovarem amb slapcat</p>
+<img width="720" height="408" alt="image" src="https://github.com/user-attachments/assets/c4f573e7-9e30-4715-bcb1-b29758408793" />
+<img width="880" height="109" alt="image" src="https://github.com/user-attachments/assets/98a899f8-1ba5-456b-911f-fbfb0a02b970" />
+<img width="477" height="528" alt="image" src="https://github.com/user-attachments/assets/fda61c37-e76a-4e05-8f9f-2180ae50ab4f" />
+
+
+<p>Crearem una nova OU anomenada nomines a un arxiu ldif i el executarem i comprovarem amb slapcat</p>
+<img width="777" height="195" alt="image" src="https://github.com/user-attachments/assets/2dff8d8d-fa76-4c70-9491-be17a568c5e4" />
+<img width="907" height="102" alt="image" src="https://github.com/user-attachments/assets/a5b47104-67f7-4662-a781-934e9d87321d" />
+<img width="463" height="261" alt="image" src="https://github.com/user-attachments/assets/e1c869c6-20ea-4cd1-80c1-9d3e32479d55" />
+
+<p>Per a afegir a el usuari ferran a nomines modificarem el arxiu usuari.ldif i detras de el uid afegirem ou=nomines i tornarem a executar i slapcat</p>
+<img width="566" height="74" alt="image" src="https://github.com/user-attachments/assets/eb23f3d5-8e99-4110-a747-dc385dd7c6aa" />
+<img width="878" height="104" alt="image" src="https://github.com/user-attachments/assets/86f16a6a-fc29-4931-bf4a-329ce3337ee8" />
+<img width="466" height="530" alt="image" src="https://github.com/user-attachments/assets/302c1d76-ddd1-4175-a41a-bff9737bb606" />
+
+<p>Hi han dos grups informatica i administracio</p>
+<img width="487" height="515" alt="image" src="https://github.com/user-attachments/assets/4e648b80-867e-4b57-ab78-6b3011e5efdf" />
+
+<p>Afegirem a el usuari ferran a el grup de informatica afegin el seu member uid a el arxiu ldif de el grup</p>
+<img width="728" height="194" alt="image" src="https://github.com/user-attachments/assets/18ee86f8-3668-4b44-a328-0c7114fc19ef" />
+<img width="857" height="119" alt="image" src="https://github.com/user-attachments/assets/df61b3c9-bef4-4d38-9f48-a0727c850233" />
+
+<p>Volem canviar el apellit de sergui i afegir una descipcio crearem el arxiu ldif i direm que es un arxiu de modificacio remplace el sn per pallares i que afegeixque la descripcio</p>
+<img width="898" height="356" alt="image" src="https://github.com/user-attachments/assets/cb7100fb-f911-4a6e-8575-e8ae054e6706" />
+
+<p>Ha afegit la descripcio pero algo ha pasat en el cognom sn LDAP el ha xifrat en base64 perque pallarés porta accent i es un caracter especial al no sapiguer interpretarho o xifra per a no guardarho malament</p> 
+<img width="476" height="414" alt="image" src="https://github.com/user-attachments/assets/e16ab68f-3949-4b0d-b729-5cd01512ddb6" />
+
+<p>Aqui la prova en un descodificador de base 64</p> 
+<img width="655" height="528" alt="image" src="https://github.com/user-attachments/assets/c4fc6071-5a93-423d-96db-6cb77126344e" />
+
+<p>Dintre de la UO rrh esta xavier,enric i sergi</p>  
+<img width="374" height="28" alt="image" src="https://github.com/user-attachments/assets/3d8a5566-3236-4a9e-95f2-8bdd8c06d027" />
+<img width="374" height="28" alt="image" src="https://github.com/user-attachments/assets/53a42704-9bb8-43e7-83f9-deea23506f2e" />
+<img width="374" height="28" alt="image" src="https://github.com/user-attachments/assets/10b5e66f-9210-4f8e-8623-6fbf694116f5" />
+
+
+
+
+
 
 
 <h2>Servidor Samba</h2>
