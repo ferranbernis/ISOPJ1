@@ -240,6 +240,7 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 
 
 
+
 <h2>Servidor Samba</h2>
 
 <p>Samba serveix per compartir fitxers, impressores i carpetes en una xarxa local. La seva gran característica, és que permet gestionar l'accés mitjançant una autenticació a nivell d'usuari. Això significa que el servidor no només comparteix el recurs, sinó que verifica qui ets abans de deixar-te entrar, permetent que cada usuari tingui els seus propis permisos i carpetes privades.</p>
