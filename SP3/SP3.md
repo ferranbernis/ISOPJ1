@@ -349,6 +349,12 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <p>Despres obrirem una terminal de powershell i intoduirem mount.exe per a montar la ip de el servidor la ruta de la carpeta al servidor i per ultim el punt de muntatge on es munatara a windows per exeple la unitat F</p>
 <img width="430" height="93" alt="image" src="https://github.com/user-attachments/assets/cf37ddcf-56c0-4cf9-a5b3-871173187794" />
 
+<p>Ja se haura montat com una ubicacio en red</p> 
+<img width="438" height="191" alt="image" src="https://github.com/user-attachments/assets/fe236c58-beaa-440c-b5c2-97fe9215d2b7" />
+
+<img width="559" height="155" alt="image" src="https://github.com/user-attachments/assets/e16eeca1-0b69-4eed-adfd-c38749bf5431" />
+
+
 
 <p>Mostarem el configut de la carpeta i veurem que esta el arxiu hola creat anteriorment a el NFS sense ldap</p>
 <img width="387" height="183" alt="image" src="https://github.com/user-attachments/assets/2f662c99-dc5a-412b-a38e-bbfe352aac81" />
