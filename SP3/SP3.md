@@ -230,6 +230,9 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="467" height="434" alt="image" src="https://github.com/user-attachments/assets/dc0ca756-fcf5-4e89-8e93-58da88960ea4" />
 
 <p>Canviarem el nom de xavier a fransesc xavier el changetype que es el tipus es de modificar i remplacarem el cn per el correcte</p> 
+<img width="509" height="264" alt="image" src="https://github.com/user-attachments/assets/5a804dcc-614d-41db-aa55-5000d6ec44c4" />
+<img width="792" height="131" alt="image" src="https://github.com/user-attachments/assets/f9d50477-de51-4ec1-9e0a-7037d49226ef" />
+<img width="509" height="417" alt="image" src="https://github.com/user-attachments/assets/944bda56-99a3-4893-ae62-d90d2eca75fe" />
 
 
 
