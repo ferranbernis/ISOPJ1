@@ -234,6 +234,10 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="792" height="131" alt="image" src="https://github.com/user-attachments/assets/f9d50477-de51-4ec1-9e0a-7037d49226ef" />
 <img width="509" height="417" alt="image" src="https://github.com/user-attachments/assets/944bda56-99a3-4893-ae62-d90d2eca75fe" />
 
+<p>Buscarem els usuaris que estan a la ou rrhh</p> 
+<img width="792" height="600" alt="image" src="https://github.com/user-attachments/assets/dd05971e-a17b-47f4-b5ec-36db750e7aba" />
+
+
 
 
 <h2>Servidor Samba</h2>
