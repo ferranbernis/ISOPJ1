@@ -355,7 +355,6 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <img width="559" height="155" alt="image" src="https://github.com/user-attachments/assets/e16eeca1-0b69-4eed-adfd-c38749bf5431" />
 
 
-
 <p>Mostarem el configut de la carpeta i veurem que esta el arxiu hola creat anteriorment a el NFS sense ldap</p>
 <img width="387" height="183" alt="image" src="https://github.com/user-attachments/assets/2f662c99-dc5a-412b-a38e-bbfe352aac81" />
 
