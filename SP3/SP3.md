@@ -237,6 +237,14 @@ Exemple: Si l'escola fje.edu compra una empresa anomenada empresa.com, podrien u
 <p>Buscarem els usuaris que estan a la ou rrhh</p> 
 <img width="792" height="600" alt="image" src="https://github.com/user-attachments/assets/dd05971e-a17b-47f4-b5ec-36db750e7aba" />
 
+<p>No hi ha cap usuari que te el numero 1003</p>
+
+<p>Mostra quins són els usuaris on el seu cognom comenci per R i el seu uidNumber sigui més gran que 1003</p>
+<img width="792" height="633" alt="image" src="https://github.com/user-attachments/assets/55ded5b3-22df-44f1-a757-d3b308368758" />
+
+<p>Mostra quins usuaris formen part del grup informàtica o aquells usuaris que tinguis de cognom Pallarés</p>
+<img width="1205" height="632" alt="image" src="https://github.com/user-attachments/assets/cfee3160-43df-4e83-a709-ed95133c266b" />
+<img width="395" height="357" alt="image" src="https://github.com/user-attachments/assets/112b154a-3f14-4934-86fb-fe50393a8ab5" />
 
 
 
