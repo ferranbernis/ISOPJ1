@@ -55,7 +55,35 @@
 <p>Exercici una maquina virtual ha de rebre els logs de un altra maquina</p>
 
 
+<h2>Servidor de Actualizacions</h2>
 
+<h4>Servidor</h4>
+<img width="719" height="177" alt="image" src="https://github.com/user-attachments/assets/495cfb57-fe54-40af-8d80-5741dfaccc38" />
+
+
+<img width="729" height="365" alt="image" src="https://github.com/user-attachments/assets/0dec8e3a-0500-40d6-a862-2673d4302376" />
+
+
+<img width="939" height="744" alt="image" src="https://github.com/user-attachments/assets/a9da8d42-9c4b-4cc8-980c-445347ba0925" />
+
+
+<img width="939" height="744" alt="image" src="https://github.com/user-attachments/assets/f50d7949-112f-4138-b0e6-0fbf23233654" />
+
+
+<img width="744" height="143" alt="image" src="https://github.com/user-attachments/assets/d34929e8-e185-487b-ab2a-796ea67eed1c" />
+
+<img width="964" height="85" alt="image" src="https://github.com/user-attachments/assets/b6ea7648-8137-476b-9881-75d9ce52f989" />
+
+<h4>Client</h4>
+<img width="795" height="794" alt="image" src="https://github.com/user-attachments/assets/d5784c3b-8301-4860-91da-2b625c05321f" />
+
+<img width="849" height="209" alt="image" src="https://github.com/user-attachments/assets/2bd05f4e-6e07-4efc-837f-2775aaf392d9" />
+
+<img width="842" height="113" alt="image" src="https://github.com/user-attachments/assets/39debc5b-1f6f-4bfd-8e28-85349dd6b616" />
+
+<img width="842" height="297" alt="image" src="https://github.com/user-attachments/assets/bc1bc0e7-72b1-40c0-ba32-9ab4fa4d1c50" />
+
+<img width="835" height="417" alt="image" src="https://github.com/user-attachments/assets/1051a43b-c873-485c-865c-325f6f4df14e" />
 
 
 
