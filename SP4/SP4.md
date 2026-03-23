@@ -39,9 +39,22 @@
 
 <img width="817" height="589" alt="image" src="https://github.com/user-attachments/assets/1fbacb95-4fa5-4fb7-82dc-7e6ef44a37e2" />
 
+<img width="816" height="579" alt="image" src="https://github.com/user-attachments/assets/813b63ae-985f-4703-9cc4-26bff2bfa9c9" />
 
+<h4>ESBORRAR RAID </h4>
+<img width="920" height="318" alt="image" src="https://github.com/user-attachments/assets/37009c08-97b1-4b6b-9fee-5495a5b18d12" />
 
+<img width="597" height="41" alt="image" src="https://github.com/user-attachments/assets/2d7ea791-b269-4f18-b936-7298f757d70f" />
 
+<img width="654" height="42" alt="image" src="https://github.com/user-attachments/assets/d0383a2e-158b-4ec4-883e-27a8616b5e3d" />
+
+<img width="668" height="55" alt="image" src="https://github.com/user-attachments/assets/282ec5e5-6c5e-431d-8dfa-dc4c013623b7" />
+
+<img width="849" height="131" alt="image" src="https://github.com/user-attachments/assets/3acfbd8b-c973-40e6-b83d-223ed473290a" />
+
+<img width="918" height="113" alt="image" src="https://github.com/user-attachments/assets/18b42fe5-32d6-4461-9275-bad870ab834a" />
+
+<img width="923" height="126" alt="image" src="https://github.com/user-attachments/assets/707b934e-5405-4d41-9203-019f93b1cbeb" />
 
 
 
