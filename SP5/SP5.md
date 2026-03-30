@@ -2,8 +2,6 @@
 
 <h2>LOGS (DOCUMENTAT PER EROS A https://erosmauri.github.io/ISOPJ1/SP5/SP5.html)</h2>
 
-
-
 <img width="736" height="495" alt="image" src="https://github.com/user-attachments/assets/780c6e79-d968-4800-a41f-56f3e7d971a0" />
 
 
@@ -58,20 +56,26 @@
 <h2>Servidor de Actualizacions</h2>
 
 <h4>Servidor</h4>
+
+<p>Primer de tot instalarem apache</p>
 <img width="719" height="177" alt="image" src="https://github.com/user-attachments/assets/495cfb57-fe54-40af-8d80-5741dfaccc38" />
 
-
+<p>I apt-mirror que serveix per crear una còpia local (un "mirall") dels repositoris oficials de Debian, Ubuntu o qualsevol altra distribució basada en Debian.</p>
 <img width="729" height="365" alt="image" src="https://github.com/user-attachments/assets/0dec8e3a-0500-40d6-a862-2673d4302376" />
 
-
+<p>Despres farem un sudo nano /etc/apt/mirror.list i afegirem la linea deb la extensio de el paquet i arch=amd64 que simifica que sol descarregi els paquets per a 64 bits l'adreça URL del servidor de Google on estan guardats els fitxers del navegador Chrome la versio stable</p> 
 <img width="939" height="744" alt="image" src="https://github.com/user-attachments/assets/a9da8d42-9c4b-4cc8-980c-445347ba0925" />
 
-
+<p>Executarem apt-mirror per a que descarregi el paquet de google chrome</p> 
 <img width="939" height="744" alt="image" src="https://github.com/user-attachments/assets/f50d7949-112f-4138-b0e6-0fbf23233654" />
 
-
+<p>Per a comprovar que el paquet de google chrome es hagui instalat correctament anirem a /var/spool/aptmirror i si existeix la carpeta chrome es que ha funcionat</p>
 <img width="744" height="143" alt="image" src="https://github.com/user-attachments/assets/d34929e8-e185-487b-ab2a-796ea67eed1c" />
 
+<p>Crearem un enlaç simbolic amb ln -s 
+<p>Origen: /var/spool/apt-mirror/mirror/dl.google.com/. És la carpeta on hi ha les dades reals de Chrome descarregades.</p>
+<p>Destí: /var/www/html/. És l'arrel pública del servidor web per aixo fa falta el apache</p>
+<p>Efecte: Ara, quan algú accedeixi a l'adreça IP del servidor, el servidor web podrà "veure" i servir la carpeta dl.google.com com si estigués realment dins de /var/www/html/.
 <img width="964" height="85" alt="image" src="https://github.com/user-attachments/assets/b6ea7648-8137-476b-9881-75d9ce52f989" />
 
 <h4>Client</h4>
