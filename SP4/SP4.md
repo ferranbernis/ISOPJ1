@@ -72,22 +72,34 @@ En comptes de tenir tres discs separats, el sistema els "veu" com un de sol. Per
 <p>I amb mdadm --detail i el RAID md0 comprovarem els detalls</p>
 <img width="898" height="623" alt="image" src="https://github.com/user-attachments/assets/57ae05ca-f5dc-450a-81bd-b0777873a7d9" />
 
+<p>Mitjançant mdadm --detail --scan, el sistema obté el UUID (l'identificador únic) del RAID.</p>
 <img width="1010" height="91" alt="image" src="https://github.com/user-attachments/assets/3d2478ad-9d46-491d-84f4-4509d4f6d5a5" />
 
+<p>En desar-ho a /etc/mdadm/mdadm.conf, t'assegures que el nucli de Linux sàpiga quins discs formen el dispositiu /dev/md0 durant l'arrencada.</p>
 <img width="1087" height="130" alt="image" src="https://github.com/user-attachments/assets/e42853f5-18c0-47a4-92e3-72dbeb60d623" />
 
+<p>He editat el fitxer de la taula de sistemes de fitxers (fstab) per definir on s'ha de "punxar" el RAID de manera permanent que es a la carpeta raid1 dintre de mnt</p>
 <img width="1088" height="374" alt="image" src="https://github.com/user-attachments/assets/d05c5e96-0a6a-4d9d-b603-6b397ad32449" />
 
+<p>He executat update-initramfs -u -k all aquesta comanda regenera la imatge d'arrencada de Linux. És un pas crític després de configurar un RAID.</p>
 <img width="698" height="92" alt="image" src="https://github.com/user-attachments/assets/6038cdf6-4175-44f0-81bd-6450f2068670" />
 
+<p>He entrat al directori /mnt/raid1 i he llistat el contingut amb ls</p>
 <img width="520" height="160" alt="image" src="https://github.com/user-attachments/assets/00705695-3e88-47ff-b251-908642eabbe7" />
 
+<p> Ara simularem que un disc de els dos de el raid 1 per exemple el sdb1 amb mdadm /dev/md0 -f /dev/sdb1</p>
 <img width="749" height="46" alt="image" src="https://github.com/user-attachments/assets/eba756ec-d999-456c-8250-3ff7793ed126" />
 
-
+<p> I amb mdadm --detail i el RAID md0 comprovarem els detalls i veurem que el disc sdb1 esta en faulty (defectuós)</p>
 <img width="817" height="589" alt="image" src="https://github.com/user-attachments/assets/1fbacb95-4fa5-4fb7-82dc-7e6ef44a37e2" />
 
+<p>Tornarem a afegir sdb1 amb mdadm /dev/md0 -a /dev/sdb1 i rapid executarem mdadm --detail /dev/md0 i veurem que es esta remontant</p>
 <img width="816" height="579" alt="image" src="https://github.com/user-attachments/assets/813b63ae-985f-4703-9cc4-26bff2bfa9c9" />
+
+<p>Per finalizar tornarem a executar mdadm --detail i veurem que els dos discs estan operatius
+<img width="898" height="623" alt="image" src="https://github.com/user-attachments/assets/04b1293f-4717-4731-84a6-40481fcf2eba" />
+
+
 
 <h4>ESBORRAR RAID </h4>
 <img width="920" height="318" alt="image" src="https://github.com/user-attachments/assets/37009c08-97b1-4b6b-9fee-5495a5b18d12" />
