@@ -2,7 +2,41 @@
 
 <h2>RAID</h2>
 
-<p> Explicaio de RAID i els tipus</p>
+<p>Un RAID (acrònim de Redundant Array of Independent Disks) és una tecnologia que combina diversos discs durs o unitats SSD en una sola unitat lògica.
+En comptes de tenir tres discs separats, el sistema els "veu" com un de sol. Per què ho fem, això? Principalment per dues raons: seguretat (per no perdre dades si un disc s'espatlla) i rendiment (per anar més ràpid).</p>
+
+<img width="450" height="253" alt="image" src="https://github.com/user-attachments/assets/15038abd-5458-44e0-991b-758b9242b0bd" />
+
+
+<p>RAID 0 (Stripping o Fragmentació)</p>
+<p>Aquest nivell prioritza la velocitat. Divideix les dades i les reparteix entre els discs.</p>
+<p>Com funciona: Si escrius un fitxer, la meitat va al Disc A i l'altra meitat al Disc B.</p>
+<p>Avantatge: És el més ràpid.</p>
+<p>Inconvenient: Risc total. Si un dels discs falla, perds absolutament tota la informació.</p>
+<p>Mínim de discs: 2.</p>
+
+<p>2. RAID 1 (Mirroring o Mirall)</p>
+<p>Aquest nivell prioritza la seguretat. Tot el que s'escriu en un disc es duplica exactament en l'altre.</p>
+<p>Com funciona: Tens una còpia exacta en temps real.</p>
+<p>Avantatge: Si un disc mor, el sistema continua funcionant sense perdre ni un bit.</p>
+<p>Inconvenient: Estàs pagant dos discs per tenir la capacitat d'un de sol (perds el 50% de l'espai).</p>
+<p>Mínim de discs: 2.</p>
+
+<p>RAID 5 (Paritat distribuïda)</p>
+<p>És l'equilibri perfecte i el més utilitzat en servidors i sistemes professionals.</p>
+<p>Com funciona: Reparteix les dades entre tots els discs, però reserva un espai per a la "paritat" (una mena de codi matemàtic que permet reconstruir les dades).</p>
+<p>Avantatge: Molt bona velocitat i seguretat. Si un disc falla, les dades es recuperen gràcies a la paritat dels altres.</p>
+<p>Inconvenient: Si fallen dos discs a la vegada, perds la informació.</p>
+<p>Mínim de discs: 3.</p>
+
+<p>4. RAID 10 (o 1+0)</p>
+<p>És una combinació: un "mirall de fragments".</p>
+<p>Com funciona: Primer fa un mirall (RAID 1) i després els uneix en un RAID 0.</p>
+<p>Avantatge: El millor dels dos mons: màxima velocitat i màxima seguretat.</p>
+<p>Inconvenient: Molt car, ja que necessites molts discs i només aprofites la meitat de l'espai total.</p>
+<p>Mínim de discs: 4.</p>
+
+
 
 <h3>RAID 1</h3>
 
