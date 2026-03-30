@@ -5,7 +5,10 @@
 <p>Un RAID (acrònim de Redundant Array of Independent Disks) és una tecnologia que combina diversos discs durs o unitats SSD en una sola unitat lògica.
 En comptes de tenir tres discs separats, el sistema els "veu" com un de sol. Per què ho fem, això? Principalment per dues raons: seguretat (per no perdre dades si un disc s'espatlla) i rendiment (per anar més ràpid).</p>
 
-<img width="450" height="253" alt="image" src="https://github.com/user-attachments/assets/15038abd-5458-44e0-991b-758b9242b0bd" />
+<div style="display: flex; gap: 10px;">
+  <img width="450" height="253" alt="image" src="https://github.com/user-attachments/assets/15038abd-5458-44e0-991b-758b9242b0bd" />
+  <img width="450" height="253" alt="image" src="https://github.com/user-attachments/assets/f47b0c0f-1d11-4dee-bb4e-afc59c65e3ee" />
+</div>
 
 
 <p>RAID 0 (Stripping o Fragmentació)</p>
@@ -29,7 +32,7 @@ En comptes de tenir tres discs separats, el sistema els "veu" com un de sol. Per
 <p>Inconvenient: Si fallen dos discs a la vegada, perds la informació.</p>
 <p>Mínim de discs: 3.</p>
 
-<p>4. RAID 10 (o 1+0)</p>
+<p>RAID 10 (o 1+0)</p>
 <p>És una combinació: un "mirall de fragments".</p>
 <p>Com funciona: Primer fa un mirall (RAID 1) i després els uneix en un RAID 0.</p>
 <p>Avantatge: El millor dels dos mons: màxima velocitat i màxima seguretat.</p>
