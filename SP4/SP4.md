@@ -57,7 +57,7 @@ En comptes de tenir tres discs separats, el sistema els "veu" com un de sol. Per
 <p>Executarem fdisk /dev/sdc per crear una particio nova amb la opcio n utilizarem els valors predeterminats amb p i guardarem amb w</p>
 <img width="925" height="629" alt="image" src="https://github.com/user-attachments/assets/f3b49e39-8353-44eb-8b2c-248339d41daa" />
 
-<p> Tornarem a executar fdisk -l per veure el llistat de discs
+<p>Tornarem a executar fdisk -l per veure el llistat de discs</p>
 <img width="621" height="446" alt="image" src="https://github.com/user-attachments/assets/538ef179-e76d-4c96-9ef1-e294ce8a0e31" />
 
 
