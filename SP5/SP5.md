@@ -53,9 +53,7 @@
 <img width="588" height="135" alt="image" src="https://github.com/user-attachments/assets/6fb732e0-01a5-4344-8fce-58df9fc344b4" />
 
 
-<p>Exercici una maquina virtual ha de rebre els logs de un altra maquina</p>
-<p>Exercici Fer captures de el monitor del sistema</p> 
-<p>Tots els logs de el sistema pero hi han aplicacions que tenen els logs a les seves propies carpetes</p> 
+
 
 
 <h2>Servidor de Actualizacions</h2>
