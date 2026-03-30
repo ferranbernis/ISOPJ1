@@ -5,6 +5,8 @@
 <p>Un RAID (acrònim de Redundant Array of Independent Disks) és una tecnologia que combina diversos discs durs o unitats SSD en una sola unitat lògica.
 En comptes de tenir tres discs separats, el sistema els "veu" com un de sol. Per què ho fem, això? Principalment per dues raons: seguretat (per no perdre dades si un disc s'espatlla) i rendiment (per anar més ràpid).</p>
 
+<p>Es recomanabe que els discs utilizats siguin iguals de mida (GB) i de velociatat (MB/s o GB/s)</p>
+
 <div style="display: flex; gap: 10px;">
   <img width="450" height="253" alt="image" src="https://github.com/user-attachments/assets/15038abd-5458-44e0-991b-758b9242b0bd" />
   <img width="450" height="253" alt="image" src="https://github.com/user-attachments/assets/f47b0c0f-1d11-4dee-bb4e-afc59c65e3ee" />
@@ -43,15 +45,21 @@ En comptes de tenir tres discs separats, el sistema els "veu" com un de sol. Per
 
 <h3>RAID 1</h3>
 
+<p>Primer de tot instalarem mdadm que és l'eina de línia de ordres més potent i utilitzada en sistemes Linux per gestionar el que anomenem RAID</p>
 <img width="687" height="76" alt="image" src="https://github.com/user-attachments/assets/5ac555a2-8cd7-4e89-bd31-f73afdc01ed5" />
 
+<p>Executarem fdisk -l per veure el llistat de discs els que ens interesen per a fer el RAID son el sdb i sdc de 2 GB cada un</p>
 <img width="774" height="649" alt="image" src="https://github.com/user-attachments/assets/bd8ee64e-f8d4-410a-94db-6f4acd9cd50d" />
 
+<p>Executarem fdisk /dev/sdb per crear una particio nova amb la opcio n utilizarem els valors predeterminats amb p i guardarem amb w</p>
 <img width="923" height="631" alt="image" src="https://github.com/user-attachments/assets/20b36a44-b719-491e-a46f-07ea58d3d17e" />
 
+<p>Executarem fdisk /dev/sdc per crear una particio nova amb la opcio n utilizarem els valors predeterminats amb p i guardarem amb w</p>
 <img width="925" height="629" alt="image" src="https://github.com/user-attachments/assets/f3b49e39-8353-44eb-8b2c-248339d41daa" />
 
+<p> Tornarem a executar fdisk -l per veure el llistat de discs
 <img width="621" height="446" alt="image" src="https://github.com/user-attachments/assets/538ef179-e76d-4c96-9ef1-e294ce8a0e31" />
+
 
 <img width="636" height="217" alt="image" src="https://github.com/user-attachments/assets/d10ddd95-53ab-4ec4-a003-5faacb261c96" />
 
