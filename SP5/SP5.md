@@ -1,7 +1,7 @@
 <h1>Sprint 5: Monitoratge, Auditories i Programari Client/Servidor</h1>
 
 <h2>LOGS (DOCUMENTAT PER EROS A <a href="https://erosmauri.github.io/ISOPJ1/SP5/SP5.html" target="_blank">
-    https://erosmauri.github.io/ISOPJ1/SP5/SP5.html)</h2>
+    https://erosmauri.github.io/ISOPJ1/SP5/SP5.html</a>)</h2>
 
 <img width="736" height="495" alt="image" src="https://github.com/user-attachments/assets/780c6e79-d968-4800-a41f-56f3e7d971a0" />
 
