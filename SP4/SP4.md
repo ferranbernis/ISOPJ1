@@ -96,24 +96,32 @@ En comptes de tenir tres discs separats, el sistema els "veu" com un de sol. Per
 <p>Tornarem a afegir sdb1 amb mdadm /dev/md0 -a /dev/sdb1 i rapid executarem mdadm --detail /dev/md0 i veurem que es esta remontant</p>
 <img width="816" height="579" alt="image" src="https://github.com/user-attachments/assets/813b63ae-985f-4703-9cc4-26bff2bfa9c9" />
 
-<p>Per finalizar tornarem a executar mdadm --detail i veurem que els dos discs estan operatius
+<p>Per finalizar tornarem a executar mdadm --detail i veurem que els dos discs estan operatius</p>
 <img width="898" height="623" alt="image" src="https://github.com/user-attachments/assets/04b1293f-4717-4731-84a6-40481fcf2eba" />
 
 
 
 <h4>ESBORRAR RAID </h4>
+
+<p>Per esborrar el raid primer comentarem la linea de el arxiu fstab que el munta automaticament</p>
 <img width="920" height="318" alt="image" src="https://github.com/user-attachments/assets/37009c08-97b1-4b6b-9fee-5495a5b18d12" />
 
+<p>Despres desmontarem el RAID amb umount</p>
 <img width="597" height="41" alt="image" src="https://github.com/user-attachments/assets/2d7ea791-b269-4f18-b936-7298f757d70f" />
 
+<p>Pararem el RAID amb mdadm --stop</p>
 <img width="654" height="42" alt="image" src="https://github.com/user-attachments/assets/d0383a2e-158b-4ec4-883e-27a8616b5e3d" />
 
+<p>Eliminarem el RAID amb mdadm --remove</p>
 <img width="668" height="55" alt="image" src="https://github.com/user-attachments/assets/282ec5e5-6c5e-431d-8dfa-dc4c013623b7" />
 
+<p>Eliminarem la carpeta raid1 i molt important esborrar la "signatura" del RAID que hi havia escrita dins de cada disc físic amb mdadm --zero-superblock</p>
 <img width="849" height="131" alt="image" src="https://github.com/user-attachments/assets/3acfbd8b-c973-40e6-b83d-223ed473290a" />
 
+<p>Comentarem les lines Array i Device per a que el sistema no els buscqui al arrancar i doni errors de arrancada perque ja no existeix el raid</p>
 <img width="918" height="113" alt="image" src="https://github.com/user-attachments/assets/18b42fe5-32d6-4461-9275-bad870ab834a" />
 
+<p>Comprovarem que el raid ja no existeix amb mdadm --detail i ens dira que no trova el directori</p>
 <img width="923" height="126" alt="image" src="https://github.com/user-attachments/assets/707b934e-5405-4d41-9203-019f93b1cbeb" />
 
 
