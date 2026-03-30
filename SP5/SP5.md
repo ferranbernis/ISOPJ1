@@ -1,9 +1,10 @@
 <h1>Sprint 5: Monitoratge, Auditories i Programari Client/Servidor</h1>
 
 <h2>LOGS</h2>
-<p>Exercici Fer captures de el monitor del sistema</p> 
 
-<p>Tots els logs de el sistema pero hi han aplicacions que tenen els logs a les seves propies carpetes</p> 
+<h2>DOCUMENTAT PER EROS A https://erosmauri.github.io/ISOPJ1/SP5/SP5.html</h2>
+
+
 <img width="736" height="495" alt="image" src="https://github.com/user-attachments/assets/780c6e79-d968-4800-a41f-56f3e7d971a0" />
 
 
@@ -53,6 +54,8 @@
 
 
 <p>Exercici una maquina virtual ha de rebre els logs de un altra maquina</p>
+<p>Exercici Fer captures de el monitor del sistema</p> 
+<p>Tots els logs de el sistema pero hi han aplicacions que tenen els logs a les seves propies carpetes</p> 
 
 
 <h2>Servidor de Actualizacions</h2>
