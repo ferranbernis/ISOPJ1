@@ -60,13 +60,16 @@ En comptes de tenir tres discs separats, el sistema els "veu" com un de sol. Per
 <p>Tornarem a executar fdisk -l per veure el llistat de discs</p>
 <img width="621" height="446" alt="image" src="https://github.com/user-attachments/assets/538ef179-e76d-4c96-9ef1-e294ce8a0e31" />
 
-
+<p>Entarem a la carpeta mnt i crearem la carpeta raid 1 amb mkdir i donarem amb chmod 777 privilegis totals a tots i comprovarem els permisos de la carpeta amb ls -l</p>
 <img width="636" height="217" alt="image" src="https://github.com/user-attachments/assets/d10ddd95-53ab-4ec4-a003-5faacb261c96" />
 
+<p>Crearem amb mdadm --create /dev/md0 i --level=1 que es RAID 1 i raid-devices=2 que son els dos disc dur sdb1 i sdc1</p> 
 <img width="1070" height="273" alt="image" src="https://github.com/user-attachments/assets/36b66def-7de7-43c9-b5cb-573e92ad9fe2" />
 
+<p>Formatarem el raid amb el sistema de fitxers ext4</p>
 <img width="829" height="302" alt="image" src="https://github.com/user-attachments/assets/ab06d109-c248-451f-8001-62d7b0b54ff6" />
 
+<p>I amb mdadm --detail i el RAID md0 comprovarem els detalls</p>
 <img width="898" height="623" alt="image" src="https://github.com/user-attachments/assets/57ae05ca-f5dc-450a-81bd-b0777873a7d9" />
 
 <img width="1010" height="91" alt="image" src="https://github.com/user-attachments/assets/3d2478ad-9d46-491d-84f4-4509d4f6d5a5" />
