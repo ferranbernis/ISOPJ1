@@ -79,14 +79,19 @@
 <img width="964" height="85" alt="image" src="https://github.com/user-attachments/assets/b6ea7648-8137-476b-9881-75d9ce52f989" />
 
 <h4>Client</h4>
+<p>Configuració del fitxer /etc/apt/sources.list en el ordinador client per utilitzar el repositori local de Google Chrome allotjat a la IP 10.0.2.15 (Servidor)</p>
 <img width="795" height="794" alt="image" src="https://github.com/user-attachments/assets/d5784c3b-8301-4860-91da-2b625c05321f" />
 
+<p>Executarem un apt update pero donara error perque no podra verificar la clau publica</p>
 <img width="849" height="209" alt="image" src="https://github.com/user-attachments/assets/2bd05f4e-6e07-4efc-837f-2775aaf392d9" />
 
+<p>Obtindrem la clau pubica de google chrome amb wget -q -0 el link de la clau i apt-key add</p>
 <img width="842" height="113" alt="image" src="https://github.com/user-attachments/assets/39debc5b-1f6f-4bfd-8e28-85349dd6b616" />
 
+<p>Tornarem a executar el apt update</p>
 <img width="842" height="297" alt="image" src="https://github.com/user-attachments/assets/bc1bc0e7-72b1-40c0-ba32-9ab4fa4d1c50" />
 
+<p>Per a finalizar executarem el apt install de google chrome i com es veu a la imatge es obte de el servidor 10.0.2.15 configurat anteriorment</p>
 <img width="835" height="417" alt="image" src="https://github.com/user-attachments/assets/1051a43b-c873-485c-865c-325f6f4df14e" />
 
 <h3>PACKET EDGE</h3>
