@@ -55,8 +55,6 @@
 <img width="413" height="485" alt="Captura de pantalla de 2026-04-14 10-25-57" src="https://github.com/user-attachments/assets/13a02f9d-318a-49b9-9e7e-acb2bd008ce0" />
 
 
-
-
 <p>Descarregarem el llibreoffice per exemple desde la seva pagina web oficial</p> 
 <img width="897" height="218" alt="image" src="https://github.com/user-attachments/assets/b08535bb-dcb4-4dcd-b676-23293afd945a" />
 
