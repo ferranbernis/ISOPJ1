@@ -54,6 +54,8 @@
 <p>Crearem el punt de restauracio</p>
 <img width="413" height="485" alt="Captura de pantalla de 2026-04-14 10-25-57" src="https://github.com/user-attachments/assets/13a02f9d-318a-49b9-9e7e-acb2bd008ce0" />
 
+<img width="404" height="225" alt="image" src="https://github.com/user-attachments/assets/cadc99e0-edec-4c22-a591-ad8fc0ba99d1" />
+
 
 <p>Descarregarem el llibreoffice per exemple desde la seva pagina web oficial</p> 
 <img width="897" height="218" alt="image" src="https://github.com/user-attachments/assets/b08535bb-dcb4-4dcd-b676-23293afd945a" />
@@ -61,9 +63,37 @@
 <p>Apretarem seguent hasta que finalize la instalacio</p>
 <img width="635" height="381" alt="image" src="https://github.com/user-attachments/assets/8f64e96b-844f-4215-afb4-af3430660215" />
 
-<p></p>
+<p>Ja el tindiem instalat</p>
+<img width="659" height="396" alt="image" src="https://github.com/user-attachments/assets/92a8c40a-b9b2-4f77-9714-33e7d593c3ae" />
 
+<p>Ara tornem a els punts de restauracio i apretarem a restaurar el sistema</p>
+<img width="413" height="489" alt="image" src="https://github.com/user-attachments/assets/3912f1e9-ad9b-4587-8151-e881e69941aa" />
 
+<p>Apretarem seguent i selecionarem el punt de restauracio i a finalizar i esperem</p>
+<img width="566" height="457" alt="image" src="https://github.com/user-attachments/assets/8a8bfff4-135a-4210-890f-0beb9294b394" />
+<img width="566" height="457" alt="image" src="https://github.com/user-attachments/assets/7fb945a4-e1eb-4aad-ba2b-f60c8d789a50" />
+<img width="566" height="457" alt="image" src="https://github.com/user-attachments/assets/bb17dba2-5917-472e-b19e-95bda55b4acf" />
 
+<p>Se ha restaurat la copia de seguretat i com havia instalat el llibre office despues de crear el punt de restauracio ya no esta</p>
+
+<img width="649" height="426" alt="image" src="https://github.com/user-attachments/assets/bdefc280-0f3e-440c-b570-5c4f410d065f" />
+
+<img width="386" height="684" alt="image" src="https://github.com/user-attachments/assets/bf2c2e35-58bb-4210-b914-8cb5cde9d93e" />
+
+<h1>Fase 3: Llicencies de Windows</h1>
+
+<p>Anirem a configuraacio i actualizacio i seguretat i a activacio (Windows 10 es diferent) i veurem que windows no esta activat</p>
+<img width="803" height="758" alt="image" src="https://github.com/user-attachments/assets/4f5ddc2d-915a-4ffb-b896-ac0922c66c79" />
+
+<p>Executarem la comanda slmgr /xpr que serveix comprovar si la teva llicència del sistema està activada de forma permanent o temporal en aquest cas no esta activat</p> 
+<img width="899" height="510" alt="image" src="https://github.com/user-attachments/assets/ea266166-966a-4732-9287-ef09752c9e56" />
+
+<p>Aquests són els tres tipus principals que pots trobar:</p> 
+
+<p>OEM (Original Equipment Manufacturer): Llicències que venen preinstal·lades en equips nous (portàtils o sobretaula de marca). Estan lligades al maquinari d'aquell ordinador i no es poden transferir a un altre dispositiu.</p> 
+  
+<p>Retail (FPP - Full Packaged Product): Llicències que es compren per separat en una caixa o digitalment. Tenen l'avantatge que es poden transferir d'un ordinador a un altre (sempre que només estiguin actives en un a la vegada).</p> 
+
+<p>Volum (GVLK): Destinades a empreses o centres educatius per activar múltiples equips sota un mateix contracte. Sovint requereixen connectar-se a un servidor de l'organització (KMS) per mantenir-se actives.</p> 
 
 
