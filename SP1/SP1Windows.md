@@ -52,9 +52,7 @@
 <img width="411" height="470" alt="image" src="https://github.com/user-attachments/assets/e03bffd2-daac-4d73-90e1-77c96cc4dad0" />
 
 <p>Crearem el punt de restauracio</p>
-
-
-
+<img width="413" height="485" alt="Captura de pantalla de 2026-04-14 10-25-57" src="https://github.com/user-attachments/assets/13a02f9d-318a-49b9-9e7e-acb2bd008ce0" />
 
 
 
