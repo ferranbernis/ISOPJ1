@@ -12,7 +12,7 @@ El contenido está bajo licencia [Creative Commons BY-NC-SA 4.0 ES](LICENSE.md).
 
 ## Contingut del curs
 
-<h1>PROJECTE 1 (Linux)</h1>
+#PROJECTE 1 (Linux)#
 ### [Sprint 1. Instal·lació i Configuració Inicial](SP1/SP1.md)  
 ### [Sprint 2. Instal·lació, Configuració de Programari de Base i Gestió de Fitxers](SP2/SP2.md)  
 ### [Sprint 3.  Administració de Dominis i Seguretat](SP3/SP3.md)  
