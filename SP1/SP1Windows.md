@@ -45,9 +45,27 @@
 
 <h1>Fase 2: Punts de restauració</h1>
 
+<p>A la barra de busqueda buscarem crear un punt de restauracio de el sistema i apretarem configurar</p>
+<img width="411" height="484" alt="image" src="https://github.com/user-attachments/assets/f508e055-f1c9-4941-91e7-4c353faceca8" />
+
+<p>Activarem la protecio de el sitema i aplicarem els canvis</p>
+<img width="411" height="470" alt="image" src="https://github.com/user-attachments/assets/e03bffd2-daac-4d73-90e1-77c96cc4dad0" />
+
+<p>Crearem el punt de restauracio</p>
 
 
 
+
+
+
+
+<p>Descarregarem el llibreoffice per exemple desde la seva pagina web oficial</p> 
+<img width="897" height="218" alt="image" src="https://github.com/user-attachments/assets/b08535bb-dcb4-4dcd-b676-23293afd945a" />
+
+<p>Apretarem seguent hasta que finalize la instalacio</p>
+<img width="635" height="381" alt="image" src="https://github.com/user-attachments/assets/8f64e96b-844f-4215-afb4-af3430660215" />
+
+<p></p>
 
 
 
