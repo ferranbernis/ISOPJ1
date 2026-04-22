@@ -96,4 +96,12 @@
 
 <p>Volum (GVLK): Destinades a empreses o centres educatius per activar múltiples equips sota un mateix contracte. Sovint requereixen connectar-se a un servidor de l'organització (KMS) per mantenir-se actives.</p> 
 
+<h1>Fase 4: Gestor de arrancada</h1>
+
+<p>Executarem el terminal com a administrador</p> 
+<img width="323" height="269" alt="image" src="https://github.com/user-attachments/assets/2a0e0ec4-bdde-4dda-b698-6c8ded4a7f1f" />
+
+<p>Executarem bcdedit que podrem veure el administrador de arranque de windows i el carregador de arranque de windows</p> 
+<img width="518" height="636" alt="image" src="https://github.com/user-attachments/assets/eab198e7-41ff-4cd4-a1bb-78e72b140d1f" />
+
 
