@@ -164,6 +164,17 @@ del fitxer.txt  (eliminar fitxer)</p>
 <p>tasklist → Mostra tots els processos actius
 taskkill /IM notepad.exe /F → Força el tancament del procés Notepad
 systeminfo → Mostra informació detallada del sistema
+hostname  → retorna el nom de l’equip
+whoami → retorna l’usuari actual</p>
+
+<img width="552" height="758" alt="image" src="https://github.com/user-attachments/assets/bdc47001-7d79-4446-a9d8-3c0830f6983b" />
+<img width="448" height="53" alt="image" src="https://github.com/user-attachments/assets/195506dc-42e2-4925-a63b-208b0d35336c" />
+<img width="780" height="811" alt="image" src="https://github.com/user-attachments/assets/c76b2458-4ef9-4179-85e8-4c8bf300c5cb" />
+<img width="780" height="88" alt="image" src="https://github.com/user-attachments/assets/4fae153d-aa3e-4a2f-bfa7-baf211c0bc84" />
+
+
+
+
 
 
 
