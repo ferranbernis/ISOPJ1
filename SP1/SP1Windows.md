@@ -148,11 +148,11 @@ PowerShell → eina moderna, treballa amb objectes, molt més potent i per autom
 <img width="317" height="280" alt="image" src="https://github.com/user-attachments/assets/45cd719e-9cd3-4607-bf7f-8a730c5ef0e9" />
 
 <p>Comandes bàsiques</p>
-<p>dir  (veure fitxers)
-cd  (moure's per carpetes)
-mkdir prova (crear carpeta)
-echo hola > fitxer.txt (crear fitxer)
-del fitxer.txt  (eliminar fitxer)</p>
+<p>dir  (veure fitxers)</p>
+<p>cd  (moure's per carpetes)</p>
+<p>mkdir prova (crear carpeta)</p>
+<p>echo hola > fitxer.txt (crear fitxer)</p>
+<p>del fitxer.txt  (eliminar fitxer)</p>
 
 <img width="438" height="378" alt="image" src="https://github.com/user-attachments/assets/9216ebbb-aea0-49c6-81a7-d3b714aaf29e" />
 <img width="291" height="57" alt="image" src="https://github.com/user-attachments/assets/d103f5f0-0e10-4233-add7-838f2ef707bd" />
@@ -161,23 +161,41 @@ del fitxer.txt  (eliminar fitxer)</p>
 <img width="404" height="40" alt="image" src="https://github.com/user-attachments/assets/b328d27d-acfd-4c9d-8198-fb93200ab31d" />
 
 <p>Comandes útils del sistema</p>
-<p>tasklist → Mostra tots els processos actius
-taskkill /IM notepad.exe /F → Força el tancament del procés Notepad
-systeminfo → Mostra informació detallada del sistema
-hostname  → retorna el nom de l’equip
-whoami → retorna l’usuari actual</p>
+<p>tasklist → Mostra tots els processos actius</p>
+<p>taskkill /IM notepad.exe /F → Força el tancament del procés Notepad</p>
+<p>systeminfo → Mostra informació detallada del sistema</p>
+<p>hostname  → retorna el nom de l’equip</p>
+<p>whoami → retorna l’usuari actual</p>
 
 <img width="552" height="758" alt="image" src="https://github.com/user-attachments/assets/bdc47001-7d79-4446-a9d8-3c0830f6983b" />
 <img width="448" height="53" alt="image" src="https://github.com/user-attachments/assets/195506dc-42e2-4925-a63b-208b0d35336c" />
 <img width="780" height="811" alt="image" src="https://github.com/user-attachments/assets/c76b2458-4ef9-4179-85e8-4c8bf300c5cb" />
 <img width="780" height="88" alt="image" src="https://github.com/user-attachments/assets/4fae153d-aa3e-4a2f-bfa7-baf211c0bc84" />
 
+<p>Comandes de xarxa</p>
+<p>ipconfig → Veure la configuracio IP</p>
+<p>ping google.com → Comprovar connexio</p>
+<p>netstat -an→ Connexions obertes</p>
 
+<img width="491" height="292" alt="image" src="https://github.com/user-attachments/assets/66c0773a-e716-4841-b513-1ea317a8f0f7" />
+<img width="506" height="813" alt="image" src="https://github.com/user-attachments/assets/ae8f9578-ab35-4b34-becd-94b57da208fd" />
 
+<p>Comandes interessants (una mica més avançades)</p>
+<p>tree → veure estructura de carpetes</p>
+<p>cls → netejar pantalla</p>
+<p>help → veure ajuda</p>
+<p>shutdown /s /t 0 → apagar l'equip</p>
 
+<img width="323" height="102" alt="image" src="https://github.com/user-attachments/assets/fc1f771d-c34c-44c2-9e56-0e031e809158" />
+<img width="280" height="88" alt="image" src="https://github.com/user-attachments/assets/fa1c1c76-2f5b-449d-9d82-625f3abe00ee" />
+<img width="745" height="912" alt="image" src="https://github.com/user-attachments/assets/b232b3c5-549f-4a3b-b2ff-6269361f018f" />
+<img width="360" height="31" alt="image" src="https://github.com/user-attachments/assets/220db88f-4fe7-4a4d-8cab-75235e5bbab5" />
 
+Què mostra tasklist? → Mostra tots els processos actius en el moment d’executar la comanda, amb el nom del procés, el seu PID (identificador de procés), la sessió on s’executa i el consum de memòria. Permet veure quins programes estan en marxa i consumint recursos.
 
+Què mostra ipconfig? → Mostra la configuració de xarxa de totes les interfícies del sistema: adreça IP, màscara de subxarxa, porta d’enllaç predeterminada i adreces IPv6. Molt útil per diagnosticar problemes de connectivitat.
 
+Què mostra systeminfo? → Mostra un resum complet de la informació del sistema: nom de l’equip, versió del sistema operatiu, fabricant del maquinari, quantitat de RAM, processador instal·lat, data d’instal·lació de Windows i molt més. Equivalent a “Sobre aquest equip” però molt més detallat.
 
 
 
