@@ -117,8 +117,58 @@
 <p>Per veureu per interfice grafica anirem a configuracio Red i Internet</p>
 <img width="931" height="798" alt="image" src="https://github.com/user-attachments/assets/3d0198c5-ee2e-416f-865a-f97973f27d2e" />
 
-<p>Despres a Ethernet</p>
+<p>Despres a Ethernet i clicem damunt</p>
 <img width="931" height="798" alt="image" src="https://github.com/user-attachments/assets/0bc4118c-8caa-4bd2-95cb-6d5d4d2b6eef" />
+
+
+<p>Veurem les opcions la primera es perfil de red per si el equip esta en un lloc public o privat per a la configuracio de seguretat i si la connexio es de us mig i la configuracio de ip si DHCP o Manual i baix de tot les propietats de el adaptador</p>
+<img width="489" height="870" alt="image" src="https://github.com/user-attachments/assets/d74224e5-1109-4281-8587-580defa980a3" />
+<img width="477" height="423" alt="image" src="https://github.com/user-attachments/assets/06b267b3-bb60-450b-8e38-56b5a045641a" />
+
+<img width="390" height="186" alt="image" src="https://github.com/user-attachments/assets/82a82e8a-552d-4a6d-b068-9461cbb5dedb" />
+
+
+<p>Per a introduir la ip manual activarem IPv4 introduirem la ip la mascara i la porta de enlaç i DNS</p>
+<img width="393" height="762" alt="image" src="https://github.com/user-attachments/assets/2b87cc34-487e-4ba9-b469-73848d6dd8b2" />
+
+
+<p>Ja estaria introduida manualment tambe es pot fer desde el panel de control</p>
+<img width="361" height="241" alt="image" src="https://github.com/user-attachments/assets/5a9bb18d-b64c-4226-a59c-ec38f8150191" />
+
+<p>Farem un ping a google.com</p>
+<img width="545" height="324" alt="image" src="https://github.com/user-attachments/assets/eda0a16e-61ba-4879-a6fb-823cda559ab4" />
+
+
+<h1>Fase 6: Comandes Generals</h1>
+
+<p>CMD → eina antiga, treballa amb text, útil per ordres bàsiques.
+PowerShell → eina moderna, treballa amb objectes, molt més potent i per automatització.</p>
+
+<p>Executarem el Powershell</p>
+<img width="317" height="280" alt="image" src="https://github.com/user-attachments/assets/45cd719e-9cd3-4607-bf7f-8a730c5ef0e9" />
+
+<p>Comandes bàsiques</p>
+<p>dir  (veure fitxers)
+cd  (moure's per carpetes)
+mkdir prova (crear carpeta)
+echo hola > fitxer.txt (crear fitxer)
+del fitxer.txt  (eliminar fitxer)</p>
+
+<img width="438" height="378" alt="image" src="https://github.com/user-attachments/assets/9216ebbb-aea0-49c6-81a7-d3b714aaf29e" />
+<img width="291" height="57" alt="image" src="https://github.com/user-attachments/assets/d103f5f0-0e10-4233-add7-838f2ef707bd" />
+<img width="390" height="179" alt="image" src="https://github.com/user-attachments/assets/7843f89e-70a0-4d18-9c63-8fa3dbeec967" />
+<img width="405" height="55" alt="image" src="https://github.com/user-attachments/assets/b8fec5a3-015b-4604-a9af-b6bcb6d56b08" />
+<img width="404" height="40" alt="image" src="https://github.com/user-attachments/assets/b328d27d-acfd-4c9d-8198-fb93200ab31d" />
+
+<p>Comandes útils del sistema</p>
+<p>tasklist → Mostra tots els processos actius
+taskkill /IM notepad.exe /F → Força el tancament del procés Notepad
+systeminfo → Mostra informació detallada del sistema
+
+
+
+
+
 
 
 
