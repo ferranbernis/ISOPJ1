@@ -104,4 +104,25 @@
 <p>Executarem bcdedit que podrem veure el administrador de arranque de windows i el carregador de arranque de windows</p> 
 <img width="518" height="636" alt="image" src="https://github.com/user-attachments/assets/eab198e7-41ff-4cd4-a1bb-78e72b140d1f" />
 
+<p>Esta arrancant windows a la particio C: el temps de espera abans de arrancar es de 30 segons i el fitxer que inicia es winload.exe</p> 
+
+<p>El Boot Manager presenta el menú per triar quin sistema operatiu iniciar, mentre que el Boot Loader és l'encarregat de carregar el nucli (kernel) d'aquest sistema a la memòria RAM per executar-lo.</p> 
+
+
+<h1>Fase 5: Xarxa Basica</h1>
+
+<p>Executarem la comanda ipconfig per veure les ip assignades a aquest ordinador</p> 
+<img width="547" height="231" alt="Captura de pantalla de 2026-04-22 20-30-10" src="https://github.com/user-attachments/assets/04bbbbda-74b1-4986-9a2b-3e70a2c7c8be" />
+
+<p>Per veureu per interfice grafica anirem a configuracio Red i Internet</p>
+<img width="931" height="798" alt="image" src="https://github.com/user-attachments/assets/3d0198c5-ee2e-416f-865a-f97973f27d2e" />
+
+<p>Despres a Ethernet</p>
+<img width="931" height="798" alt="image" src="https://github.com/user-attachments/assets/0bc4118c-8caa-4bd2-95cb-6d5d4d2b6eef" />
+
+
+
+
+
+
 
