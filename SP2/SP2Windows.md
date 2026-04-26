@@ -117,8 +117,9 @@
 Creem un fitxer script.bat (per exemple a C:\Users\FerranBernis\Documents\scriptBackup.bat) amb el contingut següent:
 
 <p>@echo off</p>
-<p>xcopy C:\Users\%USERNAME% B:\CòpiesUsuaris\%USERNAME% /E /I /Y</p>
-<img width="516" height="105" alt="image" src="https://github.com/user-attachments/assets/4cbd26ef-60c5-407f-b10a-11c460fc2d86" />
+<p>xcopy C:\Users\%USERNAME% B:\CopiesUsuaris\%USERNAME% /E /I /Y</p>
+<img width="512" height="108" alt="image" src="https://github.com/user-attachments/assets/4117d2aa-feb1-4d58-87a5-4006ef224cf1" />
+
 
 
 <p>Explicació de la comanda:</p>
@@ -143,6 +144,38 @@ Creem un fitxer script.bat (per exemple a C:\Users\FerranBernis\Documents\script
 
 
 <h1>Fase 4: Verificació i documentació</h1>
+
+<p>Iniciem sessió amb l’usuari alumne1. L’script s’executa automàticament a l’inici de sessió i copia el contingut de C:\Users\alumne1 a B:\CòpiesUsuaris\alumne1.</p>
+<p>La captura del Explorador de Windows confirma que la còpia s’ha realitzat correctament: es veuen totes les carpetes del perfil d’alumne1 (Contacts, Desktop, Documents, Downloads, etc.) dins de B:\CòpiesUsuaris\alumne1\</p>
+<img width="1125" height="415" alt="image" src="https://github.com/user-attachments/assets/bb1cd593-18c2-4584-a451-214c4e736139" />
+
+<p>Comprovacio Cuotes (Explicacio mes a dalt)</p>
+<img width="740" height="482" alt="image" src="https://github.com/user-attachments/assets/a3a53d01-c48a-4155-8d86-bb892b94db2c" />
+
+<h1>Fase 5: Gestió de processos i serveis</h1>
+
+<p>Iniciem sessió com a alumne1, obrim la consola (CMD) i executem tasklist per obtenir la llista de tots els processos actius, amb el seu PID, sessió i ús de memòria.</p>
+<img width="464" height="111" alt="image" src="https://github.com/user-attachments/assets/f6e4beba-5d3c-4989-880e-528f5d42bd88" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
