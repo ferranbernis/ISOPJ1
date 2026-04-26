@@ -129,6 +129,21 @@ Creem un fitxer script.bat (per exemple a C:\Users\FerranBernis\Documents\script
 <p>/I=	Si la destinació no existeix, la crea com a directori</p>
 <p>/Y=	Sobreescriu fitxers existents sense demanar confirmació</p>
 
+<p>Per assignar l'script perquè s'executi automàticament en iniciar sessió, obrim l'Editor de directrius de grup local executant gpedit.msc des de la finestra Executar (Win + R).</p>
+<img width="391" height="186" alt="image" src="https://github.com/user-attachments/assets/f82139fc-2e84-4293-883f-04f9887ebf81" />
+
+<p>Dins de l'editor, naveguem per l'arbre de directives:</p>
+<p>Configuració d'usuari → Configuració de Windows → Scripts (inici de sessió o tancament de sessió)</p>
+<p>Fem doble clic sobre Iniciar sessió per obrir la finestra de propietats.</p>
+<img width="679" height="335" alt="image" src="https://github.com/user-attachments/assets/59ad095b-595b-496b-8732-54bf81e5c613" />
+
+<p>A la finestra de propietats d'Iniciar sessió, fem clic a Agregar… i introduïm la ruta completa al nostre script:</p>
+<img width="402" height="460" alt="image" src="https://github.com/user-attachments/assets/45d75a7b-c380-478d-81c5-a0c941f54cd5" />
+<img width="425" height="293" alt="image" src="https://github.com/user-attachments/assets/df200a3b-b3af-4ed1-adbb-7a6fc8d988cf" />
+
+
+<h1>Fase 4: Verificació i documentació</h1>
+
 
 
 
