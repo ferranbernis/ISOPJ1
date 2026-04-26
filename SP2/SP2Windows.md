@@ -67,5 +67,42 @@
 <p>Registrar un evento cuando algún usuario supere su nivel de advertencia</p>
 <img width="363" height="450" alt="image" src="https://github.com/user-attachments/assets/230927d4-637b-4677-a813-1b27b5367b7b" />
 
+<p>Per crear usuaris locals a Windows, executem lusrmgr.msc (Gestió d’usuaris i grups locals) des de la finestra Executar (Win + R).</p>
+<img width="402" height="209" alt="image" src="https://github.com/user-attachments/assets/50adc7f2-e7d2-46f9-9284-890040f09050" />
+
+<p>Dins de la consola, fem clic dret sobre Usuaris i Usuari nou</p>
+<img width="658" height="251" alt="image" src="https://github.com/user-attachments/assets/41c13d8f-fd93-42f6-87df-6f20a84c2b5c" />
+
+<p>Creem l’usuari alumne1 amb la contrasenya corresponent. Activem l’opció La contrasenya mai expira per evitar problemes en les proves.</p>
+<img width="416" height="390" alt="image" src="https://github.com/user-attachments/assets/577ef5b4-3cef-4c57-b6f6-23741c532df6" />
+
+<p>De la mateixa manera, creem l’usuari alumne2 amb la mateixa configuració.</p>
+<img width="415" height="390" alt="image" src="https://github.com/user-attachments/assets/ff5c6883-c97f-4420-8393-fc9aa20b2c47" />
+
+<p>Ara dins de lusrmgr.msc, fem clic sobre la carpeta Grupos per veure tots els grups existents. Clic dret en un espai buit de la llista → Grupo nuevo</p>
+<img width="304" height="261" alt="image" src="https://github.com/user-attachments/assets/d5152946-f5e0-45f5-be37-e3c50dcf663a" />
+
+<p>Introduïm el nom del grup Limitats i afegim els dos usuaris creats (alumne1 i alumne2) com a membres. Fem clic a Crear per finalitzar.</p>
+<img width="417" height="391" alt="image" src="https://github.com/user-attachments/assets/e0d3f253-0112-4f40-bf6a-e23785cacde7" />
+
+<p>Per comprovar que les quotes funcionen correctament, iniciem sessió com a **alumne1** i intentem crear fitxers de diverses mides a la partició `E:\` amb la comanda `fsutil file createnew`:</p>
+
+<p>fsutil file createnew E:\prova.dat 350000000   → Error 112: Espai insuficient (supera els 300 MB)</p>
+<p>fsutil file createnew E:\prova.dat 150000000   → Fitxer creat (150 MB)</p>
+<p>fsutil file createnew E:\prova.dat 150000000   → Fitxer creat (re-escriu el mateix)</p>
+<p>fsutil file createnew E:\prova2.dat 50000000   → Fitxer creat (50 MB)</p>
+<p>fsutil file createnew E:\prova3.dat 50000000   → Fitxer creat (50 MB)</p>
+<p>fsutil file createnew E:\prova4.dat 50000000   → Fitxer creat (50 MB)</p>
+<p>fsutil file createnew E:\prova5.dat 50000000   → Error 112: Espai insuficient (ja s'han superat els 300 MB)</p>
+
+<p>La captura mostra clarament com el sistema nega l'accés quan l'usuari intenta superar els 300 MB assignats per la quota. L'error 112 és el codi de Windows per "espai en disc insuficient", que en aquest context és provocat artificialment per la quota, no per la mida real del disc.</p>
+<img width="740" height="482" alt="image" src="https://github.com/user-attachments/assets/a3a53d01-c48a-4155-8d86-bb892b94db2c" />
+
+<h1>Fase 3: Script de còpia i automatització</h1>
+
+
+
+
+
 
 
