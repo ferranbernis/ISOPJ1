@@ -100,8 +100,34 @@
 
 <h1>Fase 3: Script de còpia i automatització</h1>
 
+<p>Des de la configuració de VirtualBox, afegim un tercer disc (Windows10_2.vdi) de 5 GB connectat al port SATA 3. Servirà com a unitat de còpies de seguretat.</p>
+<img width="881" height="546" alt="image" src="https://github.com/user-attachments/assets/b3d3b78f-ac64-4dd2-a97d-5b4fade78799" />
+
+<p>Un cop dins de Windows, obrim la Gestió de discs i localitzem el nou Disc 2 (4,98 GB, no asignat). Clic dret → Nou volum simple</p>
+<img width="744" height="109" alt="image" src="https://github.com/user-attachments/assets/bb5a4c49-7fd9-400e-8249-ba349ef2e2fd" />
+
+<p>Formatem tot el disc com a NTFS i li posem l'etiqueta Backups. Assignem la lletra B:.</p>
+<img width="491" height="386" alt="image" src="https://github.com/user-attachments/assets/589fec38-e819-4028-a37d-9df86d501afa" />
+<img width="488" height="382" alt="image" src="https://github.com/user-attachments/assets/433c1fb2-e10c-4b7f-ae22-b4a5e266d940" />
+<img width="744" height="109" alt="image" src="https://github.com/user-attachments/assets/c215a212-cd0f-4892-aaf2-0711adea7acf" />
+
+<p>Un cop creat i muntat el disc Backups (B:), creem manualment la carpeta CòpiesUsuaris dins de la unitat B:. Aquesta carpeta actuarà com a contenidor principal on l'script crearà una subcarpeta per cada usuari.</p>
+<img width="664" height="137" alt="image" src="https://github.com/user-attachments/assets/91dcb468-0f20-4a7f-baf3-4d9f7c505080" />
+
+Creem un fitxer script.bat (per exemple a C:\Users\FerranBernis\Documents\scriptBackup.bat) amb el contingut següent:
+
+<p>@echo off</p>
+<p>xcopy C:\Users\%USERNAME% B:\CòpiesUsuaris\%USERNAME% /E /I /Y</p>
+<img width="516" height="105" alt="image" src="https://github.com/user-attachments/assets/4cbd26ef-60c5-407f-b10a-11c460fc2d86" />
 
 
+<p>Explicació de la comanda:</p>
+<p>@echo off=	Silencia la sortida de les comandes a la consola</p>
+<p>xcopy=	Copia fitxers i directoris (inclou subdirectoris)</p>
+<p>%USERNAME%=	Variable d'entorn que s'expandeix automàticament amb el nom de l'usuari actiu</p>
+<p>/E=	Copia tots els subdirectoris, fins i tot els buits</p>
+<p>/I=	Si la destinació no existeix, la crea com a directori</p>
+<p>/Y=	Sobreescriu fitxers existents sense demanar confirmació</p>
 
 
 
