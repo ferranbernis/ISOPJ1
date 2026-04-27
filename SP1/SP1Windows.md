@@ -213,7 +213,11 @@ Què mostra systeminfo? → Mostra un resum complet de la informació del sistem
 <p>Esperarem a que se completi la instalacio</p> 
 <img width="659" height="312" alt="image" src="https://github.com/user-attachments/assets/4d590367-b14e-4819-bee0-594a2c3298e9" />
 
+<p>Selecionarem o inicia la sessio o mantenirla tancada</p> 
+<img width="839" height="792" alt="image" src="https://github.com/user-attachments/assets/159d9e02-bb99-4485-b23c-da7d1e7386cd" />
 
+<p>Selecionarem el buscador</p> 
+<img width="839" height="792" alt="image" src="https://github.com/user-attachments/assets/83e7db1d-6666-45e9-9051-b73512b2cd48" />
 
 
 
