@@ -232,5 +232,11 @@ Què mostra systeminfo? → Mostra un resum complet de la informació del sistem
 <p>Si salta el avis de els canvis al dispositiu direm que si</p> 
 <img width="503" height="393" alt="image" src="https://github.com/user-attachments/assets/fde00968-3516-4b7d-83db-e769dbe97497" />
 
+<p>Ya estaria</p> 
+<img width="928" height="970" alt="image" src="https://github.com/user-attachments/assets/37998415-1839-4335-a4f0-589ba17ce583" />
+
+
+
+
 
 
