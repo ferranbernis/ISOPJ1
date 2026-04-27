@@ -198,6 +198,21 @@ Què mostra ipconfig? → Mostra la configuració de xarxa de totes les interfí
 Què mostra systeminfo? → Mostra un resum complet de la informació del sistema: nom de l’equip, versió del sistema operatiu, fabricant del maquinari, quantitat de RAM, processador instal·lat, data d’instal·lació de Windows i molt més. Equivalent a “Sobre aquest equip” però molt més detallat.
 
 
+<h1>Fase 7: Instalacio d'aplicacions</h1>
+
+<p>Entrem a la pagina offical per a desscaregar google chrome i apretarem descaregar</p>
+<img width="740" height="921" alt="image" src="https://github.com/user-attachments/assets/4817ba80-6b76-4bcd-856c-425d16fae808" />
+
+<p>Anirem a descargas i executarem el archiu amb doble click</p>
+<img width="787" height="638" alt="image" src="https://github.com/user-attachments/assets/63394860-7c46-46de-a176-155f87e31135" />
+
+<p>Clickarem que si volem permitir que la aplicacio faigui canvis al dispositiu</p>
+<img width="460" height="337" alt="image" src="https://github.com/user-attachments/assets/eccc7d07-6bb5-46a6-93cb-86300f715e64" />
+
+
+<p>Esperarem a que se completi la instalacio</p> 
+<img width="659" height="312" alt="image" src="https://github.com/user-attachments/assets/4d590367-b14e-4819-bee0-594a2c3298e9" />
+
 
 
 
