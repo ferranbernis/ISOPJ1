@@ -157,17 +157,153 @@ Creem un fitxer script.bat (per exemple a C:\Users\FerranBernis\Documents\script
 <p>Iniciem sessió com a alumne1, obrim la consola (CMD) i executem tasklist per obtenir la llista de tots els processos actius, amb el seu PID, sessió i ús de memòria.</p>
 <img width="464" height="111" alt="image" src="https://github.com/user-attachments/assets/f6e4beba-5d3c-4989-880e-528f5d42bd88" />
 
+<p>La captura mostra processos típics del sistema: System Idle Process, System, Registry, smss.exe, csrss.exe, wininit.exe, services.exe, lsass.exe, svchost.exe (múltiples instàncies), etc.</p>
+<img width="642" height="441" alt="image" src="https://github.com/user-attachments/assets/f6c76da7-4a34-4aad-b7bf-2abf3f87e545" />
+
+<p>Redirigim la sortida a un fitxer de text per poder-la analitzar:
+La captura mostra que la comanda s’ha executat correctament i que el fitxer processos_inici.txt (12.950 bytes) s’ha creat al directori de l’usuari alumne1. Fem dir per confirmar-ho.</p>
+<img width="550" height="530" alt="image" src="https://github.com/user-attachments/assets/eb7b708d-c6fd-4cd6-a7da-63557a78fa59" />
+
+<p>Comprovem alguns processos clau usant findstr per filtrar del fitxer guardat:</p>
+<p>findstr explorer.exe C:\Users\%USERNAME%\processos_inici.txt</p>
+<p>findstr SearchIndexer.exe C:\Users\%USERNAME%\processos_inici.txt</p>
+<p>findstr OneDrive.exe C:\Users\%USERNAME%\processos_inici.txt</p>
+
+<img width="770" height="234" alt="image" src="https://github.com/user-attachments/assets/8389b57b-6cd9-4356-aff4-36dc806029df" />
+
+<p>explorer.exe (275 MB) → Gestor del sistema de fitxers i escriptori.</p>
+<p>SearchIndexer.exe (42 MB) → Servei d’indexació per a la cerca de Windows.</p>
+<p>OneDrive.exe (133–135 MB) → Sincronització al núvol de Microsoft; prescindible en entorns de laboratori.</p>
+
+<p>Filtrem el tasklist per trobar processos no essencials per a l’usuari en un entorn educatiu:</p>
+<p>La captura mostra que OneDrive.exe s’executa en dues instàncies (PID 4272 i 1480), consumint uns 125 MB de RAM en total.</p>
+<img width="631" height="107" alt="image" src="https://github.com/user-attachments/assets/d067828a-b6f3-46ea-bb6f-407cabd64d0b" />
+
+**Taula de processos prescindibles identificats:**
+
+| Nom del procés | Memòria aproximada | Justificació per eliminar |
+|----------------|----------------|---------------------------|
+| `OneDrive.exe` | 125 MB | Sincronització al núvol innecessària en un entorn de VM sense connexió a internet real |
+| `Teams.exe` | 150-400 MB | Client de videoconferència no necessari per a tasques d'aula |
+| `SkypeApp.exe` | 80-150 MB | Aplicació de comunicació no requerida en l'entorn de laboratori |
+
+<p>Ara eliminarem el procces One drive amb taskkill /IM OneDrive.exe /F (Ha de estar la terminal com a administrador per a puger eliminar el procces)</p>
+<img width="495" height="162" alt="image" src="https://github.com/user-attachments/assets/e130b88e-86ff-43ff-850b-85ec4a886d94" />
+
+<p>Comprovarem amb tasklist | findstr OneDrive.exe</p>
+<img width="469" height="143" alt="image" src="https://github.com/user-attachments/assets/d6c9330d-b0df-48b6-a0ab-95d944176212" />
+
+<p>Modifiquem l’script script.bat per incloure les comandes taskkill que eliminaran automàticament OneDrive i Teams cada vegada que un usuari iniciï sessió:</p>
+<p>taskkill /IM OneDrive.exe /F</p>
+<p>taskkill /IM Teams.exe /F</p>
+<img width="520" height="160" alt="image" src="https://github.com/user-attachments/assets/4f1108f0-4f42-4752-9d44-febdf30bc4df" />
+
+<p>Per verificar que funciona, iniciem sessió com a alumne2 i comprovem que OneDrive no s’executa:</p>
+<img width="435" height="69" alt="image" src="https://github.com/user-attachments/assets/a222a3bc-2b48-4e93-a3c0-6d91ce3e3024" />
+
+#### Fitxer de processos i anàlisi
+
+El fitxer `processos_inici.txt` generat per `tasklist` conté la llista completa de processos en el moment d'inici de sessió. S'ha adjuntat a la documentació com a evidència.
+
+#### Què passa si mates un procés crític com explorer.exe?
+
+`explorer.exe` és el gestor de l'escriptori i de l'Explorador de fitxers de Windows. Si l'eliminem:
+
+1. L'escriptori desapareix completament (barra de tasques, icones, fons).
+2. No podem obrir cap finestra ni accedir a cap fitxer via GUI.
+3. El sistema NO es penja: el kernel i els serveis segueixen funcionant.
+4. Per recuperar-lo: `Ctrl + Alt + Supr → Administrador de tasques → Arxiu → Executar nova tasca → explorer.exe`
+
+> **Prova controlada:** En un entorn de laboratori, eliminar `explorer.exe` és reversible. En un entorn de producció caldria anar amb molta cura, ja que l'usuari quedaria sense interfície gràfica.
+
+#### Com millora el rendiment en VMs?
+
+| Acció | Recursos alliberats |
+|-------|---------------------|
+| Matar OneDrive.exe | ~135 MB RAM, CPU esporàdica |
+| Matar Teams.exe | ~150-400 MB RAM, CPU i xarxa |
+| Deshabilitar SearchIndexer | ~40 MB RAM, I/O disc reduït |
+| Total estimat | +300-600 MB RAM disponible |
+
+En màquines virtuals amb 4 GB de RAM, alliberar 300+ MB pot significar la diferència entre un sistema fluid i un de lent.
+
+---
+
+<h1>Fase 6: Gestió de permisos (ACLs) </h1>
+
+### Què són les ACLs i com funcionen a Windows
+
+A Windows, cada fitxer i carpeta té una **llista de control d'accés (ACL, Access Control List)**. Aquesta llista defineix qui pot fer què amb aquell recurs.
+
+Cada entrada d'una ACL es diu **ACE (Access Control Entry)** i indica:
+- Quina **identitat** (usuari o grup) està afectada
+- Quins **permisos** té (lectura, escriptura, execució, control total, etc.)
+- Si el permís és **Permetre** o **Denegar**
+
+**Permisos disponibles a Windows:**
+
+| Permís | Descripció |
+|--------|------------|
+| Control total (F) | Accés complet: llegir, escriure, modificar, eliminar i canviar permisos |
+| Modificar (M) | Llegir, escriure i eliminar fitxers, però no canviar permisos |
+| Lectura i execució (RX) | Obrir fitxers i executar programes |
+| Mostrar contingut | Llistar el contingut d'una carpeta |
+| Lectura (R) | Obrir fitxers en mode només lectura |
+| Escriptura (W) | Crear fitxers i subcarpetes |
+
+**Herència:** Els permisos d'una carpeta pare es propaguen automàticament a les subcarpetes i fitxers. Quan es desactiva la herència, cal decidir si es conserven o descarten les entrades heretades.
+
+---
 
 
+<p> Iniciem sessió com a administrador i creem la carpeta Projectes dintre de la particio dades</p>
+<img width="780" height="184" alt="image" src="https://github.com/user-attachments/assets/aa8093a4-c85b-4287-8747-571017c85fb5" />
 
+<p>Fem clic dret sobre E:\Projectes → Propietats → Seguretat. Veiem els permisos actuals (heretats de E:\): Usuaris autenticats, SYSTEM, Administradors i Usuaris.</p>
+<p>Fem clic a Opciones avanzadas per accedir a la configuració avançada de permisos.</p>
+<img width="363" height="485" alt="image" src="https://github.com/user-attachments/assets/1f7a89a5-3d34-4d16-8953-6390b3c7e328" />
 
+<p>A la finestra d'opcions avançades veiem que els permisos estan heretats des de E:\ (columna "Heredada de"). Fem clic a Deshabilitar herencia per trencar la herència i poder gestionar els permisos de forma independent.</p>
+<img width="361" height="480" alt="image" src="https://github.com/user-attachments/assets/25b6ce4e-1ce8-44b0-95c6-55f1c9b8b181" />
 
+<p>Eliminem l'entrada de Usuarios (DESKTOP-6104CQ0\Usuarios) per netejar els permisos per defecte que no necessitem. Seleccionem l'entrada i fem clic a Quitar.</p>
+<img width="767" height="526" alt="image" src="https://github.com/user-attachments/assets/dbc3aae9-e599-4268-8bc0-4f8452a3024d" />
 
+<p>Ara afegim el grup Limitats amb Control total. Fem clic a Agregar, introduïm Limitats, i marquem tots els permisos bàsics (Control total, Modificar, Lectura i execució, Mostrar el contingut de la carpeta, Lectura, Escriptura).</p>
 
+<p>El tipus és Permitir i s'aplica a Esta carpeta, subcarpetes y archivos per garantir herència cap avall.</p>
+<img width="916" height="413" alt="image" src="https://github.com/user-attachments/assets/199c5a06-640e-47e7-a903-b268d0585506" />
 
+<p>La captura de la configuració avançada final mostra el resultat: la columna "Heredada de" ara diu "Ninguno" per a totes les entrades, confirmant que la herència s'ha desactivat. El grup Limitats (FerranBernis\Limitats) apareix amb Control total.</p>
+<img width="1034" height="523" alt="image" src="https://github.com/user-attachments/assets/3219bf11-0417-4ffe-9879-f3666ed9e12f" />
 
+<p>Iniciem sessió com a alumne1 (membre del grup Limitats). Creem un fitxer de text prova.txt a E:\Projectes amb el contingut "hola".</p>
 
+<p>La captura confirma que alumne1 ha pogut crear i escriure el fitxer sense cap problema, tal com s'esperava (té Control total hereta del grup Limitats).</p>
+<img width="1771" height="520" alt="image" src="https://github.com/user-attachments/assets/1d1373b4-89db-4934-a3b0-2e016fda449f" />
 
+<p>El fitxer prova.txt.</p>
+<img width="258" height="91" alt="image" src="https://github.com/user-attachments/assets/7aa8e58e-825a-4534-8771-19d86cd3130e" />
+
+Tornem a iniciar sessió com a **administrador** i executem la comanda `icacls` per aplicar una excepció específica per a `alumne2`:
+
+```
+icacls "E:\Projectes" /grant:r alumne2:(R)
+```
+
+**Explicació:**
+- `/grant:r` → Substitueix (reset) qualsevol permís existent per a aquell usuari.
+- `alumne2:(R)` → Assigna **només lectura (R)** a l'usuari alumne2.
+
+<p>La sortida confirma: *"Se procesaron correctamente 1 archivos"*. Ara `alumne2` té **només lectura**, tot i ser membre del grup Limitats que té Control total (la entrada explícita de l'usuari té **prioritat** sobre la del grup).</p>
+<img width="555" height="175" alt="image" src="https://github.com/user-attachments/assets/40a366d4-29a8-4ac2-9239-ac5cd3ff5972" />
+
+<p>Iniciem sessió com a alumne2 i accedim a E:\Projectes.</p>
+<p>Quan alumne2 intenta crear un fitxer nou o modificar algun existent, rep un missatge de denegació d'accés.</p>
+<img width="1129" height="642" alt="image" src="https://github.com/user-attachments/assets/b3967735-13c1-477b-ae7e-d41b19979b11" />
+
+<p>Executem la comanda des de la consola com a administrador per veure l’estat final de tots els permisos de E:\Projectes:</p>
+<img width="573" height="328" alt="image" src="https://github.com/user-attachments/assets/4512eefc-c285-459b-b2e1-18a38ff85686" />
 
 
 
