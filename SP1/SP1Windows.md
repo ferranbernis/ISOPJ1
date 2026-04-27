@@ -219,8 +219,18 @@ Què mostra systeminfo? → Mostra un resum complet de la informació del sistem
 <p>Selecionarem el buscador</p> 
 <img width="839" height="792" alt="image" src="https://github.com/user-attachments/assets/83e7db1d-6666-45e9-9051-b73512b2cd48" />
 
+<p>Ja estaria</p> 
+<img width="900" height="892" alt="image" src="https://github.com/user-attachments/assets/6470350d-8012-4d05-bc9e-a024edceca19" />
 
+<p>Entrarem a la microsoft store i selecionarem la app que volem instalar</p> 
+<img width="930" height="962" alt="image" src="https://github.com/user-attachments/assets/783b6540-c36b-41db-b66a-18d7252f61cd" />
+<img width="930" height="962" alt="image" src="https://github.com/user-attachments/assets/c9303ef0-e0db-40ec-bd8a-a8adc8052c3b" />
 
+<p>Esperarem a que finalizi la instalacio</p> 
+<img width="930" height="962" alt="image" src="https://github.com/user-attachments/assets/f26b5504-2770-4d7f-b76d-fd23b0f746ed" />
+
+<p>Si salta el avis de els canvis al dispositiu direm que si</p> 
+<img width="503" height="393" alt="image" src="https://github.com/user-attachments/assets/fde00968-3516-4b7d-83db-e769dbe97497" />
 
 
 
