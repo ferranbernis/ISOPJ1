@@ -1,3 +1,5 @@
+
+
 <img width="563" height="330" alt="Captura de pantalla de 2026-04-28 13-07-30" src="https://github.com/user-attachments/assets/800621ea-9212-4090-a866-6f06bfc5c7f1" />
 <img width="470" height="629" alt="Captura de pantalla de 2026-04-28 13-15-07" src="https://github.com/user-attachments/assets/8f606621-bee3-46f9-8404-89716e31d7d8" />
 <img width="790" height="563" alt="Captura de pantalla de 2026-04-28 13-15-54" src="https://github.com/user-attachments/assets/9c437d0f-b96c-4183-a77b-9b49e40253f3" />
